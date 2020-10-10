@@ -11,6 +11,9 @@ https://discord.gg/JggdMFz
 
 Current Kits:
 - German Paratroopers ca. 2010
+   G36 rifles with stock scopes no Zeiss optics.
+   M92 Helmets and no heavy body armor. 
+
 - 
 
 
