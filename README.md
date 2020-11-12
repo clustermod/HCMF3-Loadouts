@@ -14,7 +14,8 @@ Current Kits:
    G36 rifles with stock scopes no Zeiss optics.
    M92 Helmets and no heavy body armor. 
 
-- 
+- German KSK from 1997 with all Black Uniforms (Helmet is unrealistc 
+  since no realistic helmet present in modpack) with MP5's and G36K's. Aswell as one role with a shotgun.
 
 
 
