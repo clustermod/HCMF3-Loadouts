@@ -15,7 +15,7 @@ Current Kits:
    M92 Helmets and no heavy body armor. 
 
 - German KSK from 1997 with all Black Uniforms (Helmet is unrealistc 
-  since no realistic helmet present in modpack) with MP5's and G36K's. Aswell as one role with a shotgun.
+  since no realistic helmet present in modpack) with MP5's and G36K's. Aswell as one role with a shotgun. Which is also not the right one but whatever. This kit was sourced from pictures inside the K-ISOM special magazine about the KSK. 
 
 
 
