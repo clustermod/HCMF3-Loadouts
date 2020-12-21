@@ -1,6 +1,6 @@
 # EMF_Kits
 This is a collection of kits made with/for the EMF (Erik's Mission Framework) made by Eric. 
-He made the .sqf file template/structure and the EMF (obviously). 
+He made the .sqf file template/structure and the EMF (obviously).                             
 Link to EMF: https://github.com/Tapawingo/Eric-s-Mission-Framework/wiki/Functions
 
 Only thing that is done by me is putting in the classnames in the right place and sourcing the kits vom different sources.
