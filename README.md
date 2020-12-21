@@ -17,5 +17,5 @@ Current Kits:
 - German KSK from 1997 with all Black Uniforms (Helmet is unrealistc 
   since no realistic helmet present in modpack) with MP5's and G36K's. Aswell as one role with a shotgun. Which is also not the right one but whatever. This kit was sourced from pictures inside the K-ISOM special magazine about the KSK. 
 
-
+- Iranian SOF from roughly 2010-2020 and based on video sources from their recent/current deployments. 
 
