@@ -2,7 +2,8 @@
 This is a collection of loadouts made for Erik's Mission Framework (EMF).                                                        
 Link to [Erik's Mission Framework](https://github.com/Tapawingo/Eric-s-Mission-Framework) 
 
-Needed Mods are all part of the mod collection used by [Cluster Community](https://discord.gg/JggdMFz):
+The needed mods may change from loadout to loadout and will be listed in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).                                   
+Since the loadouts where made for [Cluster Community](https://discord.gg/JggdMFz) their modpack will have all mods. 
 
 All available loadouts with explanation and sources can be found in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).
 
