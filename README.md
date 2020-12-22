@@ -1,12 +1,12 @@
 # EMF_Kits
 This is a collection of kits made with/for the EMF (Erik's Mission Framework) made by Eric.                           
 He made the .sqf file template/structure and the EMF (obviously).                             
-Link to EMF: https://github.com/Tapawingo/Eric-s-Mission-Framework/wiki/Functions
+Link to [Erik's Mission Framework](https://github.com/Tapawingo/Eric-s-Mission-Framework) 
 
-Needed Mods are all part of the modcollection useed by Cluster Community:
+Needed Mods are all part of the modcollection used by Cluster Community:
 https://discord.gg/JggdMFz
 
-All available kits/loadouts with explanation can be found in the wiki.
+All available kits/loadouts with explanation can be found in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).
 
 # How to install
 EMF is needed, this is only made for KoscherArsenal. Git clone the repository or download the zip (extract) to any folder. 
