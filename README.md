@@ -15,5 +15,10 @@ Then go into `initPlayerLocal.sqf` and change the filename `USA_EARLY90_RANGER_D
 ```sqf
 [["USA_EARLY90_RANGER_DESERT"]] call EMF_fnc_kosherArsenalLoad;
 ```
-to whatever the name is of the loadout you want. 
+to whatever the name is of the loadout you want.
 
+Example:
+```sqf
+[["V_1.0__GER_FALLSCHIRMJAEGER_CA_2010"]] call EMF_fnc_kosherArsenalLoad;
+```
+You do not need to add the file extenstion (`.sqf`). 
