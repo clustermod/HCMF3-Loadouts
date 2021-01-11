@@ -1,5 +1,5 @@
 ## PvH's EMF Loadouts
-This is a collection of loadouts made for Erik's Mission Framework (EMF).                                                        
+This is a collection of loadouts made by me, Per von Harke, for Erik's Mission Framework (EMF).                                                        
 Link to [Erik's Mission Framework](https://github.com/Tapawingo/Eric-s-Mission-Framework) 
 
 The needed mods may change from loadout to loadout and will be listed in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).                                   
