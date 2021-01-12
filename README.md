@@ -22,3 +22,5 @@ Example:
 [["V_1.0__GER_FALLSCHIRMJAEGER_CA_2010"]] call EMF_fnc_kosherArsenalLoad;
 ```
 You do not need to add the file extenstion (`.sqf`). 
+
+**I would also heavily recommend deleting all unneeded kits to performance/loading time**
