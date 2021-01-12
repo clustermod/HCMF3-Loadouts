@@ -12,6 +12,8 @@ _defBackpacks = [];
 _defHeadgear = [];
 _defFacewear = [];
 
+// Made by Per_von_Harke
+
 //EOD class has to be manually added to the correct player unit for now. Might fix it later.
 // All commading personnel and pilots has/have a PRC-152
 
@@ -57,7 +59,7 @@ if (_role == "MED") then
 };
 
 // SAW/LMG
-if (_role == "AR") then
+if (_role == "LMG") then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_RPK74"];
@@ -153,7 +155,7 @@ if (_role == "ENG") then
 };
 
 // Rotary Wing Pilot
-if (_role == "RFL") then
+if (_role == "RWP") then
 {
 	_availableUniforms = ["rhs_uniform_df15_tan"];
 	_availableWeapons = ["CUP_arifle_AKS74U", "rhs_weap_rsp30_green"];
@@ -166,7 +168,7 @@ if (_role == "RFL") then
 };
 
 // Fixed Wing Pilot
-if (_role == "RFL") then
+if (_role == "FWP") then
 {
 	_availableUniforms = ["rhs_uniform_df15_tan"];
 	_availableWeapons = ["CUP_arifle_AKS74U", "rhs_weap_rsp30_green"];
