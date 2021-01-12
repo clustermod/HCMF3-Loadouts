@@ -12,6 +12,8 @@ _defBackpacks = ["LOP_V_Carrier_BLK"];
 _defHeadgear = ["CUP_H_RUS_K6_3_black", "CUP_H_RUS_K6_3"];
 _defFacewear = ["CUP_G_ESS_BLK_Facewrap_Black"];
 
+// Made by Per_von_Harke
+
 // Rifleman
 if (_role == "RFL") then
 {
@@ -25,6 +27,7 @@ if (_role == "RFL") then
 	_availableFacewear = [];
 };
 
+// Breacher
 if (_role == "BREACHER") then
 {
 	_availableUniforms = [];
@@ -65,7 +68,7 @@ if (_role == "MED") then
 };
 
 // SAW/LMG
-if (_role == "AR") then
+if (_role == "LMG") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
