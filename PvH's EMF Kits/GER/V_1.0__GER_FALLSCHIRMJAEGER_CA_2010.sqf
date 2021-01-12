@@ -12,6 +12,8 @@ _defBackpacks = ["CUP_B_GER_Pack_Flecktarn"];
 _defHeadgear = ["CUP_H_Ger_M92_Cover", "CUP_H_Ger_M92_Cover_GG_CB", "CUP_H_Ger_M92_Cover_GG_CF", "CUP_H_Ger_M92_Cover_GG" ];
 _defFacewear = ["CUP_G_ESS_BLK","rhsusf_oakley_goggles_clr","rhs_goggles_clear","rhs_googles_orange","rhs_googles_yellow"];
 
+// Made by Per_von_Harke
+
 // Rifleman
 if (_role == "RFL") then
 {
