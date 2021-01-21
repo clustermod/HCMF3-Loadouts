@@ -12,6 +12,8 @@ _defBackpacks = ["tgc_tssi_m9_hpc"];
 _defHeadgear = ["rhsusf_opscore_mc_cover_pe lt", "rhsusf_opscore_mc_cover_pelt_nsw","rhsusf_opscore_mc_cover_pelt_cam", "rhsusf_opscore_rg_cover_pelt", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_mc_pelt", "rhsusf_opscore_mc_pelt_nsw", "rhsusf_opscore_ut_pelt_cam", "rhsusf_opscore_ut_pelt_nsw", "rhsusf_opscore_ut_pelt_nsw_cam"];
 _defFacewear = ["CUP_G_ESS_BLK_Dark", "UK3CB_BAF_G_Tactical_Clear"];
 
+// Made by Per_von_Harke with help from AutisticBalistic
+
 //Extra added roles: JTAC
 
 // Rifleman
