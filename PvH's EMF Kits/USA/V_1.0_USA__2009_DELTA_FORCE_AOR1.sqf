@@ -12,9 +12,9 @@ _defBackpacks = [];
 _defHeadgear = [];
 _defFacewear = [];
 
-//Loadout made by Per_von_Harke
+//Loadout made by Per_von_Harke with help from Eric, AutisticBallistic and Galil.
 
-//
+// Stil WIP
 //
 //
 
