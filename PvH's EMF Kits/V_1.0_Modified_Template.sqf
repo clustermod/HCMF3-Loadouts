@@ -18,7 +18,7 @@ _defFacewear = [];
 //
 
 // Zeus
-if (_role == "RFL") then
+if (_role == "ZEUS") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -43,7 +43,7 @@ if (_role == "RFL") then
 	_availableFacewear = [];
 };
 
-// Team leader
+// Squad Leader
 if (_role == "SL") then
 {
 	_availableUniforms = [];
@@ -149,7 +149,7 @@ if (_role == "HAT") then
 };
 
 // EOD
-if (_role == "HAT") then
+if (_role == "EOD") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -176,7 +176,7 @@ if (_role == "ENG") then
 };
 
 // Rotary Wing Pilot
-if (_role == "RFL") then
+if (_role == "RWP") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -189,7 +189,7 @@ if (_role == "RFL") then
 };
 
 // Fixed Wing Pilot
-if (_role == "RFL") then
+if (_role == "FWP") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
