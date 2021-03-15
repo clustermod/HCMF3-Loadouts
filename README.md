@@ -19,7 +19,7 @@ to whatever the name is of the loadout you want.
 
 Example:
 ```sqf
-[["V_1.0__GER_ca2010_FALLSCHIRMJAEGER_FLECKTARN"]] call EMF_fnc_kosherArsenalLoad;
+[["GER_2015__PSA_BPO__SOLIDURBAN.sqf "]] call EMF_fnc_kosherArsenalLoad;
 ```
 You do not need to add the file extenstion (`.sqf`). 
 
