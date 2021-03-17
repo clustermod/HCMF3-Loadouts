@@ -17,7 +17,7 @@ _defFacewear = ["G_Shades_tactical", "UK3CB_BAF_G_Tactical_Black", "UK3CB_BAF_G_
 // Zeus
 if (_role == "ZEUS") then
 {
-	_availableUniforms = [];
+	_availableUniforms = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG"];
 	_availableWeapons = [];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_tlbelt_rngr"];
@@ -34,7 +34,7 @@ if (_role == "RFL") then
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_lightbelt_rngr", "CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_communicationsbelt_rngr", "CUP_V_CPC_weapons_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_communications_rngr"];
-	_availableItems = [];
+	_availableItems = ["ACRE_SEM52SL"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
@@ -44,10 +44,10 @@ if (_role == "RFL") then
 if (_role == "SL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_tlbelt_rngr", "CUP_V_CPC_tl_rngr"];
-	_availableItems = [];
+	_availableItems = ["ACRE_SEM70", "ACRE_SEM52SL"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
@@ -58,148 +58,18 @@ if (_role == "MED") then
 {
 	[player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
+	_availableUniforms = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG"];
 	_availableWeapons = [];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACRE_SEM52SL", "ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = ["G_Squares_Tinted"];
 };
 
-// SAW/LMG
-if (_role == "AR") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
 
-// MMG
-if (_role == "MMG") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Grenadier
-if (_role == "GRD") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// LAT
-if (_role == "LAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// MAT
-if (_role == "MAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// HAT
-if (_role == "HAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Engineer
-if (_role == "ENG") then
-{
-	player setVariable ["ACE_IsEngineer", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// JTAC
-if (_role == "JTAC") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Marksman 
-if (_role == "MRK") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Breacher
-if (_role == "BRC") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// EOD 
+// VIP 
 if (_role == "EOD") then
 {
 	_availableUniforms = [];
