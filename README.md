@@ -2,8 +2,9 @@
 This is a collection of loadouts made by me, Per von Harke , for Erik's Mission Framework (EMF).                                                        
 Link to [Erik's Mission Framework](https://github.com/Tapawingo/Eric-s-Mission-Framework) 
 
-The needed mods may change from loadout to loadout and will be listed in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).                                   
-Since the loadouts where made for [Cluster Community](https://discord.gg/JggdMFz) their modpack will have all mods. 
+The needed mods may change from loadout to loadout.
+[A link to the modlist used while creating these](https://cluster-community.com/downloads/cc_core_aio.html).                      
+All kits are made to fit the [Cluster Community](https://discord.gg/JggdMFz) modpack.
 
 All available loadouts with explanation and sources can be found in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).
 
@@ -23,4 +24,4 @@ Example:
 ```
 You do not need to add the file extenstion (`.sqf`). 
 
-**I would also heavily recommend deleting all unneeded kits to performance/loading time**
+**I would also heavily recommend deleting all unneeded kits to improve performance/loading time**
