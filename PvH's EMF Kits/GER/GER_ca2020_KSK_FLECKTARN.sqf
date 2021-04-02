@@ -72,8 +72,8 @@ if (_role == "MED") then
 if (_role == "AR") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
+	_availableWeapons = ["hlc_rifle_g3sg1"];
+	_availableMagazines = ["hlc_50rnd_762x51_MDIM_G3", "hlc_50rnd_762x51_M_G3"];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
 	_availableItems = [];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
