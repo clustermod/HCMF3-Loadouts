@@ -63,7 +63,7 @@ if (_role == "MED") then
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_medicalbelt_coy", "CUP_V_CPC_medical_coy"];
 	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
-	_availableBackpacks = ["TRYK_B_Medbag_OD"];
+	_availableBackpacks = ["tgc_tssi_m9_hpc"];
 	_availableHeadgear = ["rhsusf_opscore_ut_pelt_nsw_cam", "rhsusf_opscore_ut_pelt_nsw", "rhsusf_opscore_ut_pelt_cam"];
 	_availableFacewear = [];
 };
