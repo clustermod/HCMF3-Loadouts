@@ -10,7 +10,7 @@ _defWeapons = [];
 _defVests = [];
 _defBackpacks = [];
 _defHeadgear = ["UK3CB_BAF_H_Mk6_DDPM_A", "UK3CB_BAF_H_Mk6_DDPM_B", "UK3CB_BAF_H_Mk6_DDPM_C", "UK3CB_BAF_H_Mk6_DDPM_D", "UK3CB_BAF_H_Mk6_DDPM_E", "UK3CB_BAF_H_Mk6_DDPM_F"];
-_defFacewear = ["rhs_googles_black", "rhs_googles_clear", "rhs_googles_orange", "];
+_defFacewear = ["rhs_googles_black", "rhs_googles_clear", "rhs_googles_orange"];
 
 //Loadout made by Per_von_Harke
 
@@ -44,7 +44,7 @@ if (_role == "RFL") then
 if (_role == "SL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["UK3CB_BAF_L85A2"];
 	_availableMagazines = [];
 	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5", "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8"];
 	_availableItems = ["ACRE_PRC148"];
@@ -173,7 +173,7 @@ if (_role == "JTAC") then
 	_availableFacewear = [];
 };
 
-// Marksman 
+// Marksman   !not yet finished!
 if (_role == "MRK") then
 {
 	_availableUniforms = [];
@@ -199,7 +199,7 @@ if (_role == "BRC") then
 	_availableFacewear = [];
 };
 
-// EOD 
+// EOD
 if (_role == "EOD") then
 {
 	_availableUniforms = [];
