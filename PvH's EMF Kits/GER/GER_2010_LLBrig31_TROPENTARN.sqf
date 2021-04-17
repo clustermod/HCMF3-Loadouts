@@ -17,7 +17,7 @@ _defFacewear = [];
 // Grenade presets follow Cluster-Community SOP's.
 //
 // Default western Grenades: "Chemlight_green", "Chemlight_blue", "ACE_Chemlight_IR", "Chemlight_red", "ACE_Chemlight_Orange", "rhs_mag_m67", "rhs_mag_an_m8hc", "rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red", "rhs_mag_m18_yellow", "rhs_mag_mk84", "rhs_mag_mk3a2", "rhs_mag_m7a3_cs"
-// Default Eastern Grenades: 
+// Default Eastern Grenades:
 //
 
 // Zeus
@@ -159,7 +159,7 @@ if (_role == "ENG") then
 	_availableWeapons = ["ACE_Vector", "CUP_arifle_G36A"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_B_GER_PVest_Trop_RFL"];
-	_availableItems = [];
+	_availableItems = ["ToolKit"];
 	_availableBackpacks = [];
 	_availableHeadgear = ["CUP_H_Ger_M92_Cover_Trop", "CUP_H_Ger_M92_Cover_Trop_GG_CB", "CUP_H_Ger_M92_Cover_Trop_GG_CF", "CUP_H_Ger_M92_Cover_Trop_GG"];
 	_availableFacewear = ["CUP_G_ESS_BLK", "rhs_googles_clear", "rhs_googles_orange", "rhs_googles_yellow"];
@@ -178,7 +178,7 @@ if (_role == "JTAC") then
 	_availableFacewear = ["CUP_G_ESS_BLK", "rhs_googles_clear", "rhs_googles_orange", "rhs_googles_yellow"];
 };
 
-// Marksman 
+// Marksman
 if (_role == "MRK") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_1", "CUP_U_B_GER_Tropentarn_6"];
@@ -230,7 +230,7 @@ if (_role == "FWP") then
 	_availableFacewear = [];
 };
 
-// EOD 
+// EOD
 if (_role == "EOD") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_1", "CUP_U_B_GER_Tropentarn_6"];

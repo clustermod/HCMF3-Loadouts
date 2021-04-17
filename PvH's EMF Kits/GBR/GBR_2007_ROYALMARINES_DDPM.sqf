@@ -154,7 +154,7 @@ if (_role == "ENG") then
 	_availableWeapons = ["UK3CB_BAF_L85A2"];
 	_availableMagazines = [];
 	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5", "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8"];
-	_availableItems = [];
+	_availableItems = ["ToolKit"];
 	_availableBackpacks = ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
@@ -190,8 +190,8 @@ if (_role == "MRK") then
 if (_role == "BRC") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["UK3CB_BAF_L85A2"];
-	_availableMagazines = [];
+	_availableWeapons = ["UK3CB_BAF_L85A2", "UK3CB_BAF_L128A1"];
+	_availableMagazines = ["UK3CB_BAF_12G_Slugs", "UK3CB_BAF_12G_Pellets"];
 	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5", "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8"];
 	_availableItems = [];
 	_availableBackpacks = ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A"];
@@ -204,9 +204,22 @@ if (_role == "EOD") then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["UK3CB_BAF_L85A2", "ACE_VMH3"];
-	_availableMagazines = [];
+	_availableMagazines = ["rhs_ec200_sand_mag", "rhs_ec400_sand_mag", "rhs_ec75_mag"];
 	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5", "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8"];
-	_availableItems = [];
+	_availableItems = ["ACE_DefusalKit", "ACE_Clacker"];
+	_availableBackpacks = ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A"];
+	_availableHeadgear = [];
+	_availableFacewear = [];
+};
+
+// Explosive Specialist
+if (_role == "ESP") then
+{
+	_availableUniforms = [];
+	_availableWeapons = ["UK3CB_BAF_L85A2", "ACE_VMH3"];
+	_availableMagazines = ["rhsusf_m112x4_mag", "rhsusf_m112_mag", "CUP_TimeBomb_M", "rhs_ec400_mag"];
+	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5", "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8"];
+	_availableItems = ["ACE_Clacker"];
 	_availableBackpacks = ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

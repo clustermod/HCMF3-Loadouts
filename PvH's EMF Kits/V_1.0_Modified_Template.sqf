@@ -169,7 +169,7 @@ if (_role == "ENG") then
 	_availableWeapons = [];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = [];
+	_availableItems = ["ToolKit"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

@@ -17,7 +17,7 @@ _defFacewear = ["CUP_G_ESS_BLK","rhsusf_oakley_goggles_clr","rhs_goggles_clear",
 // Rifleman
 if (_role == "RFL") then
 {
-	_availableUniforms = [];	
+	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableMagazines = ["CUP_30Rnd_556x45_G36"];
 	_availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
@@ -77,7 +77,7 @@ if (_role == "AR") then
 	_availableMagazines = ["CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M"];
 	_availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
 	_availableItems = [];
-	_availableBackpacks = [];	
+	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
@@ -168,7 +168,7 @@ if (_role == "ENG") then
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableMagazines = ["CUP_30Rnd_556x45_G36"];
 	_availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
-	_availableItems = ["cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d"];
+	_availableItems = ["cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d", "ToolKit"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

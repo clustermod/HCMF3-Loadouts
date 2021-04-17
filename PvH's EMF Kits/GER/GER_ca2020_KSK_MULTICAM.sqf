@@ -154,7 +154,7 @@ if (_role == "ENG") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_mc", "CUP_V_CPC_medicalbelt_mc", "CUP_V_CPC_medical_mc", "CUP_V_CPC_Fast_mc", "CUP_V_CPC_lightbelt_mc"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["ToolKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["B_AssaultPack_mcamo"];
 	_availableHeadgear = ["rhsusf_opscore_ut_pelt_nsw_cam", "rhsusf_opscore_ut_pelt_nsw", "rhsusf_opscore_ut_pelt_cam"];
 	_availableFacewear = [];
@@ -173,7 +173,7 @@ if (_role == "JTAC") then
 	_availableFacewear = [];
 };
 
-// Designated Marksman 
+// Designated Marksman
 if (_role == "DMR") then
 {
 	_availableUniforms = [];
@@ -200,7 +200,7 @@ if (_role == "BRC") then
 	_availableFacewear = [];
 };
 
-// EOD 
+// EOD
 if (_role == "EOD") then
 {
 	_availableUniforms = [];
@@ -213,7 +213,7 @@ if (_role == "EOD") then
 	_availableFacewear = [];
 };
 
-// Explosive Specialist 
+// Explosive Specialist
 if (_role == "ESP") then
 {
 	_availableUniforms = [];

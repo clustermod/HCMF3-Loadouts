@@ -19,12 +19,12 @@ Generic Eastern Grenades:
 Equipment presets:
 
 EOD:
-Magazines =
-Items =
+Magazines = "rhs_ec75_mag", "rhs_ec200_mag"
+Items = "ACE_Clacker", "ACE_DefusalKit"
 
 Explosive Specialist:
-Magazines =
-Items =
+Magazines = "rhs_ec200_mag", "rhs_ec400_mag", "CUP_TimeBomb_M", "rhsusf_m112_mag", "rhsusf_m112x4_mag"
+Items = "ACE_Clacker"
 
 
 ========================================================
