@@ -21,7 +21,7 @@ if (_role == "ZEUS") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_tlbelt_rngr", "CUP_V_CPC_communicationsbelt_rngr", "CUP_V_CPC_tl_rngr", "CUP_V_CPC_communications_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -34,7 +34,7 @@ if (_role == "RFL") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -47,7 +47,7 @@ if (_role == "SL") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_tlbelt_rngr", "CUP_V_CPC_communicationsbelt_rngr", "CUP_V_CPC_tl_rngr", "CUP_V_CPC_communications_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -62,7 +62,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["TRYK_B_Medbag_OD"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -101,7 +101,7 @@ if (_role == "GRD") then
 	_availableWeapons = ["CUP_arifle_G36K_RIS_AG36"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_weapons_rngr", "CUP_V_CPC_weaponsbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -114,7 +114,7 @@ if (_role == "LAT") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "rhs_weap_M136_hp", "rhs_weap_M136_hedp", "rhs_weap_M136"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -127,7 +127,7 @@ if (_role == "MAT") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "CUP_launch_PzF3", "CUP_launch_HCPF3", "CUP_launch_BF3"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -140,7 +140,7 @@ if (_role == "HAT") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -154,7 +154,7 @@ if (_role == "ENG") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["ToolKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["ToolKit", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -167,7 +167,7 @@ if (_role == "JTAC") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "rhs_weap_M320"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_weapons_rngr", "CUP_V_CPC_weaponsbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -192,9 +192,9 @@ if (_role == "BRC") then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "CUP_sgun_M1014_Entry"];
-	_availableMagazines = ["ACE_2Rnd_12Gauge_Pellets_No4_Buck"];
+	_availableMagazines = ["rhsusf_5Rnd_00Buck", "rhsusf_5Rnd_Slug"];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -207,7 +207,7 @@ if (_role == "EOD") then
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "ACE_VMM3"];
 	_availableMagazines = ["rhs_ec75_mag", "rhs_ec200_mag"];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["ACE_DefusalKit", "ACE_Clacker"               "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["ACE_DefusalKit", "ACE_Clacker",               "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
@@ -218,9 +218,9 @@ if (_role == "ESP") then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip"];
-	_availableMagazines = [];
+	_availableMagazines = ["rhs_ec400_mag", "rhs_ec200_mag", "rhs_ec75_mag", "rhsusf_m112x4_mag", "rhsusf_m112_mag", "rhsusf_mine_m14_mag", "rhs_mine_M19_mag", "CUP_TimeBomb_M", "CUP_PipeBomb_M"];
 	_availableVests = ["CUP_V_CPC_Fastbelt_rngr", "CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr", "CUP_V_CPC_Fast_rngr", "CUP_V_CPC_lightbelt_rngr"];
-	_availableItems = ["ACE_Clacker", "rhs_ec400_mag", "rhs_ec200_mag", "rhs_ec75_mag", "rhsusf_m112x4_mag", "rhsusf_m112_mag", "rhsusf_mine_m14_mag", "rhs_mine_M19_mag", "CUP_TimeBomb_M", "CUP_PipeBomb_M"              "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des" "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
+	_availableItems = ["ACE_Clacker", "rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Flecktarn"];
 	_availableHeadgear = ["rhsusf_opscore_fg_pelt_nsw", "rhsusf_opscore_fg_pelt_cam", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_rg_cover_pelt"];
 	_availableFacewear = [];
