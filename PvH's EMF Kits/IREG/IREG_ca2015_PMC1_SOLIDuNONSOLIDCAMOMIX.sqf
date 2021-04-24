@@ -12,12 +12,12 @@ _defBackpacks = [];
 _defHeadgear = [];
 _defFacewear = [];
 
-//Helmets are horrendous I will change that in a later version. 
+//Helmets are horrendous I will change that in a later version.
 
 // Loadout made by Per_von_Harke
 
 // Simple PMC loadouts with western guns and clothing.
-// This kit includes multiple different VIP's Loadouts that have 
+// This kit includes multiple different VIP's Loadouts that have
 // various levels of protection for themselves. They can be found at the very bottom
 // of this file.
 

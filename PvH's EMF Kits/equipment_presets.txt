@@ -26,5 +26,7 @@ Explosive Specialist:
 Magazines = "rhs_ec200_mag", "rhs_ec400_mag", "CUP_TimeBomb_M", "rhsusf_m112_mag", "rhsusf_m112x4_mag"
 Items = "ACE_Clacker"
 
+Modern Misc Items for SOF Loadouts:
+Items = "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam"
 
 ========================================================

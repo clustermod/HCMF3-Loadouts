@@ -15,7 +15,7 @@ _defFacewear = [];
 // Made by Per_von_Harke
 
 //
-//VIPs are universal so I left them in. 
+//VIPs are universal so I left them in.
 //
 
 // Saved Uniforms: "TRYK_U_hood_nc"

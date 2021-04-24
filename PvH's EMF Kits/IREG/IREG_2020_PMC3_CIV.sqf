@@ -16,18 +16,7 @@ _defFacewear = [];
 // Work in progress
 // Loadout made by Per_von_Harke
 
-// Zeus
-if (_role == "ZEUS") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
+
 
 // Rifleman
 if (_role == "RFL") then
