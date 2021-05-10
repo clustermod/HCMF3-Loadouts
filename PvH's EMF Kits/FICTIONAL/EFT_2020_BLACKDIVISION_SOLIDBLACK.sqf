@@ -12,7 +12,7 @@ _defBackpacks = ["CUP_B_AssaultPack_Black", "CUP_B_UAVTerminal_Black"];
 _defHeadgear = ["tc2002_blk", "anvis10_blk"];
 _defFacewear = ["G_Bandanna_blk", "CUP_RUS_Balaclava_blk", "CUP_PMC_Facewrap_Black", "CUP_G_PMC_Facewrap_Black_Glasses_Dark", "CUP_G_PMC_Facewrap_Black_Glasses_Ember", "G_Shades_tactical"];
 
-// Black Division from Escape from Tarkov
+// I tried to imitate the Black Division that was seen in the last episode of the EFT Web Series by Battlestate Games.
 // Loadout made by Per_von_Harke
 
 // Rifleman
