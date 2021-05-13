@@ -15,18 +15,6 @@ _defFacewear = [];
 //Loadout made by Per_von_Harke
 // Possible RUSFOR NODS rhs_1PN138
 
-// Zeus
-if (_role == "ZEUS") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
 
 // Rifleman
 if (_role == "RFL") then
@@ -173,7 +161,7 @@ if (_role == "JTAC") then
 	_availableFacewear = ["CUP_G_RUS_Balaclava_Ratnik_winter", "CUP_G_RUS_Balaclava_Ratnik_winter_v2", "G_SWDG"];
 };
 
-// Marksman 
+// Marksman
 if (_role == "MRK") then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
@@ -199,7 +187,7 @@ if (_role == "BRC") then
 	_availableFacewear = ["CUP_G_RUS_Balaclava_Ratnik_winter", "CUP_G_RUS_Balaclava_Ratnik_winter_v2", "G_SWDG"];
 };
 
-// High Value Target 
+// High Value Target
 if (_role == "HVT") then
 {
 	_availableUniforms = [];
@@ -212,7 +200,7 @@ if (_role == "HVT") then
 	_availableFacewear = [];
 };
 
-// Very Important Person 
+// Very Important Person
 if (_role == "VIP") then
 {
 	_availableUniforms = [];
@@ -251,7 +239,7 @@ if (_role == "FWP") then
 	_availableFacewear = ["G_Aviator"];
 };
 
-// EOD 
+// EOD
 if (_role == "EOD") then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];

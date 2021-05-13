@@ -3,37 +3,26 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack"];
-_defGrenades = [];
-_defUniforms = [];
+_defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green","CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "UK3CB_BAF_762_200Rnd_T","rhs_mag_M441_HE", "rhs_mag_m715_Green", "rhs_mag_m713_Red", "ACE_40mm_Flare_white", "rhs_mag_m661_green", "rhs_mag_m662_red"];
+_defGrenades = ["rhs_mag_m67", "Chemlight_green"];
+_defUniforms = ["M93_bdu_B"];
 _defWeapons = [];
-_defVests = [];
-_defBackpacks = [];
-_defHeadgear = [];
-_defFacewear = [];
+_defVests = ["rhsgref_alice_webbing", "rhsgref_chicom", "rhsgref_chestrig"];
+_defBackpacks = ["CUP_B_AlicePack_OD"];
+_defHeadgear = ["usm_bdu_boonie_odg", "rhssaf_booniehat_woodland", "usm_bdu_boonie_wdl"];
+_defFacewear = ["CUP_G_WristWatch"];
 
 
 // Work in progress
 // Loadout made by Per_von_Harke
 
-// Zeus
-if (_role == "ZEUS") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
+
 
 // Rifleman
 if (_role == "RFL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_M4A1"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
@@ -42,17 +31,31 @@ if (_role == "RFL") then
 	_availableFacewear = [];
 };
 
+// Radioman
+if (_role == "RADIO") then
+{
+	_availableUniforms = [];
+	_availableWeapons = ["CUP_arifle_M4A1"];
+	_availableMagazines = [];
+	_availableVests = [];
+	_availableItems = ["ACRE_PRC343"];
+	_availableBackpacks = ["rhs_r148"];
+	_availableHeadgear = [];
+	_availableFacewear = [];
+};
+
+
 // Squad Leader
 if (_role == "SL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_M4A1", "rhssaf_zrak_rd7j"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
-	_availableFacewear = [];
+	_availableFacewear = ["G_Aviator"];
 };
 
 // Medic
@@ -60,7 +63,7 @@ if (_role == "MED") then
 {
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_M4A1"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
@@ -73,20 +76,7 @@ if (_role == "MED") then
 if (_role == "AR") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// MMG
-if (_role == "MMG") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["rhs_weap_fnmag"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
@@ -99,7 +89,7 @@ if (_role == "MMG") then
 if (_role == "LAT") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_M4A1", "rhs_weap_m72a7"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
@@ -108,15 +98,14 @@ if (_role == "LAT") then
 	_availableFacewear = [];
 };
 
-// Engineer
-if (_role == "ENG") then
+// Grenadier
+if (_role == "GRD") then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["CUP_arifle_M4A1_GL_carryhandle"];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = ["ToolKit"];
+	_availableItems = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

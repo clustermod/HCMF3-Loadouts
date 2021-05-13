@@ -14,7 +14,6 @@ _defFacewear = [];
 
 //Loadout made by Per_von_Harke
 
-
 // Zeus
 if (_role == "ZEUS") then
 {
@@ -173,7 +172,7 @@ if (_role == "JTAC") then
 	_availableFacewear = [];
 };
 
-// Marksman 
+// Marksman
 if (_role == "MRK") then
 {
 	_availableUniforms = ["rhsgref_uniform_olive"];
@@ -199,7 +198,7 @@ if (_role == "BRC") then
 	_availableFacewear = [];
 };
 
-// High Value Target 
+// High Value Target
 if (_role == "HVT") then
 {
 	_availableUniforms = [];
@@ -212,7 +211,7 @@ if (_role == "HVT") then
 	_availableFacewear = [];
 };
 
-// Very Important Person 
+// Very Important Person
 if (_role == "VIP") then
 {
 	_availableUniforms = [];
@@ -251,7 +250,7 @@ if (_role == "FWP") then
 	_availableFacewear = ["G_Aviator"];
 };
 
-// EOD 
+// EOD
 if (_role == "EOD") then
 {
 	_availableUniforms = [];
