@@ -2,22 +2,22 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = [];
+_defItems = ["rhsusf_acc_compm4", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defMagazines = ["rhsusf_mag_40Rnd_46x30_FMJ", "rhsusf_mag_40Rnd_46x30_AP"];
 _defGrenades = [];
-_defUniforms = [];
-_defWeapons = [];
-_defVests = [];
+_defUniforms = ["n_m04_w"];
+_defWeapons = ["rhsusf_weap_MP7A2"];
+_defVests = ["n_m07_coy_crewman"];
 _defBackpacks = [];
-_defHeadgear = [];
-_defFacewear = [];
+_defHeadgear = ["rhsusf_cvc_green_alt_helmet"];
+_defFacewear = ["rhsusf_oakley_goggles_clr", "rhs_googles_clear"];
 
 
 //
-//
+// Loadout made by Per_von_Harke
 //
 
-// Rifleman
+// Crewman
 if (_role == "RFL") then
 {
 	_availableUniforms = [];
@@ -30,8 +30,8 @@ if (_role == "RFL") then
 	_availableFacewear = [];
 };
 
-// Squad Leader
-if (_role == "SL") then
+// Tankcommander
+if (_role == "TC") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -46,108 +46,17 @@ if (_role == "SL") then
 // Medic
 if (_role == "MED") then
 {
+  [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
-	_availableBackpacks = [];
+	_availableBackpacks = ["n_backpack_kitbag_w"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
-
-// SAW/LMG
-if (_role == "AR") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// MMG
-if (_role == "MMG") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Grenadier
-if (_role == "GRD") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// LAT
-if (_role == "LAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// MAT
-if (_role == "MAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// HAT
-if (_role == "HAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// EOD
-if (_role == "EOD") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = ["rhs_ec75_mag", "rhs_ec200_mag"];
-	_availableVests = [];
-	_availableItems = ["ACE_Clacker", "ACE_DefusalKit"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
 
 // Engineer
 if (_role == "ENG") then
@@ -158,7 +67,7 @@ if (_role == "ENG") then
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = ["ToolKit"];
-	_availableBackpacks = [];
+	_availableBackpacks = ["B_AssaultPack_cbr"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
