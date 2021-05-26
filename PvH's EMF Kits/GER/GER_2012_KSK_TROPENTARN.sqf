@@ -3,10 +3,10 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["rhsusf_acc_ardec_m240", "ACRE_SEM52SL", "ACE_wirecutter", "ACE_adenosine", "ACE_CableTie","ACE_DefusalKit","ACE_SpraypaintBlue", "ItemcTabHCam","ACE_EntrenchingTool", "ACE_IR_Strobe_Item", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_microDAGR"];
-_defMagazines = ["hlc_200rnd_556x45_B_SAW", "hlc_200rnd_556x45_M_SAW", "hlc_200rnd_556x45_Mdim_SAW", "hlc_200rnd_556x45_T_SAW", "hlc_50rnd_762x51_MDIM_G3", "hlc_50rnd_762x51_M_G3",                         "murshun_cigs_matches", "1Rnd_HE_Grenade_shell", "CUP_1Rnd_HEDP_M203", "CUP_FlareWhite_M203", "CUP_1Rnd_StarFlare_White_M203", "CUP_FlareRed_M203", "CUP_1Rnd_StarCluster_Red_M203", "rhs_mag_M433_HEDP", "CUP_1Rnd_StarFlare_Red_M203", "CUP_1Rnd_SmokeRed_M203", "rhs_mag_m4009", "murshun_cigs_cigpack", "CUP_30Rnd_556x45_G36_camo", "CUP_30Rnd_556x45_G36", "30Rnd_9x21_Mag", "16Rnd_9x21_Mag"];
+_defMagazines = ["BWA3_15Rnd_9x19_P8","hlc_200rnd_556x45_B_SAW", "hlc_200rnd_556x45_M_SAW", "hlc_200rnd_556x45_Mdim_SAW", "hlc_200rnd_556x45_T_SAW", "hlc_50rnd_762x51_MDIM_G3", "hlc_50rnd_762x51_M_G3",                         "murshun_cigs_matches", "1Rnd_HE_Grenade_shell", "CUP_1Rnd_HEDP_M203", "CUP_FlareWhite_M203", "CUP_1Rnd_StarFlare_White_M203", "CUP_FlareRed_M203", "CUP_1Rnd_StarCluster_Red_M203", "rhs_mag_M433_HEDP", "CUP_1Rnd_StarFlare_Red_M203", "CUP_1Rnd_SmokeRed_M203", "rhs_mag_m4009", "murshun_cigs_cigpack", "CUP_30Rnd_556x45_G36_camo", "CUP_30Rnd_556x45_G36", "30Rnd_9x21_Mag", "16Rnd_9x21_Mag"];
 _defGrenades = ["ACE_M84","Chemlight_blue","Chemlight_green","ACE_Chemlight_IR","Chemlight_red", "CUP_HandGrenade_M67","SmokeShell","SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 _defUniforms = [];
-_defWeapons = ["hgun_P07_F", "ACE_Vector", "rhsusf_bino_lrf_Vector21"];
+_defWeapons = ["BWA3_P8", "ACE_Vector", "rhsusf_bino_lrf_Vector21"];
 _defVests = [];
 _defBackpacks = [];
 _defHeadgear = [];
@@ -80,7 +80,7 @@ if (_role == "JTAC") then
 	_availableFacewear = ["CUP_G_Oakleys_Drk", "CUP_G_ESS_BLK","rhs_balaclava","CUP_RUS_Balaclava_blk","G_Shades_tactical", "CUP_RUS_Balaclava_tan"];
 };
 
-// Marksman 
+// Marksman
 if (_role == "MRK") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
@@ -133,7 +133,7 @@ if (_role == "GRD") then
 	_availableFacewear = ["CUP_G_Oakleys_Drk", "CUP_G_ESS_BLK","rhs_balaclava","CUP_RUS_Balaclava_blk","G_Shades_tactical", "CUP_RUS_Balaclava_tan"];
 };
 
-// LAT // DO NOT USE MAYBE M72 AT MOST, use Panzerfaust in MAT kit instead.                          
+// LAT // DO NOT USE MAYBE M72 AT MOST, use Panzerfaust in MAT kit instead.
 if (_role == "LAT") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];

@@ -3,10 +3,10 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["ACE_CableTie", "ACE_microDAGR", "ItemMicroDAGR", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACRE_PRC152", "ACE_wirecutter", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Green_Tracer_556x45_G36", "rhssaf_30rnd_556x45_MDIM_G36", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_TE1_Green_Tracer_762x51_HK417", "CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "CUP_17Rnd_9x19_glock17", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "ACE_40mm_Flare_white"];
+_defMagazines = ["BWA3_120Rnd_762x51_soft", "BWA3_120Rnd_762x51_Tracer_soft", "BWA3_120Rnd_762x51", "BWA3_120Rnd_762x51_Tracer", "BWA3_15Rnd_9x19_P8", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Green_Tracer_556x45_G36", "rhssaf_30rnd_556x45_MDIM_G36", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_TE1_Green_Tracer_762x51_HK417", "CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "CUP_17Rnd_9x19_glock17", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow", "ACE_40mm_Flare_white"];
 _defGrenades = ["rhs_mag_m67", "rhs_mag_an_m8hc", "rhs_mag_an_m14_th3", "rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red", "rhs_mag_m18_yellow", "ACE_CTS9", "ACE_M84", "ACE_Chemlight_IR", "ACE_Chemlight_Orange", "ACE_Chemlight_UltraHiOrange", "ACE_Chemlight_HiYellow", "ACE_Chemlight_HiWhite", "ACE_Chemlight_HiRed", "ACE_Chemlight_HiGreen", "ACE_Chemlight_HiBlue"];
 _defUniforms = ["CUP_U_B_GER_Crye"];
-_defWeapons = ["CUP_hgun_Glock17_blk"];
+_defWeapons = ["BWA3_P8"];
 _defVests = [];
 _defBackpacks = [];
 _defHeadgear = [];
@@ -85,7 +85,7 @@ if (_role == "AR") then
 if (_role == "MMG") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_lmg_MG3"];
+	_availableWeapons = ["BWA3_MG5_tan"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_coy", "CUP_V_CPC_medicalbelt_coy", "CUP_V_CPC_medical_coy", "CUP_V_CPC_Fast_coy", "CUP_V_CPC_lightbelt_coy"];
 	_availableItems = [];
@@ -111,7 +111,7 @@ if (_role == "GRD") then
 if (_role == "LAT") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "rhs_weap_M136_hp", "rhs_weap_M136_hedp", "rhs_weap_M136"];
+	_availableWeapons = ["CUP_arifle_G36KA3", "CUP_arifle_G36KA3_grip", "BWA3_RGW90_Loaded"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_Fastbelt_coy", "CUP_V_CPC_medicalbelt_coy", "CUP_V_CPC_medical_coy", "CUP_V_CPC_Fast_coy", "CUP_V_CPC_lightbelt_coy"];
 	_availableItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_eotech_552_d", "rhsusf_acc_su230_c", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech552_3xdown_des", "rhsusf_acc_eotech", "cup_acc_anpeq_15_top_flashlight_tan_l", "cup_acc_llm01_l", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_tan"];
