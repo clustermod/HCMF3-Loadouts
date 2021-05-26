@@ -3,29 +3,29 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = [];
-_defGrenades = [];
-_defUniforms = [];
-_defWeapons = [];
-_defVests = [];
+_defMagazines = ["uns_m1911mag", "uns_m60mag", "uns_m45mag_NT", "uns_rpdsogmag", "uns_20Rnd_556x45_Stanag", "uns_1Rnd_AB_M397", "Uns_1Rnd_HE_M381", "Uns_1Rnd_HE_M406", "uns_1Rnd_HEDP_M433", "uns_40mm_green", "uns_40mm_white", "uns_40mm_red"];
+_defGrenades = ["uns_m61gren", "uns_m67gren", "uns_m34gren", "uns_m308gren", "uns_v40gren", "uns_m18red", "uns_m18white","SmokeShellGreen", "SmokeShellBlue"];
+_defUniforms = ["UNS_SOG_BDU_OP", "UNS_SOG_BDU_O"];
+_defWeapons = ["uns_m1911", "uns_m72"];
+_defVests = ["UNS_M1956_S1", "UNS_M1956_S2", "UNS_M1956_S3", "UNS_M1956_S4"];
 _defBackpacks = [];
-_defHeadgear = [];
-_defFacewear = [];
+_defHeadgear = ["UNS_Boonie_ODP", "UNS_Boonie_OD2", "UNS_Bandana_OD3"];
+_defFacewear = ["UNS_Scarf_OD"];
 
 
 //
-//
+// Loadout made by Per_von_Harke
 //
 
 // Rifleman
 if (_role == "RFL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
-	_availableBackpacks = [];
+	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
@@ -34,11 +34,11 @@ if (_role == "RFL") then
 if (_role == "SL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
-	_availableBackpacks = [];
+	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
@@ -46,27 +46,13 @@ if (_role == "SL") then
 // Medic
 if (_role == "MED") then
 {
-  [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// SAW/LMG
-if (_role == "AR") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
+	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
@@ -75,11 +61,11 @@ if (_role == "AR") then
 if (_role == "MMG") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_rpdsog", "uns_m60shorty"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
-	_availableBackpacks = [];
+	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
@@ -88,50 +74,37 @@ if (_role == "MMG") then
 if (_role == "GRD") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e1_xm148"];
 	_availableMagazines = [];
 	_availableVests = [];
 	_availableItems = [];
-	_availableBackpacks = [];
+	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
 
-// LAT
-if (_role == "LAT") then
+// Radioman - RTO
+if (_role == "RTO") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
+	_availableItems = ["ACRE_PRC77"];
+	_availableBackpacks = ["uns_simc_rajio_4"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
 
-// MAT
-if (_role == "MAT") then
+// Zeus
+if (_role == "Zeus") then
 {
 	_availableUniforms = [];
-	_availableWeapons = [];
+	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// HAT
-if (_role == "HAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
+	_availableItems = ["ACRE_PRC77"];
+	_availableBackpacks = ["uns_simc_rajio_4"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };

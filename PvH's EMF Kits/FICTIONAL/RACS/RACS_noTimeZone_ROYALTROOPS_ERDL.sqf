@@ -2,19 +2,19 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = [];
-_defGrenades = [];
+_defItems = ["cup_optic_g36optics_rds", "cup_optic_g36optics_rds_3d", "CUP_NVG_PVS15_black", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defMagazines = ["CUP_30Rnd_556x45_G36"];
+_defGrenades = ["CUP_HandGrenade_M67", "SmokeShell", "SmokeShellGreen", "SmokeShellRed", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow"];
 _defUniforms = [];
-_defWeapons = [];
-_defVests = [];
-_defBackpacks = [];
-_defHeadgear = [];
-_defFacewear = [];
+_defWeapons = ["rhssaf_zrak_rd7j", "CUP_arifle_G36K", ""CUP_launch_M72A6""];
+_defVests = ["CUP_V_B_PASGT_OD"];
+_defBackpacks = ["CUP_B_Kombat_Olive"];
+_defHeadgear = ["CUP_H_CZ_Helmet08", "CUP_H_CZ_Helmet07"];
+_defFacewear = ["CUP_G_ESS_BLK"];
 
 
 //
-//
+// Loadout made by Per_von_Harke
 //
 
 // Rifleman
@@ -58,83 +58,19 @@ if (_role == "MED") then
 	_availableFacewear = [];
 };
 
-// SAW/LMG
-if (_role == "AR") then
+// Explosive Specialist
+if (_role == "ESP") then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
-	_availableMagazines = [];
+	_availableMagazines = ["rhs_ec200_mag", "rhs_ec400_mag", "CUP_TimeBomb_M", "rhsusf_m112_mag", "rhsusf_m112x4_mag"];
 	_availableVests = [];
-	_availableItems = [];
+	_availableItems = ["ACE_Clacker"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
 
-// MMG
-if (_role == "MMG") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// Grenadier
-if (_role == "GRD") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// LAT
-if (_role == "LAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// MAT
-if (_role == "MAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// HAT
-if (_role == "HAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
 
 //Populate with predefined items and whatever is already in the crate
 _backpacks 	= (_availableBackpacks + _defBackpacks);

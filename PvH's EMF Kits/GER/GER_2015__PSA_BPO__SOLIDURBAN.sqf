@@ -3,10 +3,10 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["sma_eotech552", "cup_acc_flashlight", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack", "CUP_30Rnd_556x45_G36", "rhsusf_mag_17Rnd_9x19_FMJ"];
+_defMagazines = ["BWA3_15Rnd_9x19_P8", "CUP_30Rnd_556x45_G36", "rhsusf_mag_17Rnd_9x19_FMJ"];
 _defGrenades = [];
 _defUniforms = [];
-_defWeapons = [];
+_defWeapons = ["BWA3_P8"];
 _defVests = [];
 _defBackpacks = [];
 _defHeadgear = [];

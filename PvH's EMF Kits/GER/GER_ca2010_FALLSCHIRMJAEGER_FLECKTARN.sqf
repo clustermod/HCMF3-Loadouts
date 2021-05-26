@@ -3,10 +3,10 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack", "16Rnd_9x21_Mag"];
+_defMagazines = ["BWA3_15Rnd_9x19_P8", "16Rnd_9x21_Mag"];
 _defGrenades = ["rhs_mag_m67", "Chemlight_green", "ACE_Chemlight_HiGreen", "SmokeShell", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "ACE_M84", "rhs_mag_mk84", "Chemlight_red" ];
 _defUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_5"];
-_defWeapons = ["rhsusf_bino_m24","hgun_P07_khk_F", "hgun_P07_F"];
+_defWeapons = ["rhsusf_bino_m24","hgun_P07_khk_F", "BWA3_P8"];
 _defVests = [];
 _defBackpacks = ["CUP_B_GER_Pack_Flecktarn"];
 _defHeadgear = ["CUP_H_Ger_M92_Cover", "CUP_H_Ger_M92_Cover_GG_CB", "CUP_H_Ger_M92_Cover_GG_CF", "CUP_H_Ger_M92_Cover_GG" ];
