@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel","ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["uns_m1911mag", "uns_m60mag", "uns_m45mag_NT", "uns_rpdsogmag", "uns_20Rnd_556x45_Stanag", "uns_1Rnd_AB_M397", "Uns_1Rnd_HE_M381", "Uns_1Rnd_HE_M406", "uns_1Rnd_HEDP_M433", "uns_40mm_green", "uns_40mm_white", "uns_40mm_red"];
 _defGrenades = ["uns_m61gren", "uns_m67gren", "uns_m34gren", "uns_m308gren", "uns_v40gren", "uns_m18red", "uns_m18white","SmokeShellGreen", "SmokeShellBlue"];
 _defUniforms = ["UNS_SOG_BDU_OP", "UNS_SOG_BDU_O"];
@@ -51,7 +51,7 @@ if (_role == "MED") then
 	_availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["UNS_Alice_2", "UNS_Alice_3", "UNS_Alice_4", "UNS_Alice_5", "UNS_Alice_6", "UNS_Alice_SOG"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

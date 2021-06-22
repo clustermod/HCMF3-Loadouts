@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["rhs_acc_dtk1983", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "rhs_acc_dtk1983", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["CUP_30Rnd_545x39_AK74M_desert_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_desert_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M", "rhs_VOG25", "rhs_VG40TB", "rhs_VOG25P", "CUP_FlareGreen_GP25_M", "CUP_IlumFlareGreen_GP25_M", "CUP_IlumFlareWhite_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_1Rnd_SmokeGreen_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M", "murshun_cigs_matches", "murshun_cigs_cigpack"];
 _defGrenades = ["rhs_mag_f1", "CUP_HandGrenade_RGD5", "rhs_mag_rdg2_white", "rhs_mag_rdg2_black", "rhs_mag_nspd"];
 _defUniforms = [];
@@ -52,7 +52,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_AK74M"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_Vest_RUS_6B45_Sh117_Desert"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit","adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["CUP_O_RUS_Patrol_bag_Desert", "CUP_O_RUS_Patrol_bag_Desert_Shovel"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

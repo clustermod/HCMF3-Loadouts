@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["cup_optic_susat", "uk3cb_baf_susat", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "cup_optic_susat", "uk3cb_baf_susat", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["UK3CB_BAF_1Rnd_SmokeBlue_Grenade_shell", "UK3CB_BAF_1Rnd_HE_Grenade_Shell", "UK3CB_BAF_1Rnd_HEDP_Grenade_Shell", "UK3CB_BAF_UGL_FlareCIR_F", "UK3CB_BAF_UGL_FlareGreen_F", "UK3CB_BAF_1Rnd_SmokeOrange_Grenade_shell", "UK3CB_BAF_1Rnd_SmokePurple_Grenade_shell", "UK3CB_BAF_UGL_FlareRed_F", "UK3CB_BAF_1Rnd_SmokeRed_Grenade_shell", "UK3CB_BAF_1Rnd_Smoke_Grenade_shell",          "murshun_cigs_matches", "murshun_cigs_cigpack", "UK3CB_BAF_762_200Rnd", "UK3CB_BAF_762_200Rnd_T", "UK3CB_BAF_762_100Rnd", "UK3CB_BAF_762_100Rnd_T", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T", "UK3CB_BAF_556_200Rnd", "UK3CB_BAF_556_200Rnd_T"];
 _defGrenades = ["UK3CB_BAF_SmokeShellYellow", "UK3CB_BAF_SmokeShellPurple", "UK3CB_BAF_SmokeShell", "UK3CB_BAF_SmokeShellGreen", "UK3CB_BAF_SmokeShellOrange", "UK3CB_BAF_SmokeShellRed", "UK3CB_BAF_SmokeShellBlue", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "HandGrenade"];
 _defUniforms = ["UK3CB_BAF_U_CombatUniform_DDPM", "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve"];
@@ -62,7 +62,7 @@ if (_role == "MED") then
 	_availableWeapons = ["UK3CB_BAF_L85A2"];
 	_availableMagazines = [];
 	_availableVests = ["UK3CB_BAF_V_Osprey_DDPM9"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["UK3CB_BAF_B_Bergen_TAN_Rifleman_B", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

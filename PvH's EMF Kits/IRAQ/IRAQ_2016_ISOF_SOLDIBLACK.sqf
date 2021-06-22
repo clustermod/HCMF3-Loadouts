@@ -58,7 +58,7 @@ if (_role == "MED") then
 	_availableWeapons = ["rhs_weap_m4_carryhandle"];
 	_availableMagazines = ["rhsusf_mbav_medic"];
 	_availableVests = ["rhsusf_mbav_medic"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhsusf_acc_compm4", "rhsusf_acc_eotech_552", "cup_optic_compm2_low", "cup_acc_anpeq_2_black_top", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_flashlight", "rhsusf_acc_kac_grip"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal",  "rhsusf_acc_compm4", "rhsusf_acc_eotech_552", "cup_optic_compm2_low", "cup_acc_anpeq_2_black_top", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_flashlight", "rhsusf_acc_kac_grip"];
 	_availableBackpacks = ["CUP_B_AssaultPack_Coyote"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

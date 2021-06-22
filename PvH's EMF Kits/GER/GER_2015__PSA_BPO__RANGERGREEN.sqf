@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["sma_eotech552", "cup_acc_flashlight","ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "sma_eotech552", "cup_acc_flashlight","ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["BWA3_15Rnd_9x19_P8", "CUP_30Rnd_556x45_G36", "rhsusf_mag_17Rnd_9x19_FMJ"];
 _defGrenades = [];
 _defUniforms = [];
@@ -62,7 +62,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_medicalbelt_rngr", "CUP_V_CPC_medical_rngr"];
-	_availableItems = ["ACRE_SEM52SL", "ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACRE_SEM52SL", "ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["B_AssaultPack_khk"];
 	_availableHeadgear = ["CUP_H_Ger_Cap_EP_Grn2", "CUP_H_Ger_Cap_EP_Grn1", "CUP_H_Ger_Cap_Grn2", "CUP_H_Ger_Cap_EP_Tan2", "CUP_H_Ger_Cap_EP_Tan1", "CUP_H_Ger_Cap_Tan2", "CUP_H_PMC_Beanie_Headphones_Khaki", "CUP_H_PMC_Beanie_Headphones_Black"];
 	_availableFacewear = ["G_Squares_Tinted", "G_Shades_tactical", "UK3CB_BAF_G_Tactical_Black", "UK3CB_BAF_G_Tactical_Clear", "UK3CB_BAF_G_Tactical_Grey", "rhs_googles_black"];

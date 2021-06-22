@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["BWA3_15Rnd_9x19_P8", "16Rnd_9x21_Mag"];
 _defGrenades = ["rhs_mag_m67", "Chemlight_green", "ACE_Chemlight_HiGreen", "SmokeShell", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "SmokeShellRed", "SmokeShellYellow", "ACE_M84", "rhs_mag_mk84", "Chemlight_red" ];
 _defUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_5"];
@@ -63,7 +63,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableMagazines = ["CUP_30Rnd_556x45_G36"];
 	_availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d","adv_aceCPR_AED"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d","adv_aceCPR_AED"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

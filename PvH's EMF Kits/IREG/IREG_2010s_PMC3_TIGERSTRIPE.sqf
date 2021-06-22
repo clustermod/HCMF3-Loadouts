@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "UK3CB_BAF_762_200Rnd_T", "rhs_mag_M441_HE", "rhs_mag_m715_Green", "rhs_mag_m713_Red", "ACE_40mm_Flare_white", "rhs_mag_m661_green", "rhs_mag_m662_red"];
 _defGrenades = ["rhs_mag_m67", "Chemlight_green"];
 _defUniforms = ["CUP_U_B_BDUv2_Tigerstripe", "CUP_U_B_BDUv2_dirty_Tigerstripe", "CUP_U_B_BDUv2_roll_dirty_Tigerstripe", "CUP_U_B_BDUv2_roll_Tigerstripe"];
@@ -66,7 +66,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_M4A1"];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

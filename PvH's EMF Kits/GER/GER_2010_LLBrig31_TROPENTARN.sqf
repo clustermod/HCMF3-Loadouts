@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["BWA3_15Rnd_9x19_P8", "CUP_120Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Green_Tracer_556x45_G36", "BWA3_200Rnd_556x45", "BWA3_200Rnd_556x45_Tracer",   "rhs_mag_M433_HEDP", "rhs_mag_M397_HET", "rhs_mag_M441_HE", "ACE_40mm_Flare_white", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "UGL_FlareRed_F"];
 _defGrenades = ["Chemlight_green", "Chemlight_blue", "ACE_Chemlight_IR", "Chemlight_red", "ACE_Chemlight_Orange", "rhs_mag_m67", "rhs_mag_an_m8hc", "rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red", "rhs_mag_m18_yellow", "rhs_mag_mk84"];
 _defUniforms = [];
@@ -13,7 +13,7 @@ _defHeadgear = [];
 _defFacewear = [];
 
 //Loadout made by Per_von_Harke
-//As used by Germany in 2010 Afghanistan 
+//As used by Germany in 2010 Afghanistan
 //
 
 // Zeus
@@ -63,7 +63,7 @@ if (_role == "MED") then
 	_availableWeapons = ["ACE_Vector", "CUP_arifle_G36A"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_B_GER_PVest_Trop_Med"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "cup_optic_g36optics_rds", "cup_optic_g36optics_rds_3d"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "cup_optic_g36optics_rds", "cup_optic_g36optics_rds_3d"];
 	_availableBackpacks = ["CUP_B_GER_Medic_Tropentarn"];
 	_availableHeadgear = ["CUP_H_Ger_M92_Cover_Trop", "CUP_H_Ger_M92_Cover_Trop_GG_CB", "CUP_H_Ger_M92_Cover_Trop_GG_CF", "CUP_H_Ger_M92_Cover_Trop_GG"];
 	_availableFacewear = ["CUP_G_ESS_BLK", "rhs_googles_clear", "rhs_googles_orange", "rhs_googles_yellow"];
