@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green", "UGL_FlareRed_F", "rhs_mag_M441_HE", "rhs_mag_m713_Red", "rhs_mag_m715_Green", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "hlc_200rnd_556x45_B_SAW", "hlc_200rnd_556x45_T_SAW", "hlc_200rnd_556x45_M_SAW"          "murshun_cigs_matches", "murshun_cigs_cigpack"];
 _defGrenades = ["ACE_HandFlare_Green", "Chemlight_green", "Chemlight_blue","Chemlight_red", "ACE_Chemlight_Orange", "rhs_mag_an_m8hc", "rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red"];
 _defUniforms = [];
@@ -61,7 +61,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_M4A1"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["CUP_B_AlicePack_OD"];
 	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
 	_availableFacewear = [];

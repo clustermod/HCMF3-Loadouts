@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["rhsusf_acc_sf3p556", "rhsusf_acc_sfmb556", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACRE_PRC152"];
+_defItems = ["kat_guedel", "rhsusf_acc_sf3p556", "rhsusf_acc_sfmb556", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_XL50", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACRE_PRC152"];
 _defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack", "rhsusf_20Rnd_762x51_SR25_m62_Mag", "rhs_mag_20Rnd_SCAR_762x51_m62_tracer", "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan", "150Rnd_762x51_Box_Tracer", "CUP_21Rnd_9x19_M17_Black", "rhsusf_mag_17Rnd_9x19_JHP", "rhs_mag_M441_HE", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_M433_HEDP"];
 _defUniforms = ["rhs_uniform_g3_m81", "CUP_U_CRYE_G3C_M81_US", "CUP_U_CRYE_G3C_M81_US_V2", "CUP_U_CRYE_G3C_M81_US_V3", "CUP_U_CRYE_G3C_M81_RGR_US", "CUP_U_CRYE_G3C_M81_Tan_US"];
 _defWeapons = ["rhsusf_weap_glock17g4", "CUP_hgun_M17_Black", "rhsusf_bino_lerca_1200_black"];
@@ -13,7 +13,7 @@ _defHeadgear = ["rhsusf_opscore_mc_cover_pe lt", "rhsusf_opscore_mc_cover_pelt_n
 _defFacewear = ["CUP_G_ESS_BLK_Dark", "UK3CB_BAF_G_Tactical_Clear"];
 
 // Made by Per_von_Harke with help from AutisticBalistic
-
+// NOTE THAT RANGER GREEN CPCs ARE NOT ACCURATE
 //Extra added roles: JTAC
 
 // Rifleman
@@ -63,7 +63,7 @@ if (_role == "MED") then
 	_availableWeapons = [ "rhs_weap_mk18_KAC", "rhs_weap_m4a1_mstock", "CUP_arifle_Mk17_CQC_FG", "CUP_arifle_Mk17_STD", "CUP_arifle_Mk17_STD_FG", "rhs_weap_m4a1_blockII_KAC"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_CPC_medical_rngr", "CUP_V_CPC_medicalbelt_rngr"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "rksl_optic_eot552_c", "rksl_optic_eot552", "sma_eotech552_3xdown_des", "rhsusf_acc_su230_c", "sma_eotech552_kf_des", "sma_elcan_specter_green_4z", "cup_optic_elcan_specterdr_black", "cup_optic_elcan_specterdr_coyote", "sma_eotech552", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_tdstubby_tan", "rhsusf_acc_rvg_blk", "rhsusf_acc_rvg_de", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_black",    "cup_acc_anpeq_15_black", "cup_acc_anpeq_15_od", "cup_acc_anpeq_15_od_top", "cup_acc_anpeq_15", "cup_acc_anpeq_15_black_top", "cup_acc_anpeq_15_tan_top", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_top_flashlight_od_l", "cup_acc_anpeq_15_top_flashlight_tan_l"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rksl_optic_eot552_c", "rksl_optic_eot552", "sma_eotech552_3xdown_des", "rhsusf_acc_su230_c", "sma_eotech552_kf_des", "sma_elcan_specter_green_4z", "cup_optic_elcan_specterdr_black", "cup_optic_elcan_specterdr_coyote", "sma_eotech552", "rhsusf_acc_grip2", "rhsusf_acc_grip2_tan", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_tdstubby_tan", "rhsusf_acc_rvg_blk", "rhsusf_acc_rvg_de", "rhsusf_acc_nt4_tan", "rhsusf_acc_nt4_black",    "cup_acc_anpeq_15_black", "cup_acc_anpeq_15_od", "cup_acc_anpeq_15_od_top", "cup_acc_anpeq_15", "cup_acc_anpeq_15_black_top", "cup_acc_anpeq_15_tan_top", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_top_flashlight_od_l", "cup_acc_anpeq_15_top_flashlight_tan_l"];
 	_availableBackpacks = ["TRYK_B_Medbag_OD"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

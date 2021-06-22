@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_DefusalKit", "ACE_CableTie", "ACE_bodyBag", "ACRE_SEM52SL" "cup_acc_flashlight_mp5sd", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_DefusalKit", "ACE_CableTie", "ACE_bodyBag", "ACRE_SEM52SL" "cup_acc_flashlight_mp5sd", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["murshun_cigs_matches", "murshun_cigs_cigpack", "CUP_30Rnd_9x19_MP5", ];
 _defGrenades = ["HandGrenade", "ACE_M84", "rhs_mag_mk84", "ACE_CTS9" ];
 _defUniforms = ["LOP_U_UVF_Fatigue_BL"];
@@ -61,7 +61,7 @@ if (_role == "MED") then
 	_availableWeapons = [];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];

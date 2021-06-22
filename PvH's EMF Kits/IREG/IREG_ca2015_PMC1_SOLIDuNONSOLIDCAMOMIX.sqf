@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_IR_Strobe_Item", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_IR_Strobe_Item", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["rhs_30Rnd_762x39mm_Savz58", "CUP_30Rnd_Sa58_M", "CUP_30Rnd_Sa58_M_TracerG", "murshun_cigs_matches", "murshun_cigs_cigpack", "rhsusf_200Rnd_556x45_M855_soft_pouch", "rhsusf_200Rnd_556x45_soft_pouch", "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch", "rhsusf_200Rnd_556x45_mixed_soft_pouch"];
 _defGrenades = ["rhs_mag_rgd5", "rhs_mag_f1", "rhs_mag_rdg2_black", "rhs_mag_rdg2_white", "Chemlight_green", "Chemlight_blue", "ACE_Chemlight_IR", "Chemlight_red", "ACE_Chemlight_Orange"];
 _defUniforms = [];
@@ -56,7 +56,7 @@ if (_role == "MED") then
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
 	_availableMagazines = [];
 	_availableVests = ["TAC_EI_RRV24LAK_RG", "TAC_EI_RRV24LAK_OD", "TAC_EI_RRV2_RG", "TAC_EI_RRV2_OD", "TAC_EI_RRVS_SPR_RG_AK", "TAC_EI_RRVS_SPR_OD_AK", "TAC_EI_RRVS_SPR2_RG_AK", "TAC_EI_RRVS_SPR2_OD_AK", "TAC_EI_RRVS_SPR2_RG", "TAC_EI_RRVS_SPR2_OD", "TAC_EI_RRVS_SPR_RG", "TAC_EI_RRVS_SPR_OD", "TAC_EI_RRV1_RG", "TAC_EI_RRV1_OD", "TAC_EI_RRV24_RG", "TAC_EI_RRV24_OD"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhsusf_acc_mrds", "rhsgref_acc_zendl", "cup_acc_flashlight", "rhsusf_acc_rvg_blk", "rhsusf_acc_grip2", "rhsusf_acc_tdstubby_blk"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rhsusf_acc_mrds", "rhsgref_acc_zendl", "cup_acc_flashlight", "rhsusf_acc_rvg_blk", "rhsusf_acc_grip2", "rhsusf_acc_tdstubby_blk"];
 	_availableBackpacks = ["TRYK_B_Medbag_OD"];
 	_availableHeadgear = ["tc2002_s", "tc2002_p", "tc2002od2", "tc2002_od", "tc2002_sm", "CUP_H_PMC_Cap_EP_Grey", "CUP_H_PMC_Beanie_Headphones_Khaki", "CUP_H_PMC_Beanie_Headphones_Black"];
 	_availableFacewear = ["CUP_RUS_Balaclava_blk", "CUP_RUS_Balaclava_grn", "CUP_G_ESS_BLK", "CUP_G_ESS_RGR", "CUP_G_Oakleys_Clr", "rhsusf_oakley_goggles_clr"];

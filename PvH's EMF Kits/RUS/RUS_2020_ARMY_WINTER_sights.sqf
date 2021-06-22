@@ -2,7 +2,7 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["ACE_wirecutter", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defItems = ["kat_guedel", "ACE_wirecutter", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 _defMagazines = ["rhs_GRD40_Green", "rhs_GRD40_Red", "rhs_VG40OP_red", "rhs_VG40OP_green", "rhs_VG40TB",  "rhs_VOG25", "rhs_VOG25P", "murshun_cigs_matches", "murshun_cigs_cigpack", "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M", "CUP_30Rnd_545x39_AK74_plum_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"];
 _defGrenades = ["Chemlight_red", "ACE_Chemlight_Orange", "ACE_Chemlight_IR", "rhs_mag_rgd5", "CUP_HandGrenade_RGD5", "rhs_mag_rgn", "rhs_mag_rgo", "rhs_mag_f1", "rhs_mag_rdg2_black", "rhs_mag_rdg2_white", "rhs_mag_nspn_green", "rhs_mag_nspn_red", "rhs_mag_nspn_yellow"];
 _defUniforms = [];
@@ -50,7 +50,7 @@ if (_role == "MED") then
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_Vest_RUS_6B45_Sh117"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhs_acc_1p87"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "rhs_acc_1p87","adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = ["CUP_O_RUS_Patrol_bag_Winter"];
 	_availableHeadgear = ["CUP_H_RUS_6B47_v2_Winter", "CUP_H_RUS_6B47_v2_GogglesClosed_Winter", "CUP_H_RUS_6B47_v2_GogglesUp_Winter"];
 	_availableFacewear = ["CUP_G_RUS_Balaclava_Ratnik_winter", "CUP_G_RUS_Balaclava_Ratnik_winter_v2", "G_SWDG"];
