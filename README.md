@@ -24,4 +24,12 @@ Example:
 ```
 You do not need to add the file extenstion (`.sqf`). 
 
-**I would also heavily recommend deleting all unneeded kits to improve performance/loading time**
+**I would also recommend deleting all unneeded kits to improve performance/loading time**
+
+***
+If you use Atom to edit sqf files you can use lintersqf to check the syntax. If you don't want to have warnings displayed copy in this code:
+```sqf
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
+```
+infront of `params["_role", "_obj", "_rearmOnly"];` at the top of the .sqf file.
+Big thanks to Eric who showed me this. 
