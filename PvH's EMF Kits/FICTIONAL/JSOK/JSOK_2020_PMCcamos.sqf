@@ -3,71 +3,57 @@ params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
-_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "UK3CB_BAF_762_200Rnd_T", "rhs_mag_M441_HE", "rhs_mag_m715_Green", "rhs_mag_m713_Red", "ACE_40mm_Flare_white", "rhs_mag_m661_green", "rhs_mag_m662_red"];
-_defGrenades = ["rhs_mag_m67", "Chemlight_green"];
-_defUniforms = ["CUP_U_B_BDUv2_Tigerstripe", "CUP_U_B_BDUv2_dirty_Tigerstripe", "CUP_U_B_BDUv2_roll_dirty_Tigerstripe", "CUP_U_B_BDUv2_roll_Tigerstripe"];
-_defWeapons = [];
-_defVests = ["rhsgref_alice_webbing", "rhsgref_chicom", "rhsgref_chestrig"];
-_defBackpacks = ["CUP_B_AlicePack_OD"];
-_defHeadgear = ["usm_bdu_boonie_odg", "usm_bdu_boonie_tgrstp"];
-_defFacewear = ["CUP_G_WristWatch"];
+_defItems = ["ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "rhsusf_acc_grip2", "rhsusf_acc_rvg_blk", "rhsusf_acc_rvg_de", "rhsusf_acc_grip3", "cup_acc_anpeq_15_top_flashlight_tan_l", "rhsusf_acc_rotex5_grey", "sma_eotech552", "sma_eotech552_3xdown", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "rhsusf_acc_su230a_c", "sma_micro_t2", "sma_elcan_specter_tan", "optic_mrd_black", "ACRE_PRC152", "tgc_pvs23_special_p", "tgc_pvs23_special_m", "kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+_defMagazines = ["CUP_21Rnd_9x19_M17_Black", "rhs_mag_30Rnd_556x45_Mk262_PMAG", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_M585_white", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow"];
+_defGrenades = [];
+_defUniforms = ["CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_38"];
+_defWeapons = ["rhsusf_bino_lrf_Vector21", "CUP_hgun_M17_Black"];
+_defVests = [];
+_defBackpacks = ["B_AssaultPack_cbr"];
+_defHeadgear = ["rhsusf_opscore_mar_ut_pelt"];
+_defFacewear = ["AGE_Balaclava_Black", "AGE_Balaclava_MCam"];
 
 
-// Work in progress
+//
 // Loadout made by Per_von_Harke
-
-
+//
 
 // Rifleman
 if (_role == "RFL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1"];
+	_availableWeapons = ["rhs_weap_mk18_KAC"];
 	_availableMagazines = [];
-	_availableVests = [];
+	_availableVests = ["CUP_V_JPC_communicationsbelt_mc"];
 	_availableItems = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
-
-// Radioman
-if (_role == "RADIO") then
-{
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["ACRE_PRC343"];
-	_availableBackpacks = ["rhs_r148"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
 
 // Squad Leader
 if (_role == "SL") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1", "rhssaf_zrak_rd7j"];
+	_availableWeapons = ["rhs_weap_mk18_KAC"];
 	_availableMagazines = [];
-	_availableVests = [];
+	_availableVests = ["CUP_V_JPC_tlbelt_mc"];
 	_availableItems = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
-	_availableFacewear = ["G_Aviator"];
+	_availableFacewear = [];
 };
 
 // Medic
 if (_role == "MED") then
 {
+  [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1"];
+	_availableWeapons = ["rhs_weap_mk18_KAC"];
 	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
+	_availableVests = ["CUP_V_JPC_medicalbelt_mc"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
@@ -77,23 +63,10 @@ if (_role == "MED") then
 if (_role == "AR") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_fnmag"];
-	_availableMagazines = [];
+	_availableWeapons = ["rhs_weap_m249_pip_S_para"];
+	_availableMagazines = ["rhsusf_200Rnd_556x45_box", "rhsusf_200rnd_556x45_mixed_box"];
 	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-};
-
-// LAT
-if (_role == "LAT") then
-{
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1", "rhs_weap_m72a7"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
+	_availableItems = ["rhsusf_acc_saw_bipod"];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
@@ -103,15 +76,14 @@ if (_role == "LAT") then
 if (_role == "GRD") then
 {
 	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1_GL_carryhandle"];
+	_availableWeapons = ["rhs_weap_mk18_m320"];
 	_availableMagazines = [];
-	_availableVests = [];
+	_availableVests = ["CUP_V_JPC_weaponsbelt_mc"];
 	_availableItems = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
-
 
 //Populate with predefined items and whatever is already in the crate
 _backpacks 	= (_availableBackpacks + _defBackpacks);

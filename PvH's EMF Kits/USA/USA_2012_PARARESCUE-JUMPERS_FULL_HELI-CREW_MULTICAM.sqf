@@ -1,3 +1,4 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
@@ -28,7 +29,7 @@ if (_role == "RWP") then
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle"];
 	_availableMagazines = ["rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"];
 	_availableVests = ["rhsusf_spcs_ocp_crewman"];
-	_availableItems = ["rhsusf_acc_compm4"];
+	_availableItems = ["rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "cup_acc_anpeq_15_tan_top", "ACRE_PRC152"];
 	_availableBackpacks = [];
 	_availableHeadgear = ["rhsusf_hgu56p", "rhsusf_hgu56p_visor"];
 	_availableFacewear = [];
@@ -41,7 +42,7 @@ if (_role == "DGNR") then
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle"];
 	_availableMagazines = ["rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"];
 	_availableVests = ["rhsusf_spcs_ocp_crewman"];
-	_availableItems = ["ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "ACE_IR_Strobe_Item", "rhsusf_acc_compm4"];
+	_availableItems = ["ACRE_PRC152", "ACRE_PRC152", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "ACE_IR_Strobe_Item", "rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "cup_acc_anpeq_15_tan_top"];
 	_availableBackpacks = [];
 	_availableHeadgear = ["rhsusf_hgu56p_mask", "rhsusf_hgu56p_visor_mask", "rhsusf_hgu56p_visor_mask_mo"];
 	_availableFacewear = [];
@@ -52,13 +53,13 @@ if (_role == "HMED") then
 {
   [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
+	_availableUniforms = ["CUP_U_CRYE_G3C_MC_US_V2"];
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle_mstock", "rhsusf_weap_m9"];
 	_availableMagazines = ["rhsusf_mag_15Rnd_9x19_FMJ", "rhsusf_mag_15Rnd_9x19_JHP", "rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"];
-	_availableVests = ["CUP_V_JPC_medicalbelt_mc"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "kat_X_AED", "kat_accuvac",        "cup_acc_anpeq_15_tan_top", "rhsusf_acc_kac_grip", "cup_acc_anpeq_15_top_flashlight_tan_l", "rhsusf_acc_g33_xps3", "rhsusf_acc_g33_xps3_tan", "rhsusf_acc_eotech_xps3", "cup_muzzle_snds_g36_black", "rhsusf_acc_compm4", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam"];
-	_availableBackpacks = ["rhsusf_assault_eagleaiii_ocp"];
-	_availableHeadgear = ["rhsusf_opscore_ut_pelt_nsw_cam", "rhsusf_opscore_ut_pelt_nsw", "rhsusf_opscore_ut_pelt", "rhsusf_opscore_mc_pelt_nsw", "rhsusf_opscore_mc_pelt"];
+	_availableVests = ["CUP_V_JPC_medicalbelt_mc", "CUP_V_JPC_communicationsbelt_mc"];
+	_availableItems = ["vtx_stretcher_item", "ACRE_PRC152", "ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "kat_X_AED", "kat_accuvac",        "rhsusf_acc_acog_usmc", "cup_acc_anpeq_15_tan_top", "rhsusf_acc_kac_grip", "cup_acc_anpeq_15_top_flashlight_tan_l", "rhsusf_acc_g33_xps3", "rhsusf_acc_g33_xps3_tan", "rhsusf_acc_eotech_xps3", "cup_muzzle_snds_g36_black", "rhsusf_acc_compm4", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam"];
+	_availableBackpacks = ["CUP_B_USMC_AssaultPack"];
+	_availableHeadgear = ["rhsusf_opscore_ut_pelt_nsw_cam", "rhsusf_opscore_ut_pelt_nsw", "rhsusf_opscore_ut_pelt", "rhsusf_opscore_ut_pelt_cam"];
 	_availableFacewear = ["rhs_googles_black", "rhs_googles_clear"];
 };
 

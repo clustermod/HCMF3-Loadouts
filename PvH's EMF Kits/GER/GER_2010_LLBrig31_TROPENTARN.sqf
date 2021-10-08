@@ -1,3 +1,4 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
@@ -125,7 +126,7 @@ if (_role == "LAT") then
 if (_role == "MAT") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_1", "CUP_U_B_GER_Tropentarn_6"];
-	_availableWeapons = ["ACE_Vector", "CUP_arifle_G36A";
+	_availableWeapons = ["ACE_Vector", "CUP_arifle_G36A"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_B_GER_PVest_Trop_RFL"];
 	_availableItems = [];
