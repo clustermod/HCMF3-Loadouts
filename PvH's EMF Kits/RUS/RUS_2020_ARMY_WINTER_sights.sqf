@@ -1,3 +1,4 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
@@ -113,7 +114,7 @@ if (_role == "MAT") then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail", "rhs_weap_rpg7"];
-	_availableMagazines = ["rhs_rpg7_OG7V_mag", "rhs_rpg7_PG7VL_mag" "rhs_rpg7_PG7VR_mag", "rhs_rpg7_TBG7V_mag"];
+	_availableMagazines = ["rhs_rpg7_OG7V_mag", "rhs_rpg7_PG7VL_mag", "rhs_rpg7_PG7VR_mag", "rhs_rpg7_TBG7V_mag"];
 	_availableVests = ["CUP_Vest_RUS_6B45_Sh117"];
 	_availableItems = ["rhs_acc_1p87"];
 	_availableBackpacks = ["CUP_O_RUS_Patrol_bag_Winter"];

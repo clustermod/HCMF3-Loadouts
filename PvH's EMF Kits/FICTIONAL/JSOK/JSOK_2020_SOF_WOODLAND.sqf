@@ -1,3 +1,4 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
@@ -36,7 +37,7 @@ if (_role == "SL") then
 	_availableWeapons = ["rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_mk18", "rhs_weap_mk18_KAC"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_JPC_tlbelt_rngr", "CUP_V_JPC_communicationsbelt_rngr"];
-	_availableItems = ["ItemAndroid",];
+	_availableItems = ["ItemAndroid"];
 	_availableBackpacks = ["tgc_hpc_backpanel"];
 	_availableHeadgear = [];
 	_availableFacewear = [];

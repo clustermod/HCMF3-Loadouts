@@ -1,3 +1,4 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
@@ -6,7 +7,7 @@ _defItems = ["kat_guedel", "cup_optic_g36optics_rds", "cup_optic_g36optics_rds_3
 _defMagazines = ["CUP_30Rnd_556x45_G36"];
 _defGrenades = ["CUP_HandGrenade_M67", "SmokeShell", "SmokeShellGreen", "SmokeShellRed", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow"];
 _defUniforms = [];
-_defWeapons = ["rhssaf_zrak_rd7j", "CUP_arifle_G36K", ""CUP_launch_M72A6""];
+_defWeapons = ["rhssaf_zrak_rd7j", "CUP_arifle_G36K", "CUP_launch_M72A6"];
 _defVests = ["CUP_V_B_PASGT_OD"];
 _defBackpacks = ["CUP_B_Kombat_Olive"];
 _defHeadgear = ["CUP_H_CZ_Helmet08", "CUP_H_CZ_Helmet07"];

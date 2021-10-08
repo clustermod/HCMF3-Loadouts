@@ -1,9 +1,10 @@
+private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
 params["_role", "_obj", "_rearmOnly"];
 _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
 
 // Define default gear
 _defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green", "UGL_FlareRed_F", "rhs_mag_M441_HE", "rhs_mag_m713_Red", "rhs_mag_m715_Green", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "hlc_200rnd_556x45_B_SAW", "hlc_200rnd_556x45_T_SAW", "hlc_200rnd_556x45_M_SAW"          "murshun_cigs_matches", "murshun_cigs_cigpack"];
+_defMagazines = ["CUP_30Rnd_556x45_Stanag_Tracer_Green", "UGL_FlareRed_F", "rhs_mag_M441_HE", "rhs_mag_m713_Red", "rhs_mag_m715_Green", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "hlc_200rnd_556x45_B_SAW", "hlc_200rnd_556x45_T_SAW", "hlc_200rnd_556x45_M_SAW"];
 _defGrenades = ["ACE_HandFlare_Green", "Chemlight_green", "Chemlight_blue","Chemlight_red", "ACE_Chemlight_Orange", "rhs_mag_an_m8hc", "rhs_mag_m18_green", "rhs_mag_m18_purple", "rhs_mag_m18_red"];
 _defUniforms = [];
 _defWeapons = [];
