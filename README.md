@@ -6,7 +6,8 @@ The needed mods may change from loadout to loadout.
 [A link to the modlist used while creating these](https://cluster-community.com/downloads/cc_core_aio.html).                      
 All kits are made to fit the [Cluster Community](https://discord.gg/JggdMFz) modpack.
 
-All available loadouts with explanation and sources can be found in [the wiki](https://github.com/PervonHarke/EMF_Kits/wiki).
+Though I tried to not miss any important items in any loadout it is recommended that you check it before using it in a mission. 
+Or at least go through each slot you have and check if everyone gets a primary. 
 
 ## How to install
 You will need EMF for this to work.                                                                           
