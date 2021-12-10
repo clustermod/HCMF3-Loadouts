@@ -115,6 +115,7 @@ if (_role == "MRK") then
 };
 
 // MAT
+/*
 if (_role == "MAT") then
 {
 	_availableUniforms = [];
@@ -126,6 +127,7 @@ if (_role == "MAT") then
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
+*/
 
 // HAT
 if (_role == "HAT") then
