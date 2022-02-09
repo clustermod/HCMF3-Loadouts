@@ -7,7 +7,7 @@ The needed mods may change from loadout to loadout.
 All kits are made to fit the [Cluster Community](https://discord.gg/JggdMFz) modpack.
 
 Though I tried to not miss any important items in any loadout it is recommended that you check it before using it in a mission. 
-Or at least go through each slot you have and check if everyone gets a primary. 
+Or at least go through each slot you have and check if everyone gets a primary weapon so that they won't get softlocked in the arsenal. 
 
 ## How to install
 You will need EMF for this to work.                                                                           
