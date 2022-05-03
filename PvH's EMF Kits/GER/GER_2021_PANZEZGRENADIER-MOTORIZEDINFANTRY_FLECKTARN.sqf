@@ -4,7 +4,7 @@ _availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _avai
 
 // Define default gear
 _defItems = ["ACRE_SEM52SL", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ACE_CableTie", "ACE_EntrenchingTool", "BWA3_optic_NSV600", "BWA3_optic_NSV80", "BWA3_ItemNaviPad", "rhsusf_ANPVS_15", "kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["BWA3_15Rnd_9x19_P8", "CUP_30Rnd_556x45_G36", "rhssaf_30rnd_556x45_MDIM_G36", "BWA3_120Rnd_762x51_soft", "BWA3_120Rnd_762x51_Tracer_soft", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_M585_white", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow"];
+_defMagazines = ["BWA3_15Rnd_9x19_P8", "BWA3_120Rnd_762x51", "BWA3_120Rnd_762x51_Tracer", "BWA3_120Rnd_762x51_Tracer_soft", "BWA3_120Rnd_762x51_soft", "CUP_30Rnd_556x45_G36", "rhssaf_30rnd_556x45_MDIM_G36", "BWA3_120Rnd_762x51_soft", "BWA3_120Rnd_762x51_Tracer_soft", "rhs_mag_M397_HET", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_M585_white", "rhs_mag_m661_green", "rhs_mag_m662_red", "rhs_mag_m713_Red", "rhs_mag_m714_White", "rhs_mag_m715_Green", "rhs_mag_m716_yellow"];
 _defGrenades = ["BWA3_DM51A1", "BWA3_DM32_Yellow", "BWA3_DM32_Red", "BWA3_DM32_Purple", "BWA3_DM32_Orange", "BWA3_DM32_Green", "BWA3_DM32_Blue", "BWA3_DM25", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "ACE_Chemlight_Orange", "ACE_M84", "rhs_mag_an_m14_th3", "ACE_Chemlight_IR"];
 _defUniforms = [];
 _defWeapons = ["BWA3_P8"];
@@ -63,10 +63,10 @@ if (_role == "MED") then
 if (_role == "AR") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
-	_availableWeapons = ["BWA3_MG5_tan"];
+	_availableWeapons = ["BWA3_MG5_tan", "BWA3_MG3"];
 	_availableMagazines = [];
 	_availableVests = ["BWA3_Vest_MachineGunner_Fleck"];
-	_availableItems = ["bwa3_optic_zo4x30i_rsas_sand", "bwa3_optic_zo4x30i_rsas", "bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
+	_availableItems = ["bwa3_bipod_mg3", "bwa3_optic_zo4x30i_rsas_sand", "bwa3_optic_zo4x30i_rsas", "bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
 	_availableBackpacks = ["BWA3_Kitbag_Fleck"];
 	_availableHeadgear = ["rhsusf_mich_bare_norotos_arc_alt", "rhsusf_opscore_fg_pelt", "rhsusf_opscore_fg_pelt_cam"];
 	_availableFacewear = ["CUP_G_ESS_BLK", "CUP_G_ESS_BLK", "CUP_G_Oakleys_Clr", "CUP_G_Oakleys_Drk"];
@@ -111,7 +111,7 @@ if (_role == "MAT") then
 	_availableFacewear = ["CUP_G_ESS_BLK", "CUP_G_ESS_BLK", "CUP_G_Oakleys_Clr", "CUP_G_Oakleys_Drk"];
 };
 
-// HAT
+// HAT - G2A Specilist
 if (_role == "HAT") then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
