@@ -1,5 +1,6 @@
-params["_role"];
-private["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+/* Get the unit's role */
+private _condition = player getVariable ["cmf_common_role", "RFL"];
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
 private _defItems = ["ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "tgc_anvis10_tan", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
@@ -12,9 +13,10 @@ private _defVests = [];
 private _defBackpacks = ["ECPV1", "ECPV2", "Crewcab"];
 private _defHeadgear = ["CUP_H_OpsCore_Covered_MCAM_SF", "CUP_H_OpsCore_Tan_SF", "CUP_H_OpsCore_Covered_MCAM"];
 private _defFacewear = ["CUP_G_Oakleys_Clr", "CUP_G_Oakleys_Drk", "rhsusf_oakley_goggles_clr", "G_Sport_Blackred", "G_Shades_tactical", "CUP_RUS_Balaclava_rgr", "UK3CB_G_Balaclava2_DES", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark"];
+private _defAttachments = [];
 
 // Rifleman
-if (_role == "RFL") then {
+if (_condition in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = ["rhsusf_acc_g33_xps3", "rhsusf_acc_g33_t1", "rhsusf_acc_eotech", "rhsusf_acc_t1_low", "rhsusf_acc_t1_high", "rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15side_bk", "tier1_exps3_0_black", "tier1_exps3_0_3xmag_black_up", "cup_acc_anpeq_15_top_flashlight_black_l", "rhs_acc_dtk1", "rhs_acc_ak5", "rhs_acc_grip_rk6", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_rvg_blk", "tier1_mcx_la5_m600v_black", "rhsusf_acc_rotex5_grey", "tier1_rvg_mlok_black", "tier1_mvg_mlok_black", "tier1_afg_mlok_black", "tier1_dd_mlok_vfg_black", "tier1_bcm_gunfighter_vg_black"];
@@ -28,7 +30,7 @@ if (_role == "RFL") then {
 };
 
 // Team leader
-if (_role == "SL") then {
+if (_condition in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = ["rhsusf_acc_g33_xps3", "rhsusf_acc_g33_t1", "rhsusf_acc_eotech", "rhsusf_acc_t1_low", "rhsusf_acc_t1_high", "rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15side_bk", "tier1_exps3_0_black", "tier1_exps3_0_3xmag_black_up", "cup_acc_anpeq_15_top_flashlight_black_l", "rhs_acc_dtk1", "rhs_acc_ak5", "rhs_acc_grip_rk6", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_rvg_blk", "tier1_mcx_la5_m600v_black", "rhsusf_acc_rotex5_grey", "tier1_rvg_mlok_black", "tier1_mvg_mlok_black", "tier1_afg_mlok_black", "tier1_dd_mlok_vfg_black", "tier1_bcm_gunfighter_vg_black"];
@@ -42,7 +44,7 @@ if (_role == "SL") then {
 };
 
 // Medic
-if (_role == "MED") then {
+if (_condition in ["MED"]) then {
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
@@ -57,7 +59,7 @@ if (_role == "MED") then {
 };
 
 // MMG
-if (_role == "MMG") then {
+if (_condition in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_PKM_top_rail_B50_vfg"];
 	_availableAttachments = [];
@@ -71,7 +73,7 @@ if (_role == "MMG") then {
 };
 
 // HAT
-if (_role == "HAT") then {
+if (_condition in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_fgm148", "arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = [];
@@ -85,7 +87,7 @@ if (_role == "HAT") then {
 };
 
 // Engineer
-if (_role == "ENG") then {
+if (_condition in ["ENG"]) then {
 	player setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
@@ -99,9 +101,12 @@ if (_role == "ENG") then {
 	_availableFacewear = [];
 };
 
-// Return loadout arrays
+/* Loadout array that's passed back to kosherArsenal */
 [
-	"1.0", // loadout version
+	/* Loadoutfile version */
+	"1.2",
+
+	/* Allowed Equipment array */
 	[
 		(_availableBackpacks + _defBackpacks),
 		(_availableVests + _defVests),

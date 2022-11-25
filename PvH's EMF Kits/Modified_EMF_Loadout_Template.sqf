@@ -1,8 +1,17 @@
-params["_role"];
-private["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Harke
+ * [Description]
+ *
+ */
 
-// Define default gear
-private _defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
+/* Get the unit's role */
+private _condition = player getVariable ["cmf_common_role", "RFL"];
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+
+/* Default gear */
+private _defItems = ["ACE_Canteen", "ACE_EarPlugs", "kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
 private _defWeapons = [];
 private _defAttachments = [];
 private _defMagazines = [];
@@ -13,14 +22,8 @@ private _defBackpacks = [];
 private _defHeadgear = [];
 private _defFacewear = [];
 
-//
-// Made for Arma 3 Virtual MILSIM
-//
-//
-//
-
-// Rifleman
-if (_role == "RFL") then {
+/* Rifleman */
+if (_condition in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -33,8 +36,8 @@ if (_role == "RFL") then {
 	_availableFacewear = [];
 };
 
-// Team leader
-if (_role == "SL") then {
+/* Team leader */
+if (_condition in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -47,23 +50,23 @@ if (_role == "SL") then {
 	_availableFacewear = [];
 };
 
-// Medic
-if (_role == "MED") then {
+/* Medic */
+if (_condition in ["MED"]) then {
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
 	_availableMagazines = [];
 	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope"];
+	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope", "kat_amiodarone", "kat_lidocaine", "kat_IO_FAST", "kat_IV_16", "KAT_Empty_bloodIV_500", "KAT_Empty_bloodIV_250", "kat_AED", "kat_aatKit"];
 	_availableGrenades = [];
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
 };
 
-// SAW/LMG
-if (_role == "AR") then {
+/* SAW/LMG */
+if (_condition in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -76,8 +79,8 @@ if (_role == "AR") then {
 	_availableFacewear = [];
 };
 
-// MMG
-if (_role == "MMG") then {
+/* MMG */
+if (_condition in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -90,8 +93,8 @@ if (_role == "MMG") then {
 	_availableFacewear = [];
 };
 
-// Grenadier
-if (_role == "GRD") then {
+/* Grenadier */
+if (_condition in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -104,8 +107,8 @@ if (_role == "GRD") then {
 	_availableFacewear = [];
 };
 
-// LAT
-if (_role == "LAT") then {
+/* LAT */
+if (_condition in ["LAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -118,8 +121,8 @@ if (_role == "LAT") then {
 	_availableFacewear = [];
 };
 
-// MAT
-if (_role == "MAT") then {
+/* MAT */
+if (_condition in ["MAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -132,8 +135,8 @@ if (_role == "MAT") then {
 	_availableFacewear = [];
 };
 
-// HAT
-if (_role == "HAT") then {
+/* HAT */
+if (_condition in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -146,8 +149,8 @@ if (_role == "HAT") then {
 	_availableFacewear = [];
 };
 
-// Engineer
-if (_role == "ENG") then {
+/* Engineer */
+if (_condition in ["ENG"]) then {
 	player setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -161,9 +164,12 @@ if (_role == "ENG") then {
 	_availableFacewear = [];
 };
 
-// Return loadout arrays
+/* Loadout array that's passed back to kosherArsenal */
 [
-	"1.0", // loadout version
+	/* Loadoutfile version */
+	"1.2",
+
+	/* Allowed Equipment array */
 	[
 		(_availableBackpacks + _defBackpacks),
 		(_availableVests + _defVests),
