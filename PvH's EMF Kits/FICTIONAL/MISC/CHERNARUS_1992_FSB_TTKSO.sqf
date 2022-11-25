@@ -1,17 +1,18 @@
-private["_availableUniforms","_availableItems", "_availableFacewear", "_availableVests", "_availableWeapons", "_availableHeadgear", "_availableBackpacks", "_availableMagazines", "_defFacewear", "_defItems", "_defVests", "_defWeapons", "_defGrenades", "_defHeadgear", "_defUniforms", "_defBackpacks", "_defMagazines", "_magazines", "_weapons", "_backpacks", "_items"];
-params["_role", "_obj", "_rearmOnly"];
-_availableUniforms = []; _availableWeapons = []; _availableMagazines = []; _availableVests = []; _availableItems = []; _availableBackpacks = []; _availableHeadgear = []; _availableFacewear = [];
+/* Get the unit's role */
+private _condition = player getVariable ["cmf_common_role", "RFL"];
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
-_defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
-_defMagazines = ["CUP_30Rnd_545x39_AK_M", "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", "CUP_5Rnd_127x108_KSVK_M"];
-_defGrenades = ["rhs_mag_rgd5", "rhs_mag_f1", "rhs_mag_rdg2_white", "rhs_mag_rdg2_black", "rhs_mag_nspn_green", "rhs_mag_nspn_red", "rhs_mag_nspn_yellow"];
-_defUniforms = ["rhs_uniform_afghanka_ttsko"];
-_defWeapons = ["rhs_weap_makarov_pm"];
-_defVests = [];
-_defBackpacks = [];
-_defHeadgear = ["UK3CB_H_Beanie_02_BLK", "UK3CB_H_Bandanna_Camo", "H_Bandanna_khk", "rhs_fieldcap_m88_ttsko"];
-_defFacewear = ["rhs_scarf", "G_Balaclava_blk", "CUP_RUS_Balaclava_blk", "CUP_G_RUS_Balaclava_Ratnik"];
+private _defItems = ["kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
+private _defMagazines = ["CUP_30Rnd_545x39_AK_M", "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", "CUP_5Rnd_127x108_KSVK_M"];
+private _defGrenades = ["rhs_mag_rgd5", "rhs_mag_f1", "rhs_mag_rdg2_white", "rhs_mag_rdg2_black", "rhs_mag_nspn_green", "rhs_mag_nspn_red", "rhs_mag_nspn_yellow"];
+private _defUniforms = ["rhs_uniform_afghanka_ttsko"];
+private _defWeapons = ["rhs_weap_makarov_pm"];
+private _defVests = [];
+private _defBackpacks = [];
+private _defHeadgear = ["UK3CB_H_Beanie_02_BLK", "UK3CB_H_Bandanna_Camo", "H_Bandanna_khk", "rhs_fieldcap_m88_ttsko"];
+private _defFacewear = ["rhs_scarf", "G_Balaclava_blk", "CUP_RUS_Balaclava_blk", "CUP_G_RUS_Balaclava_Ratnik"];
+private _defAttachments = [];
 
 
 //
@@ -19,7 +20,7 @@ _defFacewear = ["rhs_scarf", "G_Balaclava_blk", "CUP_RUS_Balaclava_blk", "CUP_G_
 //
 
 // Rifleman
-if (_role == "RFL") then
+if (_condition in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
@@ -29,10 +30,12 @@ if (_role == "RFL") then
 	_availableBackpacks = [];
 	_availableHeadgear = ["rhs_stsh81"];
 	_availableFacewear = [];
+	_availableAttachments = [];
+	_availableGrenades = [];
 };
 
 // Squad Leader
-if (_role == "SL") then
+if (_condition in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
@@ -42,10 +45,12 @@ if (_role == "SL") then
 	_availableBackpacks = [];
 	_availableHeadgear = ["rhs_stsh81"];
 	_availableFacewear = [];
+	_availableAttachments = [];
+	_availableGrenades = [];
 };
 
 // Medic
-if (_role == "MED") then
+if (_condition in ["MED"]) then
 {
   [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
 	player setVariable ["ace_medical_medicclass", 2, true];
@@ -57,10 +62,12 @@ if (_role == "MED") then
 	_availableBackpacks = ["CUP_B_CivPack_WDL"];
 	_availableHeadgear = ["rhs_stsh81"];
 	_availableFacewear = [];
+	_availableAttachments = [];
+	_availableGrenades = [];
 };
 
 // SAW/LMG
-if (_role == "AR") then
+if (_condition in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_RPK74_45"];
@@ -70,10 +77,12 @@ if (_role == "AR") then
 	_availableBackpacks = [];
 	_availableHeadgear = ["rhs_stsh81"];
 	_availableFacewear = [];
+	_availableAttachments = [];
+	_availableGrenades = [];
 };
 
 // Marksman
-if (_role == "MRK") then
+if (_condition in ["MRK"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m76", "CUP_srifle_ksvk"];
@@ -83,23 +92,25 @@ if (_role == "MRK") then
 	_availableBackpacks = [];
 	_availableHeadgear = [];
 	_availableFacewear = [];
+	_availableAttachments = [];
+	_availableGrenades = [];
 };
 
-//Populate with predefined items and whatever is already in the crate
-_backpacks 	= (_availableBackpacks + _defBackpacks);
-_items 		= (_availableVests + _availableItems + _availableUniforms + _defUniforms + _defVests + _defItems + _defFacewear + _availableFacewear + _defHeadgear + _availableHeadgear);
-_magazines 	= (_availableMagazines + _defGrenades + _defMagazines);
-_weapons 	= (_availableWeapons + _defWeapons);
+/* Loadout array that's passed back to kosherArsenal */
+[
+	/* Loadoutfile version */
+	"1.2",
 
-if (!_rearmOnly) then {
-	[_obj, _backpacks] 	call BIS_fnc_addVirtualBackpackCargo;
-	[_obj, _items	 ] 	call BIS_fnc_addVirtualItemCargo;
-	[_obj, _magazines] 	call BIS_fnc_addVirtualMagazineCargo;
-	[_obj, _weapons	 ] 	call BIS_fnc_addVirtualWeaponCargo;
-} else {
-	[_obj, _magazines] 	call BIS_fnc_addVirtualMagazineCargo;
-	[_obj, (_availableItems + _defItems)] call BIS_fnc_addVirtualItemCargo;
-};
-
-
-player setVariable ["EMF_KA_permittedGear", [_backpacks, _items, _magazines, _weapons], true];
+	/* Allowed Equipment array */
+	[
+		(_availableBackpacks + _defBackpacks),
+		(_availableVests + _defVests),
+		(_availableUniforms + _defUniforms),
+		(_availableFacewear + _defFacewear),
+		(_defHeadgear + _availableHeadgear),
+		(_defAttachments + _availableAttachments),
+		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+		(_availableWeapons + _defWeapons),
+		(_availableItems + _defItems)
+	]
+];
