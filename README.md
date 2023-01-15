@@ -26,7 +26,7 @@ Example:
 [["GER_2015__PSA_BPO__SOLIDURBAN.sqf "]] call cmf_kosherArsenal_fnc_init;
 ```
 You do not need to add the file extenstion (`.sqf`). 
-
+[To apply these loadouts to players upon spawn reference this article.](https://wiki.cluster-community.com/index.php?title=cmf_common_fnc_setRole)
 **I would also recommend deleting all unneeded kits inside the loadouts folder to improve performance/loading time**
 
 ***
