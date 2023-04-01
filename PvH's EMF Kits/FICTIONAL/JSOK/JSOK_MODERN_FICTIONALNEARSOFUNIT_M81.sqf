@@ -1,5 +1,6 @@
-params["_role"];
-private["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+/* Get the unit's role */
+private _condition = player getVariable ["cmf_common_role", "RFL"];
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
 private _defItems = ["ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "ItemAndroid", "rhsusf_ANPVS_15", "ACRE_PRC152", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
@@ -12,6 +13,7 @@ private _defVests = [];
 private _defBackpacks = ["B_AssaultPack_rgr"];
 private _defHeadgear = ["rhsusf_mich_bare_norotos_arc_alt"];
 private _defFacewear = ["CUP_G_ESS_BLK"];
+private _defAttachments = [];
 
 //
 // Made for Arma 3 Virtual MILSIM
@@ -21,7 +23,7 @@ private _defFacewear = ["CUP_G_ESS_BLK"];
 
 
 // Rifleman
-if (_role == "RFL") then {
+if (_condition in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC"];
 	_availableAttachments = ["tier1_eotech553_tan", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk"];
@@ -35,7 +37,7 @@ if (_role == "RFL") then {
 };
 
 // Team leader
-if (_role == "SL") then {
+if (_condition in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC"];
 	_availableAttachments = ["rhsusf_acc_su230a", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk"];
@@ -49,7 +51,7 @@ if (_role == "SL") then {
 };
 
 // Medic
-if (_role == "MED") then {
+if (_condition in ["MED"]) then {
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC"];
@@ -64,7 +66,7 @@ if (_role == "MED") then {
 };
 
 // SAW/LMG
-if (_role == "AR") then {
+if (_condition in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_minimi_para_railed"];
 	_availableAttachments = ["rhsusf_acc_su230a", "cup_acc_anpeq_15", "tier1_saw_bipod_kac", "tier1_gangster_grip_black"];
@@ -78,7 +80,7 @@ if (_role == "AR") then {
 };
 
 // MMG
-if (_role == "MMG") then {
+if (_condition in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m240B"];
 	_availableAttachments = ["rhsusf_acc_su230a", "cup_acc_anpeq_15", "rhsusf_acc_ardec_m240", ""];
@@ -92,7 +94,7 @@ if (_role == "MMG") then {
 };
 
 // Grenadier
-if (_role == "GRD") then {
+if (_condition in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_M203"];
 	_availableAttachments = ["tier1_eotech553_tan", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk"];
@@ -106,7 +108,7 @@ if (_role == "GRD") then {
 };
 
 // MAT
-if (_role == "MAT") then {
+if (_condition in ["MAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC", "launch_NLAW_F"];
 	_availableAttachments = ["tier1_eotech553_tan", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk"];
@@ -120,7 +122,7 @@ if (_role == "MAT") then {
 };
 
 // Engineer
-if (_role == "ENG") then {
+if (_condition in ["ENG"]) then {
 	player setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC"];
@@ -134,9 +136,12 @@ if (_role == "ENG") then {
 	_availableFacewear = [];
 };
 
-// Return loadout arrays
+/* Loadout array that's passed back to kosherArsenal */
 [
-	"1.0", // loadout version
+	/* Loadoutfile version */
+	"1.2",
+
+	/* Allowed Equipment array */
 	[
 		(_availableBackpacks + _defBackpacks),
 		(_availableVests + _defVests),
