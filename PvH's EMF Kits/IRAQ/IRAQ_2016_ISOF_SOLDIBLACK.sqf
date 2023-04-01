@@ -14,8 +14,13 @@ _defHeadgear = ["CUP_NVG_PVS14", "H_Mich_BK_W_G","H_Mich_BK_W3_G","PO_H_mich_bar
 _defFacewear = ["TRYK_kio_balaclavas", "n_facemask_skl", "CUP_RUS_Balaclava_blk"];
 
 // Rifleman
+<<<<<<< Updated upstream
 if (_role == "RFL") then
 
+=======
+if (_condition in ["RFL"]) then
+{
+>>>>>>> Stashed changes
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4_carryhandle"];
 	_availableMagazines = [];
@@ -24,7 +29,13 @@ if (_role == "RFL") then
 	_availableBackpacks = ["TAC_MTAP_CY2"];
 	_availableHeadgear = [];
 	_availableFacewear = [];
+<<<<<<< Updated upstream
 
+=======
+	_availableAttachments = [];
+	_availableGrenades = [];
+};
+>>>>>>> Stashed changes
 // Breacher
 if (_role == "BRC") then
 {
