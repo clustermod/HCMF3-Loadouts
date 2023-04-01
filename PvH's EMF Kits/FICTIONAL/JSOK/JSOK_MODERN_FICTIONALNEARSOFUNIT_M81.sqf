@@ -55,7 +55,7 @@ if (_condition in ["MED"]) then {
 	player setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_KAC"];
-	_availableAttachments = ["tier1_eotech553_tan", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk",                    ];
+	_availableAttachments = ["tier1_eotech553_tan", "tier1_m4bii_la5_m300c_black_fl", "rhsusf_acc_grip2", "tier1_gangster_grip_black", "rhsusf_acc_rvg_blk"                    ];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_JPC_medicalbelt_mc", "CUP_V_JPC_medicalbelt_rngr"];
 	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];

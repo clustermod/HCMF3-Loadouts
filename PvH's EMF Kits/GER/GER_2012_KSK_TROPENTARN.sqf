@@ -54,7 +54,7 @@ if (_condition in ["SL", "FTL"]) then
 	_availableMagazines = [];
 	_availableVests = ["tgc_mtv_light","tgc_mtv_radio","tgc_hpc_radio_ng"];
 	_availableItems = ["tgc_pvs23_band", "tgc_pvs23_bungee", "tgc_pvs23_special_2", "ACRE_SEM70", "cup_acc_llm01_desert_l", "cup_acc_llm01_coyote_l", "cup_acc_llm01_l", "sma_eotech552_kf_des", "sma_elcan_specter", "rhsusf_acc_eotech_552", "rhsusf_acc_eotech_552_d", "rksl_optic_eot552_c", "rksl_optic_eot552", "sma_elcan_specter_4z", "sma_elcan_specter_green", "sma_elcan_specter_tan", "sma_elcan_specter_green_4z", "sma_elcan_specter_tan_4z", "sma_eotech552", "cup_optic_holodesert"];
-	_availableBackpacks = ["tgc_breacherB", "tgc_hpc_backpanel_tan","tgc_ravBackpanel", ];
+	_availableBackpacks = ["tgc_breacherB", "tgc_hpc_backpanel_tan","tgc_ravBackpanel" ];
 	_availableHeadgear = ["tc2002od2", "tc2002_sb","tc2002_s", "tc2002_od", "tc2002_tan", "tc2002_p"];
 	_availableFacewear = ["CUP_G_Oakleys_Drk", "CUP_G_ESS_BLK","rhs_balaclava","CUP_RUS_Balaclava_blk","G_Shades_tactical", "CUP_RUS_Balaclava_tan"];
 	_availableAttachments = [];
