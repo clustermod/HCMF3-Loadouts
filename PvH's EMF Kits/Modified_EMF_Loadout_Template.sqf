@@ -1,7 +1,8 @@
 /*
  * Made for Arma 3 Virtual MILSIM
  *
- * Author: Harke
+ * Author: Hark
+ * CC Modpack Version: 
  * [Description]
  *
  */
