@@ -2,7 +2,7 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V3
+ * CC Modpack Version: V4
  * [Loadout depicting the 2023 state of German Mechanized Infantry, with limitations in realism due to available mods for Arma 3.]
  *
  */
