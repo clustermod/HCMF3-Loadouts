@@ -70,7 +70,7 @@ if (_condition in ["MED"]) then {
 if (_condition in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["BWA3_MG5_tan"];
-	_availableAttachments = ["bwa3_optic_zo4x30i_microt2_sand", "bwa3_acc_varioray_irlaser"];
+	_availableAttachments = ["bwa3_optic_zo4x30i_microt2_sand", "bwa3_acc_varioray_irlaser", "rhsusf_acc_su230a_c"];
 	_availableMagazines = [];
 	_availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_medicalbelt_rngr", "CUP_V_JPC_tlbelt_rngr"];
 	_availableItems = ["ACE_SpareBarrel_Item"];
