@@ -7,7 +7,7 @@ The compatibility with the current Cluster Community Modset is written inside ea
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V3
+ * CC Modpack Version: V5
  * [Description]
  *
  */
@@ -31,4 +31,12 @@ Example:
 ```sqf
 [["GER_2015__PSA_BPO__SOLIDURBAN"]] call cmf_kosherArsenal_fnc_init;
 ```
-You do not need to add the file extension (`.sqf`). 
+You do not need to add the file extenstion (`.sqf`). 
+
+## FULL MISSION SETS
+"Mission Ready Sets" are complete CMF usable presets for the logistics system, [koscherGarage](https://wiki.cluster-community.com/index.php?title=Category:CMF3:_kosherGarage) and [koscherArsenal](https://wiki.cluster-community.com/index.php?title=Category:CMF3:_kosherArsenal).
+These files have increased priority for Cluster Community modlist updates and are checked to work correctly after each update. 
+The goal of these presets is to make implementing certain units into missions as easy as possible. They can be found in the [FULL MISSION SETS](https://github.com/PervonHarke/Harks-CMF3-Loadouts/tree/master/Full%20Mission%20Sets) folder.
+
+## AI Presets
+"AI Presets" are loadouts made for the CMF function [cmf_koscherArsenal_fnc_kosherAI](https://wiki.cluster-community.com/index.php?title=cmf_kosherArsenal_fnc_kosherAI). 
