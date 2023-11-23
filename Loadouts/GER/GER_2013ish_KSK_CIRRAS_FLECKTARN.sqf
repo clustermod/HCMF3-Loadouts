@@ -14,7 +14,6 @@ private _defHeadgear = ["tc2002_sb", "tc2002od2", "tc2002_od"];
 private _defFacewear = ["AGE_Balaclava_Black", "CUP_G_RUS_Balaclava_Ratnik", "CUP_G_ESS_BLK"];
 private _defAttachments = [];
 
-
 //
 // Loadout made by Per_von_Harke
 // Not 100% accurate. But accurate as it can get and still look good/acceptable inside Arma.
