@@ -3,6 +3,8 @@
  * [Description]
  *
  * [Modpack Version]
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!ai_arsenal_template.sqf
  */
 
 /* Get the unit's role */
