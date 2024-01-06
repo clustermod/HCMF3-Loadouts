@@ -7,24 +7,21 @@
 
 **Template Version:** `1.3`
 
----
 **Roles:** 
 - `RFL` Rifleman
 - `TC` Tank Commander
 - `MED` Medic
 - `ENG` Engineer
----
+
 **Description:**
 
 A norwegian tanker crew.
 
----
 **Contry:** Norway
 
 **Year**: 2018
 
 ---
-[Download Loadout](url to file)
 
 ## 2018 Telemark bataljonen Woodland 
 **file:** `nor_2018_telemarken-battalion_woodland.sqf`
@@ -33,7 +30,6 @@ A norwegian tanker crew.
 
 **Template Version:** `1.3`
 
----
 **Roles:** 
 - `RFL` Rifleman
 - `SL` Squad Leader
@@ -47,12 +43,11 @@ A norwegian tanker crew.
 - `HAT` Anti-Tank, Heavy
 - `EOD` Explosive Ordenance Disposal
 - `ENG` Engineer
----
+
 **Description:**
 
 A norwegian semi-sof team.
 
----
 **Contry:** Norway
 
 **Year**: 2018
@@ -60,7 +55,6 @@ A norwegian semi-sof team.
 **Camo:** M98 (N-Kamo, Woodland)
 
 ---
-[Download Loadout](url to file)
 
 ## 2020 FSK Multicam 
 **file:** `nor_2020_fsk_multicam.sqf`
@@ -69,7 +63,6 @@ A norwegian semi-sof team.
 
 **Template Version:** `1.3`
 
----
 **Roles:** 
 - `RFL` Rifleman
 - `SL` Squad Leader
@@ -83,12 +76,11 @@ A norwegian semi-sof team.
 - `HAT` Anti-Tank, Heavy
 - `EOD` Explosive Ordenance Disposal
 - `ENG` Engineer
----
+
 **Description:**
 
 A norwegian sof team in multicam.
 
----
 **Contry:** Norway
 
 **Year**: 2018
@@ -96,7 +88,6 @@ A norwegian sof team in multicam.
 **Camo:** Multicam
 
 ---
-[Download Loadout](url to file)
 
 ## 2022 Marinejeger 
 **file:** `nor_2022_marinejeger.sqf`
@@ -105,7 +96,6 @@ A norwegian sof team in multicam.
 
 **Template Version:** `1.3`
 
----
 **Roles:** 
 - `RFL` Rifleman
 - `SL` Squad Leader
@@ -113,12 +103,11 @@ A norwegian sof team in multicam.
 - `MED` Medic
 - `AR` Autorifleman
 - `BRC` Breacher
----
+
 **Description:**
 
 A norwegian marine sof team.
 
----
 **Contry:** Norway
 
 **Year**: 2022
@@ -126,4 +115,3 @@ A norwegian marine sof team.
 **Camo:** Black / Grey and Multicam
 
 ---
-[Download Loadout](url to file)

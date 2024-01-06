@@ -2,12 +2,21 @@
 
 ## country_era_unit_info
 **Modpack Version:** `[version]`
-**Template Version:** `1.3`
-<!-- Roles -->
-**Roles:** `RFL`, `SL`, `FTL`, `MED`, `AR`, `AAR`, `LAT`
 
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `AAR` Assistant Autorifleman
+- `LAT` Anti-Tank, Light
+
+**Description:**
 <!-- Description -->
 
-<!-- Information about file e.g. country: Russia-->
+<!-- File Meta Data e.g. **Country:** Russia -->
 
-[Download File](url to file)
+---

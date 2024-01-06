@@ -1,8 +1,9 @@
-# Loadouts
+# Logistic Templates
 
 ## country_era_unit_info_logistics
 **Modpack Version:** `[version]`
-**Template Version:** `1.3`
+
+**Template Version:** `1.0`
 <!-- Crates -->
 **Crates:** 
 - x2 `Fireteam`
@@ -12,4 +13,4 @@
 
 <!-- Information about file e.g. country: Russia-->
 
-[Download File](url to file)
+---
