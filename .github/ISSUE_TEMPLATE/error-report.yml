@@ -20,10 +20,9 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: Description *
       description: A clear and concise description of what the issue is. Please provide sources for your claims.
       placeholder: Describe the error.
-      required: true
   - type: input
     id: role
     attributes:

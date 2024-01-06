@@ -20,17 +20,15 @@ body:
   - type: textarea
     id: parameters
     attributes:
-      label: Loadout Parameters
+      label: Loadout Parameters *
       description: Is your loadout request related to a certain scenario, unit or timeframe?
       placeholder: Ex. I need unit ____ in camo ____ or fitting for the environment ____ in this ____ time period.
-      required: true
   - type: textarea
     id: description
     attributes:
-      label: Description of Loadout
+      label: Description of Loadout *
       description: A clear and concise description of what you want to have in the loadout (mind that is has to be as realistic as possible within the bounds of the current CC mod pack)
       placeholder: Describe the loadout you like to have
-      required: true
   - type: textarea
     id: alternatives
     attributes:
