@@ -22,47 +22,47 @@ private _defAttachments = [];
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Squad Leader
 if (_condition && _role in ["SL", "FTL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Medic
 if (_condition && _role in ["MED"]) then
 {
-	_unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _unit setVariable ["ace_medical_medicclass", 2, true];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_mk18_bk", "rhs_weap_mk18_KAC_bk"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "sma_eotech552", "sma_eotech552_3xdown", "sma_eotech", "rhsusf_acc_g33_xps3", "rhsusf_acc_su230a", "rhsusf_acc_eotech_xps3", "sma_elcan_specter_4z", "sma_elcan_specter", "rhsusf_acc_nt4_black", "rhsusf_acc_rotex5_grey", "cup_acc_anpeq_15_top_flashlight_black_l", "cup_acc_anpeq_15_flashlight_black_l", "rhsusf_acc_kac_grip", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_grip3", "rhsusf_acc_grip2"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 

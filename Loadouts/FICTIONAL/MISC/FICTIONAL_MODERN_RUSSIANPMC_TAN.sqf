@@ -24,62 +24,62 @@ private _defAttachments = [];
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
-	_availableBackpacks = ["tgc_hpc_backpanel_tan"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
+    _availableBackpacks = ["tgc_hpc_backpanel_tan"];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Squad Leader
 if (_condition && _role in ["SL", "FTL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhssaf_zrak_rd7j", "rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
-	_availableBackpacks = ["tgc_hpc_backpanel_tan"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhssaf_zrak_rd7j", "rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
+    _availableBackpacks = ["tgc_hpc_backpanel_tan"];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Medic
 if (_condition && _role in ["MED"]) then
 {
-	_unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
-	_availableBackpacks = ["TAC_MTAP_CY2"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _unit setVariable ["ace_medical_medicclass", 2, true];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_ak74m_zenitco01_b33", "rhs_weap_ak74mr", "rhs_weap_ak105_zenitco01_b33", "rhs_weap_ak104_zenitco01_b33", "rhs_weap_ak103_zenitco01_b33"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rhs_acc_dtk2", "sma_eotech552", "rhsusf_acc_g33_xps3", "rhsusf_acc_eotech_xps3", "age_inforce_white", "rhs_acc_2dpzenit", "rhs_acc_dtk1", "rhsusf_acc_rvg_blk", "rhsusf_acc_tdstubby_blk", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_tdstubby_tan"];
+    _availableBackpacks = ["TAC_MTAP_CY2"];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Machinegunner
 if (_condition && _role in ["MMG"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_lmg_Pecheneg_top_rail_B50_vfg"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["sma_eotech552", "rhs_acc_2dpzenit_ris"];
-	_availableBackpacks = ["tgc_hpc_backpanel_tan"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_lmg_Pecheneg_top_rail_B50_vfg"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["sma_eotech552", "rhs_acc_2dpzenit_ris"];
+    _availableBackpacks = ["tgc_hpc_backpanel_tan"];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 /* Loadout array that's passed back to kosherArsenal */

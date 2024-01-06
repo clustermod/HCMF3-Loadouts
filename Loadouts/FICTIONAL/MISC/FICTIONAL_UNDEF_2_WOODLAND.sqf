@@ -24,62 +24,62 @@ private _defAttachments = [];
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_akms", "rhs_weap_akm"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_akms", "rhs_weap_akm"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Squad Leader
 if (_condition && _role in ["SL", "FTL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhssaf_zrak_rd7j", "rhs_weap_akms", "rhs_weap_akm"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = ["G_Aviator"];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhssaf_zrak_rd7j", "rhs_weap_akms", "rhs_weap_akm"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = ["G_Aviator"];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Medic
 if (_condition && _role in ["MED"]) then
 {
-	_unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_akms", "rhs_weap_akm"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _unit setVariable ["ace_medical_medicclass", 2, true];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_akms", "rhs_weap_akm"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope", "kat_larynx", "kat_chestSeal"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // SAW / LMG
 if (_condition && _role in ["LMG"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_RPK74"];
-	_availableMagazines = ["CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_RPK74"];
+    _availableMagazines = ["CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 /* Loadout array that's passed back to kosherArsenal */

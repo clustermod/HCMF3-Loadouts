@@ -27,15 +27,15 @@ if (_condition && _role in ["RFL"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
     _availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableWeapons = ["n_hk416n_black"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // Squad Leader
@@ -43,15 +43,15 @@ if (_condition && _role in ["SL", "FTL"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
     _availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black", "rhsusf_bino_lrf_Vector21"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_squadleader"];
-	_availableItems = ["ACE_microDAGR", "ACRE_PRC152", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableWeapons = ["n_hk416n_black", "rhsusf_bino_lrf_Vector21"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_squadleader"];
+    _availableItems = ["ACE_microDAGR", "ACRE_PRC152", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // Medic
@@ -59,16 +59,16 @@ if (_condition && _role in ["MED"]) then
 {
     [_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
     _unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_corpsman"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = ["B_Kitbag_cbr", "n_backpack_kitbag_w"];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_corpsman"];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = ["B_Kitbag_cbr", "n_backpack_kitbag_w"];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // SAW/LMG
@@ -76,31 +76,31 @@ if (_condition && _role in ["AR"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
     _availableUniforms = [];
-	_availableWeapons = ["rhs_weap_minimi_para_railed"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_mg"];
-	_availableItems = ["rhsusf_acc_su230", "cup_acc_anpeq_2_grey", "rhsusf_acc_saw_lw_bipod", "rhsusf_acc_compm4"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableWeapons = ["rhs_weap_minimi_para_railed"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_mg"];
+    _availableItems = ["rhsusf_acc_su230", "cup_acc_anpeq_2_grey", "rhsusf_acc_saw_lw_bipod", "rhsusf_acc_compm4"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // Grenadier
 if (_condition && _role in ["GRD"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_m320_black"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_m320_black"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // Designated Marksman
@@ -108,79 +108,79 @@ if (_condition && _role in ["DMR"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
     _availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_HK417_20", "rhs_weap_M107"];
-	_availableMagazines = ["rhsusf_mag_10Rnd_STD_50BMG_mk211", "ACE_5Rnd_127x99_API_Mag", "ACE_5Rnd_127x99_AMAX_Mag", "ACE_5Rnd_127x99_Mag"];
-	_availableVests = ["n_m07_coy_marksman"];
-	_availableItems = ["ACE_Kestrel4500", "ACE_RangeCard", "rhsusf_acc_harris_bipod", "cup_optic_leupoldmk4_10x40_lrt_woodland", "cup_optic_leupoldmk4", "rhsusf_acc_nxs_3515x50f1_h58_sun", "rhsusf_acc_nxs_3515x50f1_md_sun", "rhsusf_acc_nxs_5522x56_md_sun", "rhsusf_acc_nxs_5522x56_md"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableWeapons = ["CUP_arifle_HK417_20", "rhs_weap_M107"];
+    _availableMagazines = ["rhsusf_mag_10Rnd_STD_50BMG_mk211", "ACE_5Rnd_127x99_API_Mag", "ACE_5Rnd_127x99_AMAX_Mag", "ACE_5Rnd_127x99_Mag"];
+    _availableVests = ["n_m07_coy_marksman"];
+    _availableItems = ["ACE_Kestrel4500", "ACE_RangeCard", "rhsusf_acc_harris_bipod", "cup_optic_leupoldmk4_10x40_lrt_woodland", "cup_optic_leupoldmk4", "rhsusf_acc_nxs_3515x50f1_h58_sun", "rhsusf_acc_nxs_3515x50f1_md_sun", "rhsusf_acc_nxs_5522x56_md_sun", "rhsusf_acc_nxs_5522x56_md"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // LAT
 if (_condition && _role in ["LAT"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black", "rhs_weap_m72a7"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black", "rhs_weap_m72a7"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // MAT
 if (_unit in ["MAT"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black", "launch_MRAWS_green_F"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black", "launch_MRAWS_green_F"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // HAT
 if (_condition && _role in ["HAT"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black", "UK3CB_BAF_Javelin_CLU", "UK3CB_BAF_Javelin_Launcher"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black", "UK3CB_BAF_Javelin_CLU", "UK3CB_BAF_Javelin_Launcher"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 // EOD
 if (_condition && _role in ["EOD"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black"];
-	_availableMagazines = ["rhs_ec75_mag", "rhs_ec200_mag"];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["ACE_Clacker", "ACE_DefusalKit", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black"];
+    _availableMagazines = ["rhs_ec75_mag", "rhs_ec200_mag"];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["ACE_Clacker", "ACE_DefusalKit", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 
@@ -188,34 +188,34 @@ if (_condition && _role in ["EOD"]) then
 if (_condition && _role in ["ENG"]) then
 {
     [_unit, "n_tmbn1"] call BIS_fnc_setUnitInsignia;
-	_unit setVariable ["ACE_IsEngineer", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["n_hk416n_black"];
-	_availableMagazines = [];
-	_availableVests = ["n_m07_coy_light"];
-	_availableItems = ["ToolKit", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
+    _unit setVariable ["ACE_IsEngineer", 2, true];
+    _availableUniforms = [];
+    _availableWeapons = ["n_hk416n_black"];
+    _availableMagazines = [];
+    _availableVests = ["n_m07_coy_light"];
+    _availableItems = ["ToolKit", "rhsusf_acc_su230", "sma_elcan_specter","rhsusf_acc_compm4", "rhsusf_acc_kac_grip", "rhsusf_acc_grip2", "rhsusf_acc_grip2_wd", "cup_acc_anpeq_2_flashlight_black_l", "cup_acc_anpeq_2_black_top"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
     _availableAttachments = [];
-	_availableGrenades = [];
+    _availableGrenades = [];
 };
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-	/* Loadoutfile version */
-	"1.3",
+    /* Loadoutfile version */
+    "1.3",
 
-	/* Allowed Equipment array */
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];
