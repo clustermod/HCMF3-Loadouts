@@ -6,9 +6,10 @@
  * [This depicts a 2023 German Tank Company. It can be either played by every crewmember being a player or only Company, Platoon and tank commanders (TC) being actually humans. The crew members other than the TC can be replaced by AI that is commanded by each player.]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,7 +25,7 @@ private _defHeadgear = [];
 private _defFacewear = [];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -38,7 +39,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -52,8 +53,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -67,7 +68,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -81,7 +82,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* MMG */
-if (_condition in ["MMG"]) then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -95,7 +96,7 @@ if (_condition in ["MMG"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -109,7 +110,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* LAT */
-if (_condition in ["LAT"]) then {
+if (_condition && _role in ["LAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -123,7 +124,7 @@ if (_condition in ["LAT"]) then {
 };
 
 /* MAT */
-if (_condition in ["MAT"]) then {
+if (_condition && _role in ["MAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -137,7 +138,7 @@ if (_condition in ["MAT"]) then {
 };
 
 /* HAT */
-if (_condition in ["HAT"]) then {
+if (_condition && _role in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -151,8 +152,8 @@ if (_condition in ["HAT"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -167,19 +168,19 @@ if (_condition in ["ENG"]) then {
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-	/* Loadoutfile version */
-	"1.2",
+    /* Loadoutfile version */
+    "1.3",
 
-	/* Allowed Equipment array */
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];

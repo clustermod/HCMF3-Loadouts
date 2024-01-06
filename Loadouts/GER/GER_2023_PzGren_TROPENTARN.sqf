@@ -6,9 +6,10 @@
  * [Loadout depicting the 2023 state of German Mechanized Infantry, with limitations in realism due to available mods for Arma 3. Made for a desert enviroment.]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,7 +25,7 @@ private _defHeadgear = [];
 private _defFacewear = [];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
@@ -38,7 +39,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3", "BWA3_P2A1"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
@@ -52,8 +53,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
@@ -67,7 +68,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_MG5_tan"];
 	_availableAttachments = ["bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
@@ -81,7 +82,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3_AG40"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
@@ -95,7 +96,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* LAT */
-if (_condition in ["LAT"]) then {
+if (_condition && _role in ["LAT"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3", "BWA3_PzF3_Tandem_Loaded"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser", "bwa3_optic_nsa80"];
@@ -109,7 +110,7 @@ if (_condition in ["LAT"]) then {
 };
 
 /* ZF-Schütze (DMR) */
-if (_condition in ["DMR"]) then {
+if (_condition && _role in ["DMR"]) then {
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G28"];
 	_availableAttachments = ["bwa3_optic_pmii_dmr_microt1_rear", "bwa3_acc_varioray_irlaser", "bwa3_bipod_harris"];
@@ -123,7 +124,7 @@ if (_condition in ["DMR"]) then {
 };
 
 /* Tank Crew */
-if (_condition in ["CRW"]) then {
+if (_condition && _role in ["CRW"]) then {
 	_availableUniforms = ["BWA3_Uniform_Crew_Tropen"];
 	_availableWeapons = ["BWA3_MP7", "rhssaf_zrak_rd7j"];
 	_availableAttachments = ["bwa3_optic_rsas_riser"];
@@ -137,8 +138,8 @@ if (_condition in ["CRW"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["BWA3_Uniform_Tropen"];
 	_availableWeapons = ["BWA3_G36A3", "ACE_VMM3"];
 	_availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
@@ -154,7 +155,7 @@ if (_condition in ["ENG"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

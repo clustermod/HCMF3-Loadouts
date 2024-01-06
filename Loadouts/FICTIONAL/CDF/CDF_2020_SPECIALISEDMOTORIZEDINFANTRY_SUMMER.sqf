@@ -1,5 +1,8 @@
-params["_role"];
-private["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
 private _defItems = ["ItemGPS", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
@@ -20,7 +23,7 @@ private _defFacewear = ["CUP_G_RUS_Balaclava_Ratnik", "rhs_balaclava", "G_Balacl
 //
 
 // Rifleman
-if (_role == "RFL") then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_VG_black", "CUP_arifle_AK12_black", "CUP_arifle_AK12_AFG_black"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -34,7 +37,7 @@ if (_role == "RFL") then {
 };
 
 // Team leader
-if (_role == "SL") then {
+if (_condition && _role in ["SL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_VG_black", "CUP_arifle_AK12_black", "CUP_arifle_AK12_AFG_black"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -48,8 +51,8 @@ if (_role == "SL") then {
 };
 
 // Medic
-if (_role == "MED") then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_VG_black", "CUP_arifle_AK12_black", "CUP_arifle_AK12_AFG_black"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -63,7 +66,7 @@ if (_role == "MED") then {
 };
 
 // SAW/LMG
-if (_role == "AR") then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_RPK74M_railed"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -77,7 +80,7 @@ if (_role == "AR") then {
 };
 
 // MMG
-if (_role == "MMG") then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_Pecheneg_top_rail_B50_vfg"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -91,7 +94,7 @@ if (_role == "MMG") then {
 };
 
 // Grenadier
-if (_role == "GRD") then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_GP34_black"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -105,7 +108,7 @@ if (_role == "GRD") then {
 };
 
 // HAT
-if (_role == "HAT") then {
+if (_condition && _role in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_VG_black", "CUP_arifle_AK12_black", "CUP_arifle_AK12_AFG_black", "rhs_weap_rpg7"];
 	_availableAttachments = ["rhs_acc_1p87", "rhs_acc_pgo7v3"];
@@ -119,8 +122,8 @@ if (_role == "HAT") then {
 };
 
 // Engineer and Explosive Specialist
-if (_role == "ENG") then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK12_VG_black", "CUP_arifle_AK12_black", "CUP_arifle_AK12_AFG_black"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -133,18 +136,21 @@ if (_role == "ENG") then {
 	_availableFacewear = [];
 };
 
-// Return loadout arrays
+/* Loadout array that's passed back to kosherArsenal */
 [
-	"1.0", // loadout version
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Loadoutfile version */
+    "1.3",
+
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];

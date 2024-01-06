@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -17,7 +19,7 @@ private _defAttachments = [];
 //Loadout made by Per_von_Harke
 
 // Zeus
-if (_condition in ["ZEUS"]) then
+if (_condition && _role in ["ZEUS"]) then
 {
 	_availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
@@ -32,7 +34,7 @@ if (_condition in ["ZEUS"]) then
 };
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
@@ -47,7 +49,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader / Squad leader
-if (_condition in ["SL"]) then
+if (_condition && _role in ["SL"]) then
 {
 	_availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
@@ -62,9 +64,9 @@ if (_condition in ["SL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
 	_availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
 	_availableMagazines = [];
@@ -79,7 +81,7 @@ if (_condition in ["MED"]) then
 
 
 // VIP
-if (_condition in ["VIP"]) then
+if (_condition && _role in ["VIP"]) then
 {
 	_availableUniforms = ["U_Marshal", "TRYK_SUITS_BLK_F"];
 	_availableWeapons = [];
@@ -96,7 +98,7 @@ if (_condition in ["VIP"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

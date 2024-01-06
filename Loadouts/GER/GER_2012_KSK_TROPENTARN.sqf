@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -17,7 +19,7 @@ private _defAttachments = [];
 // Made by Per_von_Harke
 
 // Zeus
-if (_condition in ["ZEUS"]) then
+if (_condition && _role in ["ZEUS"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
@@ -32,7 +34,7 @@ if (_condition in ["ZEUS"]) then
 };
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
@@ -47,7 +49,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
@@ -62,9 +64,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
 	_availableMagazines = [];
@@ -78,7 +80,7 @@ if (_condition in ["MED"]) then
 };
 
 // JTAC
-if (_condition in ["JTAC"]) then
+if (_condition && _role in ["JTAC"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo", "rhs_weap_M320"];
@@ -93,7 +95,7 @@ if (_condition in ["JTAC"]) then
 };
 
 // Marksman
-if (_condition in ["MRK"]) then
+if (_condition && _role in ["MRK"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_srifle_G22_blk", "CUP_srifle_G22_des", "hlc_rifle_psg1", "CUP_arifle_HK417_20"];
@@ -109,7 +111,7 @@ if (_condition in ["MRK"]) then
 
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["BWA3_MG4"];
@@ -124,7 +126,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["BWA3_MG3"];
@@ -139,7 +141,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableWeapons = ["CUP_arifle_G36K_RIS_AG36_camo", "CUP_arifle_G36K_RIS_AG36"];
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
@@ -154,7 +156,7 @@ if (_condition in ["GRD"]) then
 };
 
 
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["BWA3_RGW90_Loaded", "CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
@@ -169,7 +171,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo",   "CUP_launch_HCPF3", "CUP_launch_PzF3", "CUP_launch_BF3"];
@@ -184,7 +186,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo", "rhs_weap_maaws"];
@@ -199,9 +201,9 @@ if (_condition in ["HAT"]) then
 };
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
 	_availableMagazines = [];
@@ -215,9 +217,9 @@ if (_condition in ["ENG"]) then
 };
 
 // Rotary Wing Pilot
-if (_condition in ["RWP"]) then
+if (_condition && _role in ["RWP"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Fleck_Overalls_Pilot"];
 	_availableWeapons = ["CUP_smg_MP5A5", "hgun_Pistol_Signal_F"];
 	_availableMagazines = ["CUP_30Rnd_9x19_MP5", "6Rnd_GreenSignal_F", "6Rnd_RedSignal_F"];
@@ -231,9 +233,9 @@ if (_condition in ["RWP"]) then
 };
 
 // Fixed Wing Pilot
-if (_condition in ["FWP"]) then
+if (_condition && _role in ["FWP"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Fleck_Overalls_Pilot"];
 	_availableWeapons = ["CUP_smg_MP5A5", "hgun_Pistol_Signal_F"];
 	_availableMagazines = ["CUP_30Rnd_9x19_MP5", "6Rnd_GreenSignal_F", "6Rnd_RedSignal_F"];
@@ -247,7 +249,7 @@ if (_condition in ["FWP"]) then
 };
 
 // EOD  , HAS TO BE SET AS EOD INSIDE 3DEN EDITOR THROUGH ACE.
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
@@ -264,7 +266,7 @@ if (_condition in ["ENG"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

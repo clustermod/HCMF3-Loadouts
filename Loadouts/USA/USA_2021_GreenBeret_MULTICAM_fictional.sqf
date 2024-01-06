@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -28,7 +30,7 @@ List of Weapons for crates:
 "launch_MRAWS_green_F"
 */
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE"];
@@ -41,7 +43,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL"]) then
+if (_condition && _role in ["SL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE"];
@@ -56,9 +58,9 @@ if (_condition in ["SL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE"];
 	_availableMagazines = [];
@@ -72,7 +74,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_MK46_Mod1_Desert"];
@@ -87,7 +89,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m240B"];
@@ -102,7 +104,7 @@ if (_condition in ["MMG"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp"];
@@ -117,7 +119,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE", "launch_MRAWS_green_F"];
@@ -132,7 +134,7 @@ if (_condition in ["HAT"]) then
 };
 
 // DMR
-if (_condition in ["DMR"]) then
+if (_condition && _role in ["DMR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR25_tan"];
@@ -147,7 +149,7 @@ if (_condition in ["DMR"]) then
 };
 
 // EOD
-if (_condition in ["EOD"]) then
+if (_condition && _role in ["EOD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_SR16_CQB_Mod2_CTR_FDE", "Tier1_SR16_Carbine_Mod2_CTR_FDE"];
@@ -164,7 +166,7 @@ if (_condition in ["EOD"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

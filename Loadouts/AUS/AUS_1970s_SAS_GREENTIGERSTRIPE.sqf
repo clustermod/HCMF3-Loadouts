@@ -1,5 +1,8 @@
-params["_role"];
-private["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
+private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
 private _defItems = ["ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie"];
@@ -20,7 +23,7 @@ private _defFacewear = ["G_Nomex_2_lang", "G_simc_US_Bandoleer_556", "G_simc_US_
 //
 
 // Rifleman
-if (_role == "RFL") then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["uns_l2a1_shorty", "uns_l1a1"];
 	_availableAttachments = [];
@@ -34,7 +37,7 @@ if (_role == "RFL") then {
 };
 
 // Team leader
-if (_role == "SL") then {
+if (_condition && _role in ["SL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["uns_l2a1_shorty", "uns_l1a1"];
 	_availableAttachments = [];
@@ -48,8 +51,8 @@ if (_role == "SL") then {
 };
 
 // Medic
-if (_role == "MED") then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["uns_l2a1_shorty", "uns_l1a1"];
 	_availableAttachments = [];
@@ -63,7 +66,7 @@ if (_role == "MED") then {
 };
 
 // MMG
-if (_role == "MMG") then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = [];
 	_availableAttachments = [];
@@ -77,7 +80,7 @@ if (_role == "MMG") then {
 };
 
 // Grenadier
-if (_role == "GRD") then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["uns_l1a1gl"];
 	_availableAttachments = ["uns_b_mas49"];
@@ -90,18 +93,21 @@ if (_role == "GRD") then {
 	_availableFacewear = [];
 };
 
-// Return loadout arrays
+/* Loadout array that's passed back to kosherArsenal */
 [
-	"1.0", // loadout version
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Loadoutfile version */
+    "1.3",
+
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];

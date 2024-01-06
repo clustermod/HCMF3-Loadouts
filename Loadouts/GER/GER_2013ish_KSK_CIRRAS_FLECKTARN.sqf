@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -19,7 +21,7 @@ private _defAttachments = [];
 // Not 100% accurate. But accurate as it can get and still look good/acceptable inside Arma.
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS"];
@@ -34,7 +36,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS"];
@@ -49,10 +51,10 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-  [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
-	player setVariable ["ace_medical_medicclass", 2, true];
+  	[_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS"];
 	_availableMagazines = [];
@@ -66,7 +68,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["BWA3_MG4"];
@@ -81,7 +83,7 @@ if (_condition in ["AR"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_RIS_AG36"];
@@ -96,7 +98,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS"];
@@ -111,7 +113,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS", "CUP_launch_BF3", "CUP_launch_PzF3", "CUP_launch_HCPF3"];
@@ -126,7 +128,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG", "CUP_arifle_G36K_RIS"];
@@ -143,7 +145,7 @@ if (_condition in ["HAT"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

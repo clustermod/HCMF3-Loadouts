@@ -5,9 +5,10 @@
  * This does in no way support or endorse the unlawful war of agression against Ukraine by Russia.
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -23,7 +24,7 @@ private _defHeadgear = [];
 private _defFacewear = [];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white"];
@@ -37,7 +38,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_GP34_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white"];
@@ -51,8 +52,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white"];
@@ -66,7 +67,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_RPK74M_top_rail", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -80,7 +81,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* MMG */
-if (_condition in ["MMG"]) then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_lmg_Pecheneg_top_rail", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhs_acc_1p87"];
@@ -95,7 +96,7 @@ if (_condition in ["MMG"]) then {
 
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_GP34_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white"];
@@ -109,7 +110,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* MAT */
-if (_condition in ["MAT"]) then {
+if (_condition && _role in ["MAT"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_black","rhs_weap_rpg7", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white", "rhs_acc_pgo7v3", "rhs_acc_1pn93_2"];
@@ -123,7 +124,7 @@ if (_condition in ["MAT"]) then {
 };
 
 /* HAT */
-if (_condition in ["HAT"]) then {
+if (_condition && _role in ["HAT"]) then {
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_launch_Metis", "CUP_arifle_AK12_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white", "rhs_acc_pgo7v3", "rhs_acc_1pn93_2"];
@@ -137,8 +138,8 @@ if (_condition in ["HAT"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["Z_10", "Z_5", "Z_8", "Z_4", "ZZ_2", "vkpo"];
 	_availableWeapons = ["CUP_arifle_AK12_black", "rhs_tr8_periscope", "rhs_tr8_periscope_pip", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_pya"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "rhsusf_acc_t1_low", "rhs_acc_1p87", "cup_optic_1p87_1p90_blk", "cup_optic_1p87_ris", "age_inforce_white"];
@@ -152,8 +153,8 @@ if (_condition in ["ENG"]) then {
 };
 
 /* Pilot */
-if (_condition in ["PLT"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["PLT"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["Z_P_1", "Z_P_2"];
 	_availableWeapons = ["CUP_arifle_AKS74U"];
 	_availableAttachments = [];
@@ -167,8 +168,8 @@ if (_condition in ["PLT"]) then {
 };
 
 /* Armor Crewman */
-if (_condition in ["CRW"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["CRW"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["rhs_uniform_emr_patchless"];
 	_availableWeapons = ["rhs_weap_aks74n_2"];
 	_availableAttachments = [];
@@ -182,8 +183,8 @@ if (_condition in ["CRW"]) then {
 };
 
 /* Armor Crew Commander, Tank Commander */
-if (_condition in ["CRWC"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["CRWC"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["rhs_uniform_emr_patchless"];
 	_availableWeapons = ["rhs_weap_aks74n_2"];
 	_availableAttachments = [];
@@ -200,7 +201,7 @@ if (_condition in ["CRWC"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

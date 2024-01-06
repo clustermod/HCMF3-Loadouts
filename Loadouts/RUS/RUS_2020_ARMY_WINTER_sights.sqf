@@ -1,6 +1,9 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
+
 // Define default gear
 private _defItems = ["kat_guedel", "ACE_wirecutter", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch"];
 private _defMagazines = ["rhs_GRD40_Green", "rhs_GRD40_Red", "rhs_VG40OP_red", "rhs_VG40OP_green", "rhs_VG40TB",  "rhs_VOG25", "rhs_VOG25P", "murshun_cigs_matches", "murshun_cigs_cigpack", "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK74M_M", "CUP_30Rnd_545x39_AK74_plum_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"];
@@ -18,7 +21,7 @@ private _defAttachments = [];
 
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
@@ -33,7 +36,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader / Squad leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_top_rail"];
@@ -48,9 +51,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
 	_availableMagazines = [];
@@ -64,7 +67,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["LMG"]) then
+if (_condition && _role in ["LMG"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_RPK74M_top_rail"];
@@ -79,7 +82,7 @@ if (_condition in ["LMG"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_lmg_Pecheneg_top_rail"];
@@ -94,7 +97,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_top_rail"];
@@ -109,7 +112,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail", "CUP_launch_RPG26", "rhs_weap_rpg26"];
@@ -124,7 +127,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail", "rhs_weap_rpg7"];
@@ -139,7 +142,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
@@ -154,9 +157,9 @@ if (_condition in ["HAT"]) then
 };
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
 	_availableMagazines = [];
@@ -170,7 +173,7 @@ if (_condition in ["ENG"]) then
 };
 
 // JTAC
-if (_condition in ["JTAC"]) then
+if (_condition && _role in ["JTAC"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_top_rail"];
@@ -185,7 +188,7 @@ if (_condition in ["JTAC"]) then
 };
 
 // Marksman
-if (_condition in ["MRK"]) then
+if (_condition && _role in ["MRK"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["rhs_weap_svdp"];
@@ -200,7 +203,7 @@ if (_condition in ["MRK"]) then
 };
 
 // Breacher
-if (_condition in ["BRC"]) then
+if (_condition && _role in ["BRC"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
@@ -215,7 +218,7 @@ if (_condition in ["BRC"]) then
 };
 
 // High Value Target
-if (_condition in ["HVT"]) then
+if (_condition && _role in ["HVT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -230,7 +233,7 @@ if (_condition in ["HVT"]) then
 };
 
 // Very Important Person
-if (_condition in ["VIP"]) then
+if (_condition && _role in ["VIP"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -245,7 +248,7 @@ if (_condition in ["VIP"]) then
 };
 
 // Rotary Wing Pilot
-if (_condition in ["RWP"]) then
+if (_condition && _role in ["RWP"]) then
 {
 	_availableUniforms = ["rhs_uniform_df15", "rhs_uniform_df15_tan"];
 	_availableWeapons = ["rhs_weap_aks74u"];
@@ -260,7 +263,7 @@ if (_condition in ["RWP"]) then
 };
 
 // Fixed Wing Pilot
-if (_condition in ["FWP"]) then
+if (_condition && _role in ["FWP"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_aks74u"];
@@ -275,7 +278,7 @@ if (_condition in ["FWP"]) then
 };
 
 // EOD
-if (_condition in ["EOD"]) then
+if (_condition && _role in ["EOD"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Winter"];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail"];
@@ -292,7 +295,7 @@ if (_condition in ["EOD"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -21,7 +23,7 @@ private _defAttachments = [];
 
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M", "CUP_arifle_AK74M_desert"];
@@ -36,7 +38,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M", "CUP_arifle_AK74M_GL", "CUP_arifle_AK74M_GL_desert", "CUP_arifle_AK74M_desert"];
@@ -51,9 +53,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert", "CUP_arifle_AK74M_desert"];
 	_availableWeapons = ["CUP_arifle_AK74M"];
 	_availableMagazines = [];
@@ -67,7 +69,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_RPK74"];
@@ -82,7 +84,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_lmg_PKM"];
@@ -97,7 +99,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL", "CUP_arifle_AK74M_GL_desert"];
@@ -112,7 +114,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M", "rhs_weap_rpg26", "CUP_arifle_AK74M_desert"];
@@ -128,7 +130,7 @@ if (_condition in ["LAT"]) then
 
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M", "rhs_weap_rpg7", "CUP_arifle_AK74M_desert"];
@@ -143,7 +145,7 @@ if (_condition in ["HAT"]) then
 };
 
 // EOD
-if (_condition in ["EOD"]) then
+if (_condition && _role in ["EOD"]) then
 {
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert"];
 	_availableWeapons = ["CUP_arifle_AK74M", "CUP_arifle_AK74M_desert"];
@@ -160,9 +162,9 @@ if (_condition in ["EOD"]) then
 
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_O_RUS_Ratnik_Desert", "CUP_arifle_AK74M_desert"];
 	_availableWeapons = ["CUP_arifle_AK74M"];
 	_availableMagazines = ["rhs_mine_ozm72_c_mag", "rhs_mine_tm62m_mag", "CUP_MineE_M", "CUP_TimeBomb_M", "CUP_PipeBomb_M"];
@@ -176,7 +178,7 @@ if (_condition in ["ENG"]) then
 };
 
 // Rotary Wing Pilot
-if (_condition in ["RWP"]) then
+if (_condition && _role in ["RWP"]) then
 {
 	_availableUniforms = ["rhs_uniform_df15_tan"];
 	_availableWeapons = ["CUP_arifle_AKS74U", "rhs_weap_rsp30_green"];
@@ -191,7 +193,7 @@ if (_condition in ["RWP"]) then
 };
 
 // Fixed Wing Pilot
-if (_condition in ["FWP"]) then
+if (_condition && _role in ["FWP"]) then
 {
 	_availableUniforms = ["rhs_uniform_df15_tan"];
 	_availableWeapons = ["CUP_arifle_AKS74U", "rhs_weap_rsp30_green"];
@@ -208,7 +210,7 @@ if (_condition in ["FWP"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

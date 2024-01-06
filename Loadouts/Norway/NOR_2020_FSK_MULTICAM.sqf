@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -20,7 +22,7 @@ private _defAttachments = [];
 // WIP
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["n_hk416n_black"];
@@ -35,7 +37,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhsusf_bino_lrf_Vector21", "n_hk416n_black"];
@@ -50,10 +52,10 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-  	[player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
-	player setVariable ["ace_medical_medicclass", 2, true];
+  	[_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["n_hk416n_black"];
 	_availableMagazines = [];
@@ -67,7 +69,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_minimi_para_railed"];
@@ -82,7 +84,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -97,7 +99,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["n_hk416n_m320_black"];
@@ -112,7 +114,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m72a7", "n_hk416n_m320_black"];
@@ -127,7 +129,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["launch_MRAWS_olive_F", "n_hk416n_m320_black"];
@@ -142,7 +144,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["UK3CB_BAF_Javelin_Slung_Tube", "UK3CB_BAF_Javelin_CLU", "n_hk416n_m320_black"];
@@ -157,7 +159,7 @@ if (_condition in ["HAT"]) then
 };
 
 // EOD
-if (_condition in ["EOD"]) then
+if (_condition && _role in ["EOD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["n_hk416n_m320_black"];
@@ -173,9 +175,9 @@ if (_condition in ["EOD"]) then
 
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["n_hk416n_m320_black"];
 	_availableMagazines = [];
@@ -191,7 +193,7 @@ if (_condition in ["ENG"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

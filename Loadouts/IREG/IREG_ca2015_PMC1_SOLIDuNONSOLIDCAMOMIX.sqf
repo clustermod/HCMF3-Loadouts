@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -25,7 +27,7 @@ private _defAttachments = [];
 
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
@@ -40,7 +42,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris", "rhsusf_bino_m24", "rhssaf_zrak_rd7j"];
@@ -55,9 +57,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
 	_availableMagazines = [];
@@ -71,7 +73,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_m249_pip"];
@@ -86,7 +88,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = [];
@@ -101,7 +103,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = [];
@@ -116,7 +118,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_rpg75", "rhs_weap_savz58v_ris"];
@@ -131,7 +133,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
@@ -146,7 +148,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
@@ -161,9 +163,9 @@ if (_condition in ["HAT"]) then
 };
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_I_GUE_Anorak_02", "TRYK_U_Bts_PCUODs", "TRYK_U_Bts_Wood_PCUs", "TRYK_U_B_ODTAN_Tshirt", "TRYK_U_B_ODTAN", "CUP_I_B_PARA_Unit_1", "TRYK_U_pad_hood_Blod", "TRYK_U_pad_hood_tan", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_odBK", "TRYK_U_pad_hood_Cl", "TRYK_U_hood_nc", "TRYK_hoodie_Wood", "TRYK_U_B_Wood_PCUs"];
 	_availableWeapons = ["rhs_weap_savz58v_ris"];
 	_availableMagazines = [];
@@ -187,7 +189,7 @@ if (_condition in ["ENG"]) then
 //	!!!		very dependent on the mission setting.	!!!
 
 // VIP [unarmed | no protective equipment]
-if (_condition in ["VIP_UNPROTECTED"]) then
+if (_condition && _role in ["VIP_UNPROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -202,7 +204,7 @@ if (_condition in ["VIP_UNPROTECTED"]) then
 };
 
 // VIP [ unarmed | with protective equipment]
-if (_condition in ["VIP_PROTECTED"]) then
+if (_condition && _role in ["VIP_PROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -217,7 +219,7 @@ if (_condition in ["VIP_PROTECTED"]) then
 };
 
 // PRESS VIP [ unarmed | with protective equipment]
-if (_condition in ["PRESSVIP_PROTECTED"]) then
+if (_condition && _role in ["PRESSVIP_PROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -238,7 +240,7 @@ if (_condition in ["PRESSVIP_PROTECTED"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

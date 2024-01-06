@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -17,7 +19,7 @@ private _defAttachments = [];
 // Made by Per_von_Harke
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
@@ -30,7 +32,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Zeus
-if (_condition in ["ZEUS"]) then
+if (_condition && _role in ["ZEUS"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["CUP_arifle_G36A"];
@@ -47,7 +49,7 @@ if (_condition in ["ZEUS"]) then
 
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_Vector21Nite", "rhsusf_bino_klrt_Vector21", "CUP_arifle_G36A"];
@@ -62,9 +64,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableMagazines = ["CUP_30Rnd_556x45_G36"];
@@ -78,7 +80,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_MG3"];
@@ -93,7 +95,7 @@ if (_condition in ["AR"]) then
 };
 
 // MMG
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = [];
@@ -108,7 +110,7 @@ if (_condition in ["MMG"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AG36"];
@@ -123,7 +125,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
@@ -138,7 +140,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
@@ -153,7 +155,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT with Carl Gustav
-if (_condition in ["HAT1"]) then
+if (_condition && _role in ["HAT1"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A", "CUP_launch_MAAWS", "launch_MRAWS_green_rail_F"];
@@ -168,7 +170,7 @@ if (_condition in ["HAT1"]) then
 };
 
 // HAT with Panzerfaust 3 , has both versions.
-if (_condition in ["HAT2"]) then
+if (_condition && _role in ["HAT2"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A", "CUP_launch_HCPF3", "CUP_launch_PzF3"];
@@ -183,9 +185,9 @@ if (_condition in ["HAT2"]) then
 };
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableMagazines = ["CUP_30Rnd_556x45_G36"];
@@ -201,7 +203,7 @@ if (_condition in ["ENG"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

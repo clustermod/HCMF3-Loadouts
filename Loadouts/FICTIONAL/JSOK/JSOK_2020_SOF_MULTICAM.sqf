@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -19,7 +21,7 @@ private _defAttachments = [];
 //
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
@@ -34,7 +36,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL"]) then
+if (_condition && _role in ["SL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhsusf_bino_lrf_Vector21", "rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
@@ -49,10 +51,10 @@ if (_condition in ["SL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-  [player, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
-	player setVariable ["ace_medical_medicclass", 2, true];
+  [_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
 	_availableMagazines = [];
@@ -66,7 +68,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m249_pip_S_para"];
@@ -81,7 +83,7 @@ if (_condition in ["AR"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m4a1_blockII_M203_d", "rhs_weap_m4a1_blockII_M203", "rhs_weap_mk18_m320"];
@@ -96,7 +98,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp", "rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
@@ -111,7 +113,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_maaws", "rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
@@ -126,7 +128,7 @@ if (_condition in ["MAT"]) then
 };
 
 // Explosive Specialist
-if (_condition in ["ESP"]) then
+if (_condition && _role in ["ESP"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
@@ -142,9 +144,9 @@ if (_condition in ["ESP"]) then
 
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_mk18", "rhs_weap_mk18_KAC", "rhs_weap_mk18_d", "rhs_weap_mk18_KAC_d", "rhs_weap_m4a1_blockII", "rhs_weap_m4a1_blockII_KAC", "rhs_weap_m4a1_blockII_d", "rhs_weap_m4a1_blockII_KAC_d"];
 	_availableMagazines = [];
@@ -159,19 +161,19 @@ if (_condition in ["ENG"]) then
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-	/* Loadoutfile version */
-	"1.2",
+    /* Loadoutfile version */
+    "1.3",
 
-	/* Allowed Equipment array */
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];
