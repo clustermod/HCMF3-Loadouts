@@ -1,0 +1,42 @@
+name: Error Report
+description: Create a report to help me improve the loadouts
+labels: ["kind/error"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to report a issue.
+  - type: checkboxes
+    attributes:
+      label: I ACKNOWLEDGE THE FOLLOWING BEFORE PROCEEDING
+      options:
+        - label: If I list multiple issues/concerns in this one issue, the team may close my issue without further explanation or engagement.
+          required: true
+        - label: If I write an issue that has duplicates, the team may close my issue without further explanation or engagement (and without necessarily spending time to find the exact duplicate ID number).
+          required: true
+        - label: If I leave the title incomplete when filing the issue, the team may close my issue without further explanation or engagement.
+          required: true
+        - label: If I file something completely blank in the body, the team may close my issue without further explanation or engagement.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the issue is. Please provide sources for your claims.
+      placeholder: Describe the error.
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Role(s)
+      description: CMF3 Role or roles issue occured with
+      placeholder: Leave blank if all or no roles showed the issue.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: additionalContext
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
