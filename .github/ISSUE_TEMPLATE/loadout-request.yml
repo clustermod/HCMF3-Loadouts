@@ -1,0 +1,41 @@
+name: Loadout Request
+description: Suggest an idea for a new loadout
+labels: ["kind/loadout request"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to report a bug with our Framework.
+  - type: checkboxes
+    attributes:
+      label: I ACKNOWLEDGE THE FOLLOWING BEFORE PROCEEDING
+      options:
+        - label: If I list multiple loadouts in this one issue, the team may close my request without further explanation or engagement.
+          required: true
+        - label: If I write a loadout that has duplicates, the team may close my request without further explanation or engagement (and without necessarily spending time to find the exact duplicate ID number).
+          required: true
+        - label: If I leave the title incomplete when filing the request, the team may close my request without further explanation or engagement.
+          required: true
+        - label: If I file something completely blank in the body, the team may close my request without further explanation or engagement.
+          required: true
+  - type: textarea
+    id: parameters
+    attributes:
+      label: Loadout Parameters *
+      description: Is your loadout request related to a certain scenario, unit or timeframe?
+      placeholder: Ex. I need unit ____ in camo ____ or fitting for the environment ____ in this ____ time period.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Loadout *
+      description: A clear and concise description of what you want to have in the loadout (mind that is has to be as realistic as possible within the bounds of the current CC mod pack)
+      placeholder: Describe the loadout you like to have
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: A clear and concise description of any alternative solutions for gear not in a mod pack. Having loadouts with mods not present in the CC mod pack will be very rare. 
+  - type: textarea
+    id: additionalContext
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.
