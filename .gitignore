@@ -1,0 +1,10 @@
+# Editor
+.vscode
+!tools/.vscode
+
+# Tool cache
+__pycache__
+
+# Todos and changelogs
+TODO.md
+CHANGELOG.md
