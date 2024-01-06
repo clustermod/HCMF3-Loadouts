@@ -17,6 +17,9 @@ Though I tried to not miss any important items in any loadout it is recommended 
 Or at least go through each slot you have and check if everyone gets a primary weapon so that they won't get soft-locked in the arsenal. 
 (The last issue has been resolved with newer versions of CMF. It is still advised to do so anyway.)
 
+## Loadouts
+[[ List of loadouts ]](https://github.com/clustermod/Harks-CMF3-Loadouts/blob/standardizationExample/loadouts/README.md)
+
 ## How to install
 You will need [CMF3](https://github.com/clustermod/CMF3) for this to work.                                                                           
 Git clone the repository or download the zip (extract) to any folder.                                                         
