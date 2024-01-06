@@ -1,3 +1,12 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Escape from Tarkov Inspired loadout
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
 params ["_role", "_unit"];
 
 /* Custom additional condition */

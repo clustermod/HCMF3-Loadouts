@@ -1,8 +1,8 @@
 /*
- * Author: [Author]
- * [Description]
+ * Author: Eric
+ * 1961 Katangese Mercenaries of the Congo
  *
- * [Modpack Version]
+ * cc_core_v5
  */
 
 /* Get the unit's role */
