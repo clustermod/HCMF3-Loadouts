@@ -6,9 +6,10 @@
  * [Description]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_common_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,7 +25,7 @@ private _defHeadgear = [];
 private _defFacewear = [];
 
 /* Crewman */
-if (_condition in ["CRW"]) then {
+if (_condition && _role in ["CRW"]) then {
 	_availableUniforms = ["BWA3_Uniform_Crew_Fleck"];
 	_availableWeapons = ["BWA3_MP7"];
 	_availableAttachments = ["BWA3_optic_RSAS_riser"];
@@ -38,7 +39,7 @@ if (_condition in ["CRW"]) then {
 };
 
 /* Tank Commander */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = ["BWA3_Uniform_Crew_Fleck"];
 	_availableWeapons = ["BWA3_MP7", "rhssaf_zrak_rd7j"];
 	_availableAttachments = ["BWA3_optic_RSAS_riser"];
@@ -52,9 +53,9 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic/Engineer Role for support platoon if done by players. */
-if (_condition in ["MEDENGI"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["MEDENGI"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_2"];
 	_availableWeapons = ["BWA3_G36KA3", "BWA3_P8"];
 	_availableAttachments = ["BWA3_optic_RSAS_brown", "BWA3_acc_VarioRay_irlaser"];
@@ -70,7 +71,7 @@ if (_condition in ["MEDENGI"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

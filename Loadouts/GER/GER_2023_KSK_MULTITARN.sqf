@@ -6,9 +6,10 @@
  * [Loadout for modern KSK in the year of 2023. Not completly correct due to mod limitations.]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,7 +25,7 @@ private _defHeadgear = ["BWA3_OpsCore_FastMT_SOF_Multi"];
 private _defFacewear = ["BWA3_G_Combat_black", "BWA3_G_Combat_clear", "CUP_RUS_Balaclava_rgr", "G_AirPurifyingRespirator_01_F"];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -38,7 +39,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR", "BWA3_P2A1", "BWA3_Vector", "ACE_Vector"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -52,8 +53,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -67,7 +68,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* Machinegunner */
-if (_condition in ["MMG"]) then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["BWA3_MG5_tan"];
 	_availableAttachments = ["bwa3_optic_zo4x30i_microt2_sand", "bwa3_acc_varioray_irlaser", "rhsusf_acc_su230a_c"];
@@ -81,7 +82,7 @@ if (_condition in ["MMG"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR", "rhs_weap_M320"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -95,7 +96,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* LAT */
-if (_condition in ["LAT"]) then {
+if (_condition && _role in ["LAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR", "BWA3_RGW90_Loaded", "BWA3_PzF3_Tandem_Loaded"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -109,8 +110,8 @@ if (_condition in ["LAT"]) then {
 };
 
 /* Engineer and EOD */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["Tier1_HK416D145_SMR_CTR"];
 	_availableAttachments = ["tier1_exps3_0_g33_tano_up", "rhsusf_acc_grip2_tan", "rhsusf_acc_rotex5_grey", "tier1_145_ngal_m600v_fl", "tier1_145_ngal_m300c_fl"];
@@ -126,7 +127,7 @@ if (_condition in ["ENG"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

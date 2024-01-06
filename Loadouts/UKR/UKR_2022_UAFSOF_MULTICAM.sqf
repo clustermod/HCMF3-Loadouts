@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -16,7 +18,7 @@ private _defFacewear = ["CUP_G_Oakleys_Clr", "CUP_G_Oakleys_Drk", "rhsusf_oakley
 private _defAttachments = [];
 
 // Rifleman
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = ["rhsusf_acc_g33_xps3", "rhsusf_acc_g33_t1", "rhsusf_acc_eotech", "rhsusf_acc_t1_low", "rhsusf_acc_t1_high", "rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15side_bk", "tier1_exps3_0_black", "tier1_exps3_0_3xmag_black_up", "cup_acc_anpeq_15_top_flashlight_black_l", "rhs_acc_dtk1", "rhs_acc_ak5", "rhs_acc_grip_rk6", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_rvg_blk", "tier1_mcx_la5_m600v_black", "rhsusf_acc_rotex5_grey", "tier1_rvg_mlok_black", "tier1_mvg_mlok_black", "tier1_afg_mlok_black", "tier1_dd_mlok_vfg_black", "tier1_bcm_gunfighter_vg_black"];
@@ -30,7 +32,7 @@ if (_condition in ["RFL"]) then {
 };
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = ["rhsusf_acc_g33_xps3", "rhsusf_acc_g33_t1", "rhsusf_acc_eotech", "rhsusf_acc_t1_low", "rhsusf_acc_t1_high", "rhsusf_acc_anpeq15side", "rhsusf_acc_anpeq15side_bk", "tier1_exps3_0_black", "tier1_exps3_0_3xmag_black_up", "cup_acc_anpeq_15_top_flashlight_black_l", "rhs_acc_dtk1", "rhs_acc_ak5", "rhs_acc_grip_rk6", "rhsusf_acc_grip2", "rhsusf_acc_rvg_de", "rhsusf_acc_rvg_blk", "tier1_mcx_la5_m600v_black", "rhsusf_acc_rotex5_grey", "tier1_rvg_mlok_black", "tier1_mvg_mlok_black", "tier1_afg_mlok_black", "tier1_dd_mlok_vfg_black", "tier1_bcm_gunfighter_vg_black"];
@@ -44,8 +46,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 // Medic
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = [];
@@ -59,7 +61,7 @@ if (_condition in ["MED"]) then {
 };
 
 // MMG
-if (_condition in ["MMG"]) then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_PKM_top_rail_B50_vfg"];
 	_availableAttachments = [];
@@ -73,7 +75,7 @@ if (_condition in ["MMG"]) then {
 };
 
 // HAT
-if (_condition in ["HAT"]) then {
+if (_condition && _role in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_fgm148", "arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = [];
@@ -87,8 +89,8 @@ if (_condition in ["HAT"]) then {
 };
 
 // Engineer
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["arifle_MSBS65_sand_F", "arifle_MSBS65_black_F", "rhs_weap_ak74m_zenitco01_b33", "CUP_arifle_AKS74U_railed", "CUP_arifle_AK12_black"];
 	_availableAttachments = [];
@@ -104,7 +106,7 @@ if (_condition in ["ENG"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

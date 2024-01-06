@@ -1,5 +1,8 @@
 /* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -17,7 +20,7 @@ private _defAttachments = [];
 // Loadout made by Per_von_Harke
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_M4A3_black", "CUP_arifle_M4A1", "CUP_arifle_M4A1_black"];
@@ -32,7 +35,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_M4A3_black", "CUP_arifle_M4A1", "CUP_arifle_M4A1_black"];
@@ -47,9 +50,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_M4A3_black", "CUP_arifle_M4A1", "CUP_arifle_M4A1_black"];
 	_availableMagazines = [];
@@ -63,7 +66,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW / LMG
-if (_condition in ["LMG"]) then
+if (_condition && _role in ["LMG"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_m249_pip2"];
@@ -78,7 +81,7 @@ if (_condition in ["LMG"]) then
 };
 
 // Designated Markman
-if (_condition in ["DMR"]) then
+if (_condition && _role in ["DMR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_sr25", "rhsusf_bino_leopold_mk4"];
@@ -106,7 +109,7 @@ if (_condition in ["DMR"]) then
 //      won't become a problem! :)
 
 // VIP [unarmed | no protective equipment]
-if (_condition in ["VIP_UNPROTECTED"]) then
+if (_condition && _role in ["VIP_UNPROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -121,7 +124,7 @@ if (_condition in ["VIP_UNPROTECTED"]) then
 };
 
 // VIP [ unarmed | with protective equipment]
-if (_condition in ["VIP_PROTECTED"]) then
+if (_condition && _role in ["VIP_PROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -136,7 +139,7 @@ if (_condition in ["VIP_PROTECTED"]) then
 };
 
 // PRESS VIP [ unarmed | with protective equipment]
-if (_condition in ["PRESSVIP_PROTECTED"]) then
+if (_condition && _role in ["PRESSVIP_PROTECTED"]) then
 {
 	_availableUniforms = ["U_Marshal"];
 	_availableWeapons = [];
@@ -153,7 +156,7 @@ if (_condition in ["PRESSVIP_PROTECTED"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

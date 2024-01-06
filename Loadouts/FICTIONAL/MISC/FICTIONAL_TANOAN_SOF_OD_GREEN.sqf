@@ -6,9 +6,10 @@
  * [OD Green Special Operations Force made for a mission on Tanoa or any comparable jungle map.]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,7 +25,7 @@ private _defHeadgear = ["rhsusf_opscore_fg_pelt_cam"];
 private _defFacewear = ["UK3CB_G_Balaclava2_DES", "CUP_G_ESS_BLK", "CUP_G_PMC_Facewrap_Black_Glasses_Dark", "CUP_G_PMC_Facewrap_Tropical_Glasses_Dark", "UK3CB_G_Tactical_Black"];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_CZ_BREN2_556_11"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "bwa3_acc_varioray_irlaser_black", "optic_hamr"];
@@ -38,7 +39,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_CZ_BREN2_556_11", "rhsusf_bino_m24", "BWA3_P2A1"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "bwa3_acc_varioray_irlaser_black", "optic_hamr"];
@@ -52,8 +53,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_CZ_BREN2_556_11"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "bwa3_acc_varioray_irlaser_black", "optic_hamr"];
@@ -67,7 +68,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_m249_pip_S"];
 	_availableAttachments = ["tier1_exps3_0_black", "cup_acc_llm_black", "tier1_saw_bipod_kac"];
@@ -81,7 +82,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* HAT */
-if (_condition in ["HAT"]) then {
+if (_condition && _role in ["HAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_CZ_BREN2_556_11", "launch_MRAWS_green_rail_F"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "bwa3_acc_varioray_irlaser_black", "optic_hamr"];
@@ -95,8 +96,8 @@ if (_condition in ["HAT"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_CZ_BREN2_556_11"];
 	_availableAttachments = ["rhsusf_acc_t1_high", "bwa3_acc_varioray_irlaser_black", "optic_hamr"];
@@ -111,19 +112,19 @@ if (_condition in ["ENG"]) then {
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-	/* Loadoutfile version */
-	"1.2",
+    /* Loadoutfile version */
+    "1.3",
 
-	/* Allowed Equipment array */
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];

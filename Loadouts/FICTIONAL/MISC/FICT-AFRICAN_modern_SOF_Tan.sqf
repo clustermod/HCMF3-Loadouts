@@ -1,5 +1,8 @@
 /* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -21,7 +24,7 @@ private _defAttachments = [];
 // All loadouts are pretty light for long distance travel in deserts.
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_afg_desert", "CUP_arifle_AK74M_railed_desert"];
@@ -36,7 +39,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_afg_desert", "CUP_arifle_AK74M_railed_desert", "rhssaf_zrak_rd7j"];
@@ -51,9 +54,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_afg_desert", "CUP_arifle_AK74M_railed_desert"];
 	_availableMagazines = [];
@@ -67,7 +70,7 @@ if (_condition in ["MED"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_railed_desert"];
@@ -82,7 +85,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_afg_desert", "CUP_arifle_AK74M_railed_desert", "rhs_weap_rpg26"];
@@ -97,7 +100,7 @@ if (_condition in ["LAT"]) then
 };
 
 // Medium Machinegunner
-if (_condition in ["MMG"]) then
+if (_condition && _role in ["MMG"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_Pecheneg_desert"];
@@ -114,19 +117,19 @@ if (_condition in ["MMG"]) then
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-	/* Loadoutfile version */
-	"1.2",
+    /* Loadoutfile version */
+    "1.3",
 
-	/* Allowed Equipment array */
-	[
-		(_availableBackpacks + _defBackpacks),
-		(_availableVests + _defVests),
-		(_availableUniforms + _defUniforms),
-		(_availableFacewear + _defFacewear),
-		(_defHeadgear + _availableHeadgear),
-		(_defAttachments + _availableAttachments),
-		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-		(_availableWeapons + _defWeapons),
-		(_availableItems + _defItems)
-	]
+    /* Allowed Equipment array */
+    [
+        (_availableBackpacks + _defBackpacks),
+        (_availableVests + _defVests),
+        (_availableUniforms + _defUniforms),
+        (_availableFacewear + _defFacewear),
+        (_defHeadgear + _availableHeadgear),
+        (_defAttachments + _availableAttachments),
+        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+        (_availableWeapons + _defWeapons),
+        (_availableItems + _defItems)
+    ]
 ];

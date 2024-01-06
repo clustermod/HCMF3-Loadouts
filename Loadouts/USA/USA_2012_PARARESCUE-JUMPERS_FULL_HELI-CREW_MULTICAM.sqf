@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -24,7 +26,7 @@ private _defAttachments = [];
 // Note that the RHS vests could be replaced with FIR Helicrew vests. But those look ugly as f*ck in my opinion.
 
 // Helicopter Pilot
-if (_condition in ["RWP"]) then
+if (_condition && _role in ["RWP"]) then
 {
 	_availableUniforms = ["rhs_uniform_acu_oefcp"];
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle"];
@@ -39,7 +41,7 @@ if (_condition in ["RWP"]) then
 };
 
 // Door Gunner
-if (_condition in ["DGNR"]) then
+if (_condition && _role in ["DGNR"]) then
 {
 	_availableUniforms = ["rhs_uniform_acu_oefcp"];
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle"];
@@ -54,9 +56,9 @@ if (_condition in ["DGNR"]) then
 };
 
 // Helibourne Medic
-if (_condition in ["HMED"]) then
+if (_condition && _role in ["HMED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_CRYE_G3C_MC_US_V2"];
 	_availableWeapons = ["rhs_weap_m4a1_carryhandle_mstock", "rhsusf_weap_m9"];
 	_availableMagazines = ["rhsusf_mag_15Rnd_9x19_FMJ", "rhsusf_mag_15Rnd_9x19_JHP", "rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"];
@@ -74,7 +76,7 @@ if (_condition in ["HMED"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

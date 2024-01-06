@@ -6,9 +6,10 @@
  * [Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.]
  *
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -27,7 +28,7 @@ private _defHeadgear = [];
 private _defFacewear = [];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_camo", "CUP_arifle_AK74M_railed_afg_camo"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -41,7 +42,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_camo", "CUP_arifle_AK74M_GL_railed_camo"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -55,8 +56,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_camo", "CUP_arifle_AK74M_railed_afg_camo"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -70,7 +71,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["rhs_weap_m249_pip_S", "rhs_weap_m240B", "BWA3_MG3", "CUP_lmg_Pecheneg_top_rail" ];
 	_availableAttachments = ["bwa3_bipod_mg3", "optic_tws_mg"];
@@ -84,7 +85,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_camo", "CUP_arifle_AK74M_GL_railed_camo"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -98,7 +99,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* LAT */
-if (_condition in ["LAT"]) then {
+if (_condition && _role in ["LAT"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_camo", "CUP_arifle_AK74M_railed_afg_camo", "rhs_weap_rpg7", "launch_NLAW_F"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -112,7 +113,7 @@ if (_condition in ["LAT"]) then {
 };
 
 /* MAT */
-if (_condition in ["MAT"]) then {
+if (_condition && _role in ["MAT"]) then {
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_camo", "CUP_arifle_AK74M_railed_afg_camo", "launch_MRAWS_green_rail_F", "rhs_weap_fgm148"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -126,8 +127,8 @@ if (_condition in ["MAT"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = ["LOP_U_UKR_Fatigue_Multicam"];
 	_availableWeapons = ["CUP_arifle_AK74M_railed_camo", "CUP_arifle_AK74M_railed_afg_camo"];
 	_availableAttachments = ["tier1_exps3_0_desert", "tier1_exps3_0_g33_desert_up", "rhsusf_acc_t1_high", "rhsusf_acc_mrds_c"];
@@ -143,7 +144,7 @@ if (_condition in ["ENG"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

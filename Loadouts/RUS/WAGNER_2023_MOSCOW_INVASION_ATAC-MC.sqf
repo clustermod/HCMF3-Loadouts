@@ -9,9 +9,10 @@
  * [Loadout insprired by the equipment visible during the coup of Wagner in 2023]
  * Roles: RFL, TL, PL, MED, MMG, GRD, MAT, ENG
  */
+params ["_role", "_unit"];
 
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -27,7 +28,7 @@ private _defHeadgear = ["rhsusf_opscore_rg_cover_pelt", "rhsusf_opscore_ut_pelt"
 private _defFacewear = ["G_Bandanna_oli", "G_Bandanna_blk", "G_Shades_Black", "CUP_G_RUS_Balaclava_Ratnik", "CUP_G_RUS_Balaclava_Ratnik_v2", "CUP_Beard_Black", "CUP_Beard_Blonde", "CUP_Beard_Brown", "CUP_G_ESS_BLK_Facewrap_Black"];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail_camo", "CUP_arifle_AK74M_railed", "CUP_arifle_AK74M_railed_afg", "CUP_arifle_AK74M_railed_afg_camo", "CUP_arifle_AK74M_railed_camo", "CUP_arifle_AKMN_railed", "CUP_arifle_AKMN_railed_afg"];
 	_availableAttachments = ["rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -41,7 +42,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Team leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_top_rail_camo", "CUP_arifle_AK74M_GL_top_rail", "CUP_arifle_AK74M_GL_railed", "CUP_arifle_AK74M_GL_camo"];
 	_availableAttachments = ["rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -55,8 +56,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail_camo", "CUP_arifle_AK74M_railed", "CUP_arifle_AK74M_railed_afg", "CUP_arifle_AK74M_railed_afg_camo", "CUP_arifle_AK74M_railed_camo", "CUP_arifle_AKMN_railed", "CUP_arifle_AKMN_railed_afg"];
 	_availableAttachments = ["rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -70,7 +71,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* MMG */
-if (_condition in ["MMG"]) then {
+if (_condition && _role in ["MMG"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_lmg_PKM_top_rail_B50_vfg", "CUP_lmg_Pecheneg_woodland", "CUP_lmg_Pecheneg_top_rail_B50_vfg"];
 	_availableAttachments = ["tier1_exps3_0_black", "cup_optic_1p63"];
@@ -84,7 +85,7 @@ if (_condition in ["MMG"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_GL_top_rail_camo", "CUP_arifle_AK74M_GL_top_rail", "CUP_arifle_AK74M_GL_railed", "CUP_arifle_AK74M_GL_camo"];
 	_availableAttachments = ["rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -98,7 +99,7 @@ if (_condition in ["GRD"]) then {
 };
 
 /* MAT */
-if (_condition in ["MAT"]) then {
+if (_condition && _role in ["MAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_igla", "rhs_weap_rpg7", "CUP_arifle_AK74M_top_rail_camo", "CUP_arifle_AK74M_railed", "CUP_arifle_AK74M_railed_afg", "CUP_arifle_AK74M_railed_afg_camo", "CUP_arifle_AK74M_railed_camo", "CUP_arifle_AKMN_railed", "CUP_arifle_AKMN_railed_afg"];
 	_availableAttachments = ["rhs_acc_pgo7v", "rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -112,8 +113,8 @@ if (_condition in ["MAT"]) then {
 };
 
 /* Engineer */
-if (_condition in ["ENG"]) then {
-	player setVariable ["ACE_IsEngineer", 2, true];
+if (_condition && _role in ["ENG"]) then {
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AK74M_top_rail_camo", "CUP_arifle_AK74M_railed", "CUP_arifle_AK74M_railed_afg", "CUP_arifle_AK74M_railed_afg_camo", "CUP_arifle_AK74M_railed_camo", "CUP_arifle_AKMN_railed", "CUP_arifle_AKMN_railed_afg"];
 	_availableAttachments = ["rhsusf_acc_t1_low", "tier1_exps3_0_black", "tier1_romeo4t_bcq_low_black", "tier1_romeo4t_bcq_black", "tier1_romeo4t_bcd_black", "rhs_acc_2dpzenit_ris"];
@@ -129,7 +130,7 @@ if (_condition in ["ENG"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

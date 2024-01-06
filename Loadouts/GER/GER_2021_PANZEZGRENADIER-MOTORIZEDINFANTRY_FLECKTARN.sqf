@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -20,7 +22,7 @@ private _defAttachments = [];
 //
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
@@ -35,7 +37,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["ACE_Vector", "BWA3_P2A1", "CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
@@ -50,9 +52,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
 	_availableMagazines = [];
@@ -66,7 +68,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["BWA3_MG5_tan", "BWA3_MG3"];
@@ -81,7 +83,7 @@ if (_condition in ["AR"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["CUP_arifle_G36A3_AG36"];
@@ -96,7 +98,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = [    "CUP_arifle_G36A3_grip", "CUP_arifle_G36A3", "BWA3_RGW90_Loaded"];
@@ -111,7 +113,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["BWA3_PzF3_Tandem_Loaded", "BWA3_Bunkerfaust_Loaded",     "CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
@@ -126,7 +128,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT - G2A Specilist
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["rhs_weap_fgm148",      "CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
@@ -141,7 +143,7 @@ if (_condition in ["HAT"]) then
 };
 
 // DMR
-if (_condition in ["DMR"]) then
+if (_condition && _role in ["DMR"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = [ "BWA3_Vector", "BWA3_G28"];
@@ -156,7 +158,7 @@ if (_condition in ["DMR"]) then
 };
 
 // Helicopter Pilot
-if (_condition in ["HPLT"]) then
+if (_condition && _role in ["HPLT"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Fleck_Overalls_Pilot", "BWA3_Uniform_Helipilot"];
 	_availableWeapons = ["CUP_smg_MP5A5"];
@@ -171,7 +173,7 @@ if (_condition in ["HPLT"]) then
 };
 
 // EOD
-if (_condition in ["EOD"]) then
+if (_condition && _role in ["EOD"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["ACE_VMH3", "ACE_VMM3", "CUP_arifle_G36A3_grip", "CUP_arifle_G36A3"];
@@ -186,7 +188,7 @@ if (_condition in ["EOD"]) then
 };
 
 // JTAC
-if (_condition in ["JTAC"]) then
+if (_condition && _role in ["JTAC"]) then
 {
 	_availableUniforms = ["CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3"];
 	_availableWeapons = ["CUP_arifle_G36KA3_afg", "CUP_Laserdesignator", "ACE_Vector", "rhs_weap_M320"];
@@ -203,7 +205,7 @@ if (_condition in ["JTAC"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

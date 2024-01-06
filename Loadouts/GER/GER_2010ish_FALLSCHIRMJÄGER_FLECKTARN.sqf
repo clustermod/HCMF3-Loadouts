@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 
@@ -21,7 +23,7 @@ private _defHeadgear = ["rhsusf_ach_bare_headset", "rhsusf_ach_bare_wood_headset
 private _defFacewear = ["CUP_G_RUS_Balaclava_Ratnik", "rhs_googles_clear", "CUP_G_ESS_BLK", "CUP_G_ESS_RGR"];
 
 /* Rifleman */
-if (_condition in ["RFL"]) then {
+if (_condition && _role in ["RFL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableAttachments = ["cup_optic_g36optics_holo_3d", "bwa3_acc_llm01_irlaser"];
@@ -35,7 +37,7 @@ if (_condition in ["RFL"]) then {
 };
 
 /* Squad Leader and Fireteam Leader */
-if (_condition in ["SL", "FTL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A", "BWA3_Vector", "BWA3_P2A1"];
 	_availableAttachments = ["cup_optic_g36optics_holo_3d", "bwa3_acc_llm01_irlaser"];
@@ -49,8 +51,8 @@ if (_condition in ["SL", "FTL"]) then {
 };
 
 /* Medic */
-if (_condition in ["MED"]) then {
-	player setVariable ["ace_medical_medicclass", 2, true];
+if (_condition && _role in ["MED"]) then {
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A"];
 	_availableAttachments = ["cup_optic_g36optics_holo_3d", "bwa3_acc_llm01_irlaser"];
@@ -64,7 +66,7 @@ if (_condition in ["MED"]) then {
 };
 
 /* Autorifleman */
-if (_condition in ["AR"]) then {
+if (_condition && _role in ["AR"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["BWA3_MG5_tan"];
 	_availableAttachments = ["bwa3_optic_zo4x30i_sand_pip"];
@@ -78,7 +80,7 @@ if (_condition in ["AR"]) then {
 };
 
 /* Anti-Tank */
-if (_condition in ["LAT"]) then {
+if (_condition && _role in ["LAT"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_G36A", "CUP_launch_BF3"];
 	_availableAttachments = [];
@@ -92,7 +94,7 @@ if (_condition in ["LAT"]) then {
 };
 
 /* Grenadier */
-if (_condition in ["GRD"]) then {
+if (_condition && _role in ["GRD"]) then {
 	_availableUniforms = [];
 	_availableWeapons = ["CUP_arifle_AG36"];
 	_availableAttachments = ["cup_optic_g36dualoptics_3d", "bwa3_acc_llm01_irlaser"];
@@ -108,7 +110,7 @@ if (_condition in ["GRD"]) then {
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[

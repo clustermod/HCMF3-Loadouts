@@ -1,5 +1,7 @@
-/* Get the unit's role */
-private _condition = player getVariable ["cmf_organization_role", "RFL"];
+params ["_role", "_unit"];
+
+/* Custom additional condition */
+private _condition = true;
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 // Define default gear
@@ -23,7 +25,7 @@ private _defAttachments = [];
 
 
 // Rifleman
-if (_condition in ["RFL"]) then
+if (_condition && _role in ["RFL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d", "ACE_Vector"];
@@ -38,7 +40,7 @@ if (_condition in ["RFL"]) then
 };
 
 // Team leader
-if (_condition in ["SL", "FTL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhsusf_bino_lerca_1200_tan", "rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d"];
@@ -53,9 +55,9 @@ if (_condition in ["SL", "FTL"]) then
 };
 
 // Medic
-if (_condition in ["MED"]) then
+if (_condition && _role in ["MED"]) then
 {
-	player setVariable ["ace_medical_medicclass", 2, true];
+	_unit setVariable ["ace_medical_medicclass", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d"];
 	_availableMagazines = [];
@@ -69,7 +71,7 @@ if (_condition in ["MED"]) then
 };
 
 // SAW/LMG
-if (_condition in ["AR"]) then
+if (_condition && _role in ["AR"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["hlc_lmg_minimi_railed"];
@@ -84,7 +86,7 @@ if (_condition in ["AR"]) then
 };
 
 // Grenadier
-if (_condition in ["GRD"]) then
+if (_condition && _role in ["GRD"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_hk416d10_m320"];
@@ -99,7 +101,7 @@ if (_condition in ["GRD"]) then
 };
 
 // LAT
-if (_condition in ["LAT"]) then
+if (_condition && _role in ["LAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp"];
@@ -114,7 +116,7 @@ if (_condition in ["LAT"]) then
 };
 
 // MAT
-if (_condition in ["MAT"]) then
+if (_condition && _role in ["MAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_maaws", "rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d"];
@@ -129,7 +131,7 @@ if (_condition in ["MAT"]) then
 };
 
 // HAT
-if (_condition in ["HAT"]) then
+if (_condition && _role in ["HAT"]) then
 {
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_fgm148", "rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d"];
@@ -144,9 +146,9 @@ if (_condition in ["HAT"]) then
 };
 
 // Engineer
-if (_condition in ["ENG"]) then
+if (_condition && _role in ["ENG"]) then
 {
-	player setVariable ["ACE_IsEngineer", 2, true];
+	_unit setVariable ["ACE_IsEngineer", 2, true];
 	_availableUniforms = [];
 	_availableWeapons = ["rhs_weap_hk416d10_LMT", "rhs_weap_hk416d10_LMT_d", "rhs_weap_hk416d145", "rhs_weap_hk416d145_d"];
 	_availableMagazines = [];
@@ -162,7 +164,7 @@ if (_condition in ["ENG"]) then
 /* Loadout array that's passed back to kosherArsenal */
 [
 	/* Loadoutfile version */
-	"1.2",
+	"1.3",
 
 	/* Allowed Equipment array */
 	[
