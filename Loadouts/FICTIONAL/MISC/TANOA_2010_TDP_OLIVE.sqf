@@ -21,288 +21,288 @@ private _defAttachments = [];
 // Zeus
 if (_condition && _role in ["ZEUS"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_ALICE"];
-	_availableItems = ["ACRE_PRC77"];
-	_availableBackpacks = [];
-	_availableHeadgear = ["H_Beret_blk", "H_Booniehat_mgrn", "usm_bdu_boonie_odg"];
-	_availableFacewear = ["G_Aviator"];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_ALICE"];
+    _availableItems = ["ACRE_PRC77"];
+    _availableBackpacks = [];
+    _availableHeadgear = ["H_Beret_blk", "H_Booniehat_mgrn", "usm_bdu_boonie_odg"];
+    _availableFacewear = ["G_Aviator"];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Team leader / Squad leader
 if (_condition && _role in ["SL"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1", "CUP_arifle_M16A2_GL", "rhs_weap_rsp30_green"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = ["ACRE_PRC77"];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1", "CUP_arifle_M16A2_GL", "rhs_weap_rsp30_green"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = ["ACRE_PRC77"];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Medic
 if (_condition && _role in ["MED"]) then
 {
-	_unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _unit setVariable ["ace_medical_medicclass", 2, true];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "adv_aceCPR_AED", "kat_stethoscope", "kat_Pulseoximeter", "kat_larynx", "kat_chestSeal"];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // SAW/LMG
 if (_condition && _role in ["LMG"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["hlc_lmg_M249E2"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["hlc_lmg_M249E2"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // MMG
 if (_condition && _role in ["MMG"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_lmg_M240_norail"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_lmg_M240_norail"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Grenadier
 if (_condition && _role in ["GRD"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Grenadier_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = [];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Grenadier_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // LAT
 if (_condition && _role in ["LAT"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1", "rhs_weap_m72a7"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1", "rhs_weap_m72a7"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // MAT
 if (_condition && _role in ["MAT"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // HAT
 if (_condition && _role in ["HAT"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Engineer
 if (_condition && _role in ["ENG"]) then
 {
-	_unit setVariable ["ACE_IsEngineer", 2, true];
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _unit setVariable ["ACE_IsEngineer", 2, true];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // JTAC
 if (_condition && _role in ["JTAC"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M16A2_GL", "rhs_weap_rsp30_green"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive", "CUP_V_B_Interceptor_Grenadier_Olive"];
-	_availableItems = ["ACRE_PRC77"];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M16A2_GL", "rhs_weap_rsp30_green"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive", "CUP_V_B_Interceptor_Grenadier_Olive"];
+    _availableItems = ["ACRE_PRC77"];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Marksman
 if (_condition && _role in ["MRK"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = [];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Breacher
 if (_condition && _role in ["BRC"]) then
 {
-	_availableUniforms = ["rhsgref_uniform_olive"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
-	_availableItems = [];
-	_availableBackpacks = ["CUP_B_AlicePack_OD"];
-	_availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["rhsgref_uniform_olive"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_B_Interceptor_Rifleman_Olive", "CUP_V_B_Interceptor_Base_Olive"];
+    _availableItems = [];
+    _availableBackpacks = ["CUP_B_AlicePack_OD"];
+    _availableHeadgear = ["rhsgref_helmet_pasgt_olive", "H_Booniehat_oli", "usm_bdu_boonie_odg"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // High Value Target
 if (_condition && _role in ["HVT"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = [];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Very Important Person
 if (_condition && _role in ["VIP"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = [];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = [];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Rotary Wing Pilot
 if (_condition && _role in ["RWP"]) then
 {
-	_availableUniforms = ["CUP_U_B_USArmy_PilotOverall"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["Airchew_vest", "Airchew_vest_2"];
-	_availableItems = ["ACRE_PRC77"];
-	_availableBackpacks = ["TRYK_B_Alicepack"];
-	_availableHeadgear = ["rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt", "rhs_gssh18"];
-	_availableFacewear = ["G_Aviator"];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["CUP_U_B_USArmy_PilotOverall"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["Airchew_vest", "Airchew_vest_2"];
+    _availableItems = ["ACRE_PRC77"];
+    _availableBackpacks = ["TRYK_B_Alicepack"];
+    _availableHeadgear = ["rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt", "rhs_gssh18"];
+    _availableFacewear = ["G_Aviator"];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Fixed Wing Pilot
 if (_condition && _role in ["FWP"]) then
 {
-	_availableUniforms = ["FIR_Fighter_Pilot_Uniform_Flight", "FIR_Fighter_Pilot_JASDF_Nomex5", "FIR_Fighter_Pilot_JASDF_Nomex3"];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = ["Airchew_vest_2_NH", "Aircrew_vest_2_NH"];
-	_availableItems = ["ACRE_PRC77"];
-	_availableBackpacks = ["TRYK_B_Alicepack"];
-	_availableHeadgear = ["rhs_zsh7a", "rhs_zsh7a_alt"];
-	_availableFacewear = ["G_Aviator"];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = ["FIR_Fighter_Pilot_Uniform_Flight", "FIR_Fighter_Pilot_JASDF_Nomex5", "FIR_Fighter_Pilot_JASDF_Nomex3"];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = ["Airchew_vest_2_NH", "Aircrew_vest_2_NH"];
+    _availableItems = ["ACRE_PRC77"];
+    _availableBackpacks = ["TRYK_B_Alicepack"];
+    _availableHeadgear = ["rhs_zsh7a", "rhs_zsh7a_alt"];
+    _availableFacewear = ["G_Aviator"];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // EOD
 if (_condition && _role in ["EOD"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_M4A1"];
-	_availableMagazines = [];
-	_availableVests = [];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_M4A1"];
+    _availableMagazines = [];
+    _availableVests = [];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 /* Loadout array that's passed back to kosherArsenal */

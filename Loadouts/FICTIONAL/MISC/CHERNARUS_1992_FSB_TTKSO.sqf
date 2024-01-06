@@ -24,78 +24,78 @@ private _defAttachments = [];
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
-	_availableMagazines = [];
-	_availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = ["rhs_stsh81"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
+    _availableMagazines = [];
+    _availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = ["rhs_stsh81"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Squad Leader
 if (_condition && _role in ["SL", "FTL"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
-	_availableMagazines = [];
-	_availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = ["rhs_stsh81"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
+    _availableMagazines = [];
+    _availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = ["rhs_stsh81"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Medic
 if (_condition && _role in ["MED"]) then
 {
-  	[_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
-	_unit setVariable ["ace_medical_medicclass", 2, true];
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
-	_availableMagazines = [];
-	_availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
-	_availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope"];
-	_availableBackpacks = ["CUP_B_CivPack_WDL"];
-	_availableHeadgear = ["rhs_stsh81"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+      [_unit, "UK3CB_BAF_Insignia_RedCross"] call BIS_fnc_setUnitInsignia;
+    _unit setVariable ["ace_medical_medicclass", 2, true];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_AK74_Early", "CUP_arifle_AKS74U", "CUP_arifle_AKS74_Early"];
+    _availableMagazines = [];
+    _availableVests = ["rhs_6b2_lifchik", "rhs_6b2_chicom", "rhs_6b2_holster", "rhs_6b2"];
+    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_stethoscope"];
+    _availableBackpacks = ["CUP_B_CivPack_WDL"];
+    _availableHeadgear = ["rhs_stsh81"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // SAW/LMG
 if (_condition && _role in ["AR"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["CUP_arifle_RPK74_45"];
-	_availableMagazines = [];
-	_availableVests = ["rhs_6b2_RPK"];
-	_availableItems = [];
-	_availableBackpacks = [];
-	_availableHeadgear = ["rhs_stsh81"];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["CUP_arifle_RPK74_45"];
+    _availableMagazines = [];
+    _availableVests = ["rhs_6b2_RPK"];
+    _availableItems = [];
+    _availableBackpacks = [];
+    _availableHeadgear = ["rhs_stsh81"];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 // Marksman
 if (_condition && _role in ["MRK"]) then
 {
-	_availableUniforms = [];
-	_availableWeapons = ["rhs_weap_m76", "CUP_srifle_ksvk"];
-	_availableMagazines = [];
-	_availableVests = ["rhs_6b2_SVD"];
-	_availableItems = ["cup_optic_pso_3", "cup_optic_pso_1_1"];
-	_availableBackpacks = [];
-	_availableHeadgear = [];
-	_availableFacewear = [];
-	_availableAttachments = [];
-	_availableGrenades = [];
+    _availableUniforms = [];
+    _availableWeapons = ["rhs_weap_m76", "CUP_srifle_ksvk"];
+    _availableMagazines = [];
+    _availableVests = ["rhs_6b2_SVD"];
+    _availableItems = ["cup_optic_pso_3", "cup_optic_pso_1_1"];
+    _availableBackpacks = [];
+    _availableHeadgear = [];
+    _availableFacewear = [];
+    _availableAttachments = [];
+    _availableGrenades = [];
 };
 
 /* Loadout array that's passed back to kosherArsenal */

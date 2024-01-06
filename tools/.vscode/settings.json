@@ -1,0 +1,8 @@
+{
+	"files.exclude": {
+		"**/release": true
+	},
+	"python.pythonPath": "", /* Add Path to python executable to use tools */
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": true
+}
