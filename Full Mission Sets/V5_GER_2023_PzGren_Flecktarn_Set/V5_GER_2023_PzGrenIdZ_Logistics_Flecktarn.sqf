@@ -3,9 +3,10 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [CMF Logistics file with preset crates correct for the German military throughout all time zones and climates. Only needs BW mod.]
+ * [Logistics file for V5_GER_2023_PzGren_Flecktarn_Set]
  *
  */
+
 
 
 [
@@ -13,10 +14,10 @@
     ["Fireteam", {
         _available = 2;
         _class = "BWA3_Box_Ammo";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
+        _weapons = [["BWA3_PzF3_Tandem_Loaded", 2]];
+        _magazines = [["BWA3_20Rnd_762x51_G28", 15], ["BWA3_30Rnd_556x45_G36", 50], ["BWA3_120Rnd_762x51_Tracer_soft", 10],  ["rhs_mag_M433_HEDP", 15], ["BWA3_1Rnd_Flare_Illum", 10]];
+        _grenades = [["BWA3_DM51A1", 10]];
+        _items = [["ACE_fieldDressing", 12],  ["ACE_morphine", 12], ["ACE_canteen", 6]];
         _cargo = [];
     }],
     
@@ -34,12 +35,13 @@
         _available = 0;
         _class = "BWA3_Box_Explosives";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["rhs_ec200_mag", 10]];
         _grenades = [];
         _items = [];
         _cargo = [];
     }],
     
+    //MG4 
     ["MMG", {
         _available = 0;
         _class = "BWA3_Box_Ammo";
@@ -50,50 +52,21 @@
         _cargo = [];
     }],
     
+    //MG5
     ["HMG", {
         _available = 0;
         _class = "BWA3_Box_Ammo";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["BWA3_120Rnd_762x51_Tracer_soft", 30], ["BWA3_30Rnd_556x45_G36", 5]];
         _grenades = [];
-        _items = [];
+        _items = [["ACE_Canteen", 6]];
         _cargo = [];
     }],
     
     ["MAT", {
         _available = 0;
         _class = "BWA3_Box_Launchers";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["HAT", {
-        _available = 0;
-        _class = "BWA3_Box_Launchers";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["Mortar", {
-        _available = 0;
-        _class = "BWA3_box_120mm_Mo_Combo";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-
-    ["Engineer", {
-        _available = 0;
-        _class = "BWA3_Box_Support";
-        _weapons = [];
+        _weapons = [["BWA3_PzF3_Tandem_Loaded", 6]];
         _magazines = [];
         _grenades = [];
         _items = [];
