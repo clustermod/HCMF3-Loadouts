@@ -21,9 +21,11 @@ A norwegian tanker crew.
 
 **Year**: 2018
 
-<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2018_tankcrew_woodland.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
-    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
-</a>
+<table>
+  <tr>
+    <td><a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/master/loadouts/norway/loadouts/nor_2018_tankcrew_woodland.sqf">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
 
 ---
 
@@ -58,9 +60,11 @@ A norwegian semi-sof team.
 
 **Camo:** M98 (N-Kamo, Woodland)
 
-<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2018_telemarken-battalion_woodland.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
-    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
-</a>
+<table>
+  <tr>
+    <td><a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/master/loadouts/norway/loadouts/nor_2018_telemarken-battalion_woodland.sqf">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
 
 ---
 
@@ -95,9 +99,11 @@ A norwegian sof team in multicam.
 
 **Camo:** Multicam
 
-<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2020_fsk_multicam.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
-    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
-</a>
+<table>
+  <tr>
+    <td><a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/master/loadouts/norway/loadouts/nor_2020_fsk_multicam.sqf">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
 
 ---
 
@@ -126,8 +132,10 @@ A norwegian marine sof team.
 
 **Camo:** Black / Grey and Multicam
 
-<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2022_marinejeger.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
-    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
-</a>
+<table>
+  <tr>
+    <td><a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/master/loadouts/norway/loadouts/nor_2022_marinejeger.sqf">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
 
 ---
