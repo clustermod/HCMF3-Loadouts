@@ -17,5 +17,10 @@ description of file
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
 
+<table>
+  <tr>
+    <td><a download href="url">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
 
 ---

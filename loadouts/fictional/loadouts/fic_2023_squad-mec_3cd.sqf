@@ -2,8 +2,8 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5 
- * [This loadout was made after the middle eastern coaltion faction from the game Squad.]
+ * CC Modpack Version: cc_core_v5
+ * This loadout was made after the middle eastern coaltion faction from the game Squad.
  *
  */
 params ["_role", "_unit"];

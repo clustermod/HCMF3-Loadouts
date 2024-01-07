@@ -8,4 +8,10 @@
 
 <!-- Information about file e.g. country: Russia-->
 
+<table>
+  <tr>
+    <td><a download href="url">Download File (CTRL + S)</a></td>
+  </tr>
+</table>
+
 ---
