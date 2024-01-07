@@ -44,18 +44,18 @@
     //MG4 
     ["MMG", {
         _available = 0;
-        _class = "BWA3_Box_Ammo";
+        _class = "BWA3_box_120mm_Mo_HE_dpz";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["BWA3_200Rnd_556x45_Tracer", 30], ["BWA3_30Rnd_556x45_G36", 5]];
         _grenades = [];
-        _items = [];
+        _items = [["ACE_Canteen", 6]];
         _cargo = [];
     }],
     
     //MG5
     ["HMG", {
         _available = 0;
-        _class = "BWA3_Box_Ammo";
+        _class = "BWA3_box_120mm_Mo_Illum";
         _weapons = [];
         _magazines = [["BWA3_120Rnd_762x51_Tracer_soft", 30], ["BWA3_30Rnd_556x45_G36", 5]];
         _grenades = [];

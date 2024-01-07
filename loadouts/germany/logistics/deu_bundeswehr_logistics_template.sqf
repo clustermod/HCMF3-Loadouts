@@ -17,10 +17,10 @@
     ["Fireteam", {
         _available = 2;
         _class = "BWA3_Box_Ammo";
-        _weapons = [["BWA3_PzF3_Tandem_Loaded", 2]];
-        _magazines = [["BWA3_20Rnd_762x51_G28", 15], ["BWA3_30Rnd_556x45_G36", 50], ["BWA3_120Rnd_762x51_Tracer_soft", 10],  ["rhs_mag_M433_HEDP", 15], ["BWA3_1Rnd_Flare_Illum", 10]];
-        _grenades = [["BWA3_DM51A1", 10]];
-        _items = [["ACE_fieldDressing", 12],  ["ACE_morphine", 12], ["ACE_canteen", 6]];
+        _weapons = [];
+        _magazines = [];
+        _grenades = [];
+        _items = [];
         _cargo = [];
     }],
     
@@ -38,7 +38,7 @@
         _available = 0;
         _class = "BWA3_Box_Explosives";
         _weapons = [];
-        _magazines = [["rhs_ec200_mag", 10]];
+        _magazines = [];
         _grenades = [];
         _items = [];
         _cargo = [];
@@ -58,11 +58,11 @@
     //MG5
     ["HMG", {
         _available = 0;
-        _class = "BWA3_Box_Ammo";
+        _class = "BWA3_box_120mm_Mo_Illum";
         _weapons = [];
-        _magazines = [["BWA3_120Rnd_762x51_Tracer_soft", 30], ["BWA3_30Rnd_556x45_G36", 5]];
+        _magazines = [];
         _grenades = [];
-        _items = [["ACE_Canteen", 6]];
+        _items = [];
         _cargo = [];
     }],
     
