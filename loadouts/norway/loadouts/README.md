@@ -21,6 +21,10 @@ A norwegian tanker crew.
 
 **Year**: 2018
 
+<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2018_tankcrew_woodland.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
+    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
+</a>
+
 ---
 
 ## 2018 Telemark bataljonen Woodland 
@@ -53,6 +57,10 @@ A norwegian semi-sof team.
 **Year**: 2018
 
 **Camo:** M98 (N-Kamo, Woodland)
+
+<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2018_telemarken-battalion_woodland.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
+    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
+</a>
 
 ---
 
@@ -87,6 +95,10 @@ A norwegian sof team in multicam.
 
 **Camo:** Multicam
 
+<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2020_fsk_multicam.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
+    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
+</a>
+
 ---
 
 ## 2022 Marinejeger 
@@ -113,5 +125,9 @@ A norwegian marine sof team.
 **Year**: 2022
 
 **Camo:** Black / Grey and Multicam
+
+<a download href="https://github.com/clustermod/Harks-CMF3-Loadouts/raw/standardizationExample/loadouts/norway/loadouts/nor_2022_marinejeger.sqf" style="background-color: #555555; padding: 3px 0 3px 3px; color: white">
+    <span>File</span> <span style="background-color: #fe7d37; padding: 3px">Download</span>
+</a>
 
 ---
