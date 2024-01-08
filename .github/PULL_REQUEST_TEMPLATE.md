@@ -4,3 +4,5 @@
 
 ### IMPORTANT
 - [ ] Title of this PR uses our standard template `Component - Add|Fix|Improve|Change|Make|Remove {changes}`.
+- [ ] Loadouts use standard [filename format](https://github.com/clustermod/HCMF3-Loadouts/wiki#standardization).
+- [ ] Loadouts are listed and documented in the respective readme file.
