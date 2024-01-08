@@ -26,10 +26,8 @@ description of file
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
 
-<table>
-  <tr>
-    <td><a download href="url">Download File (CTRL + S)</a></td>
-  </tr>
-</table>
+<a href="fileURL">
+  <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
+</a>
 
 ---

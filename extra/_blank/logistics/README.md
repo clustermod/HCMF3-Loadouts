@@ -13,10 +13,8 @@
 
 <!-- Information about file e.g. country: Russia-->
 
-<table>
-  <tr>
-    <td><a download href="url">Download File (CTRL + S)</a></td>
-  </tr>
-</table>
+<a href="fileURL">
+  <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
+</a>
 
 ---
