@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/clustermod/HCMF3-Loadouts/master/extras/assets/logo/black/cmf3_logo_trans.png" width="480">
+    <img src="https://raw.githubusercontent.com/clustermod/HCMF3-Loadouts/master/extra/assets/logo/black/cmf3_logo_trans.png" width="480">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 <p align="center">
     <sup><strong>Click to see list of loadouts<br/>
-    <a href="https://github.com/clustermod/Harks-CMF3-Loadouts/blob/standardizationExample/loadouts/README.md">
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/README.md">
         <img src="https://img.shields.io/badge/Loadout_List-orange?style=flat-square" alt="Cluster Discord"">
     </a></strong></sup>
 </p>
