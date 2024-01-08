@@ -2,8 +2,8 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: 
- * [Description]
+ * CC Modpack Version: V5
+ * [Logistics Template made for ]
  *
  */
 params["_unit"];
@@ -23,25 +23,25 @@ private _defComponents = []; //  "ALL" for all components
 
 /* SIERRA (APC) */
 if (_condition in ["SIERRA", "ARMOR"]) then {
-    _availableVehicles = [];
+    _availableVehicles = ["BWA3_Dingo2_FLW200_M2_Fleck"];
     _availablePylons = [];
-    _availableCamos = [];
+    _availableCamos = ["Fleck"];
     _availableComponents = [];
 };
 
 /* MIKE (IFV) */
 if (_condition in ["MIKE", "ARMOR"]) then {
-    _availableVehicles = [];
+    _availableVehicles = ["BWA3_Puma_Fleck"];
     _availablePylons = [];
-    _availableCamos = [];
+    _availableCamos = ["Fleck"];
     _availableComponents = [];
 };
 
 /* TANGO (MBT) */
 if (_condition in ["TANGO", "ARMOR"]) then {
-    _availableVehicles = [];
+    _availableVehicles = ["BWA3_Leopard2_Fleck"];
     _availablePylons = [];
-    _availableCamos = [];
+    _availableCamos = ["Fleck"];
     _availableComponents = [];
 };
 
@@ -55,57 +55,17 @@ if (_condition in ["PHANTOM", "TRANS"]) then {
 
 /* REAPER (CAS) */
 if (_condition in ["REAPER", "CAS"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
-    _availableCamos = [];
-    _availableComponents = [];
-};
-
-/* UGLY (HEAVY CAS) */
-if (_condition in ["UGLY", "CAS"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
-    _availableCamos = [];
-    _availableComponents = [];
-};
-
-/* HAWG (Ground-Attack Jet) */
-if (_condition in ["HAWG", "CAS"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
-    _availableCamos = [];
-    _availableComponents = [];
-};
-
-/* PAVEMENT (A2A/Bomber Jet) */
-if (_condition in ["PAVEMENT", "CAS"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
-    _availableCamos = [];
-    _availableComponents = [];
-};
-
-/* MORTARS (Mortar squad) */
-if (_condition in ["MORTARS", "SUPPORT"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
+    _availableVehicles = ["BWA3_Tiger"];
+    _availablePylons = ["PylonLeft1", "PylonLef2", "PylonRight1", "PylonRight2"];
     _availableCamos = [];
     _availableComponents = [];
 };
 
 /* LOGISTICS (Logistics squad) */
 if (_condition in ["LOGI"]) then {
-    _availableVehicles = [];
+    _availableVehicles = ["BWA3_Multi_Fleck"];
     _availablePylons = [];
-    _availableCamos = [];
-    _availableComponents = [];
-};
-
-/* ENGI (Engineers squad) */
-if (_condition in ["ENGI", "SUPPORT"]) then {
-    _availableVehicles = [];
-    _availablePylons = [];
-    _availableCamos = [];
+    _availableCamos = ["Fleck"];
     _availableComponents = [];
 };
 
