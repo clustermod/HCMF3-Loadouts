@@ -17,5 +17,8 @@ description of file
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
 
+<a href="fileURL">
+  <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
+</a>
 
 ---
