@@ -1,4 +1,4 @@
-# Australia
+# <img src="https://cdn-icons-png.flaticon.com/512/197/197507.png" height="19px"> Australia
 <a href="https://github.com/clustermod/HCMF3-Loadouts/tree/master/loadouts/australia/loadouts">
     <img alt="Static Badge" src="https://img.shields.io/badge/Loadouts-Players-grey?labelColor=blue" height="30px">
 </a>

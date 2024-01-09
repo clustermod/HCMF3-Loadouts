@@ -1,4 +1,4 @@
-# Poland
+# <img src="https://cdn-icons-png.flaticon.com/512/197/197529.png" height="19px"> Poland
 <a href="https://github.com/clustermod/HCMF3-Loadouts/tree/master/loadouts/poland/loadouts">
     <img alt="Static Badge" src="https://img.shields.io/badge/Loadouts-Players-grey?labelColor=blue" height="30px">
 </a>

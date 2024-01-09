@@ -1,4 +1,4 @@
-# Russia
+# <img src="https://cdn-icons-png.flaticon.com/512/197/197408.png" height="19px"> Russia
 <a href="https://github.com/clustermod/HCMF3-Loadouts/tree/master/loadouts/russia/loadouts">
     <img alt="Static Badge" src="https://img.shields.io/badge/Loadouts-Players-grey?labelColor=blue" height="30px">
 </a>

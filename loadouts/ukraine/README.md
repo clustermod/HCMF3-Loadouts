@@ -1,4 +1,4 @@
-# Ukraine
+# <img src="https://cdn-icons-png.flaticon.com/512/197/197572.png" height="19px"> Ukraine
 <a href="https://github.com/clustermod/HCMF3-Loadouts/tree/master/loadouts/ukraine/loadouts">
     <img alt="Static Badge" src="https://img.shields.io/badge/Loadouts-Players-grey?labelColor=blue" height="30px">
 </a>
