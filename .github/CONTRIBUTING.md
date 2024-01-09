@@ -1,0 +1,1 @@
+See [HCMF3-Loadouts Wiki](https://github.com/clustermod/HCMF3-Loadouts/wiki) for contribution guidelines.
