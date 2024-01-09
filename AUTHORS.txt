@@ -1,0 +1,14 @@
+# HCMF3-Loadouts CONTRIBUTOR LIST
+# If you contributed, but are not listed here, contact us:
+# business.cluster.community@gmail.com
+#
+# Feel free to add yourself to this when creating a pull
+# request, preferably including an email address.
+
+# CORE TEAM
+Harke 
+
+# MAINTAINERS
+Tapawingo <tapawingoactual@gmail.com>
+
+# CONTRIBUTORS
