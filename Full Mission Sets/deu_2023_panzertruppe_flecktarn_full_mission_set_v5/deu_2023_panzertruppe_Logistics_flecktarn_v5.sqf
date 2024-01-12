@@ -3,20 +3,21 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [This depicts a 2023 German Tank Company. It can be either played by every crewmember being a player or only Company, Platoon and tank commanders (TC) being actually humans. The crew members other than the TC can be replaced by AI that is commanded by each player.]
+ * [Loadout depicting the 2023 state of German Paratroopers, with limitations in realism due to available mods for Arma 3.]
  *
- * Wiki: https://wiki.cluster-community.com/index.php?title=Logistics
  */
+
+
 
 [
     /* Fireteam Crate */
     ["Fireteam", {
         _available = 2;
-        _class = "CUP_BOX_US_ARMY_Ammo_F";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
+        _class = "BWA3_Box_Ammo";
+        _weapons = [["BWA3_PzF3_Tandem_Loaded", 2]];
+        _magazines = [["BWA3_20Rnd_762x51_G28", 15], ["BWA3_30Rnd_556x45_G36", 50], ["BWA3_120Rnd_762x51_Tracer_soft", 10],  ["rhs_mag_M433_HEDP", 15], ["BWA3_1Rnd_Flare_Illum", 10]];
+        _grenades = [["BWA3_DM51A1", 10]];
+        _items = [["ACE_fieldDressing", 12],  ["ACE_morphine", 12], ["ACE_canteen", 6]];
         _cargo = [];
     }],
     
@@ -32,68 +33,40 @@
     
     ["Explosives", {
         _available = 0;
-        _class = "CUP_BOX_US_ARMY_AmmoOrd_F";
+        _class = "BWA3_Box_Explosives";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["rhs_ec200_mag", 10]];
         _grenades = [];
         _items = [];
         _cargo = [];
     }],
     
+    //MG4 
     ["MMG", {
         _available = 0;
-        _class = "";
+        _class = "BWA3_box_120mm_Mo_HE_dpz";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["BWA3_200Rnd_556x45_Tracer", 30], ["BWA3_30Rnd_556x45_G36", 5]];
         _grenades = [];
-        _items = [];
+        _items = [["ACE_Canteen", 6]];
         _cargo = [];
     }],
     
+    //MG5
     ["HMG", {
         _available = 0;
-        _class = "";
+        _class = "BWA3_box_120mm_Mo_Illum";
         _weapons = [];
-        _magazines = [];
+        _magazines = [["BWA3_120Rnd_762x51_Tracer_soft", 30], ["BWA3_30Rnd_556x45_G36", 5]];
         _grenades = [];
-        _items = [];
+        _items = [["ACE_Canteen", 6]];
         _cargo = [];
     }],
     
     ["MAT", {
         _available = 0;
-        _class = "";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["HAT", {
-        _available = 0;
-        _class = "";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["Mortar", {
-        _available = 0;
-        _class = "";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-
-    ["Engineer", {
-        _available = 0;
-        _class = "";
-        _weapons = [];
+        _class = "BWA3_Box_Launchers";
+        _weapons = [["BWA3_PzF3_Tandem_Loaded", 6]];
         _magazines = [];
         _grenades = [];
         _items = [];
@@ -102,7 +75,7 @@
     
     ["Large", {
         _available = 0;
-        _class = "";
+        _class = "BWA3_Box_Gear_Fleck";
         _weapons = [];
         _magazines = [];
         _grenades = [];

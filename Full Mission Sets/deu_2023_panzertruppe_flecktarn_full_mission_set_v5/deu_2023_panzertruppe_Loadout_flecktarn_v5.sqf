@@ -2,14 +2,13 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5
- * [This depicts a 2023 German Tank Company. It can be either played by every crewmember being a player or only Company, Platoon and tank commanders (TC) being actually humans. The crew members other than the TC can be replaced by AI that is commanded by each player.]
+ * CC Modpack Version: 
+ * [Description]
  *
  */
-params ["_role", "_unit"];
 
-/* Custom additional condition */
-private _condition = true;
+/* Get the unit's role */
+private _condition = player getVariable ["cmf_organization_role", "RFL"];
 private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_availableVests", "_availableItems", "_availableBackpacks", "_availableHeadgear", "_availableFacewear", "_availableAttachments", "_availableGrenades"];
 
 /* Default gear */
@@ -24,163 +23,65 @@ private _defBackpacks = [];
 private _defHeadgear = [];
 private _defFacewear = [];
 
-/* Rifleman */
-if (_condition && _role in ["RFL"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
+/* Crewman */
+if (_condition in ["CRW"]) then {
+	_availableUniforms = ["BWA3_Uniform_Crew_Fleck"];
+	_availableWeapons = ["BWA3_MP7"];
+	_availableAttachments = ["BWA3_optic_RSAS_riser"];
+	_availableMagazines = ["BWA3_40Rnd_46x30_MP7"];
+	_availableVests = [];
+	_availableItems = [];
+	_availableGrenades = [];
+	_availableBackpacks = [];
+	_availableHeadgear = ["BWA3_CrewmanKSK_Fleck_Headset"];
+	_availableFacewear = ["AD_ESS_Glasses_b4"];
+}; 
+
+/* Tank Commander */
+if (_condition in ["CRW"]) then {
+	_availableUniforms = ["BWA3_Uniform_Crew_Fleck"];
+	_availableWeapons = ["BWA3_MP7", "rhssaf_zrak_rd7j"];
+	_availableAttachments = ["BWA3_optic_RSAS_riser"];
+	_availableMagazines = ["BWA3_40Rnd_46x30_MP7"];
+	_availableVests = [];
+	_availableItems = ["ACRE_SEM70"];
+	_availableGrenades = [];
+	_availableBackpacks = ["BWA3_Carryall_Fleck"];
+	_availableHeadgear = ["BWA3_Beret_Pz"];
+	_availableFacewear = ["CUP_G_ESS_BLK_Dark", "CUP_G_ESS_BLK_Facewrap_Black"];
 };
 
-/* Team leader */
-if (_condition && _role in ["SL", "FTL"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* Medic */
-if (_condition && _role in ["MED"]) then {
-    _unit setVariable ["ace_medical_medicclass", 2, true];
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope", "kat_amiodarone", "kat_lidocaine", "kat_IO_FAST", "kat_IV_16", "KAT_Empty_bloodIV_500", "KAT_Empty_bloodIV_250", "kat_AED", "kat_aatKit"];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* SAW/LMG */
-if (_condition && _role in ["AR"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* MMG */
-if (_condition && _role in ["MMG"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* Grenadier */
-if (_condition && _role in ["GRD"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* LAT */
-if (_condition && _role in ["LAT"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* MAT */
-if (_condition && _role in ["MAT"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* HAT */
-if (_condition && _role in ["HAT"]) then {
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-};
-
-/* Engineer */
-if (_condition && _role in ["ENG"]) then {
-    _unit setVariable ["ACE_IsEngineer", 2, true];
-    _availableUniforms = [];
-    _availableWeapons = [];
-    _availableAttachments = [];
-    _availableMagazines = [];
-    _availableVests = [];
-    _availableItems = [];
-    _availableGrenades = [];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
+/* Medic/Engineer Role for support platoon if done by players. */
+if (_condition in ["MED"]) then {
+	player setVariable ["ace_medical_medicclass", 2, true];
+	player setVariable ["ACE_IsEngineer", 2, true];
+	_availableUniforms = ["CUP_U_B_GER_Flecktarn_2"];
+	_availableWeapons = ["BWA3_G36KA3", "BWA3_P8"];
+	_availableAttachments = ["BWA3_optic_RSAS_brown", "BWA3_acc_VarioRay_irlaser", "BWA3_optic_ZO4x30_RSAS_brown"];
+	_availableMagazines = ["BWA3_30Rnd_556x45_G36", "BWA3_15Rnd_9x19_P8"];
+	_availableVests = ["V_CarrierRigKBT_01_light_Olive_F"];
+	_availableItems = ["ACRE_SEM70", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36", "ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope", "kat_amiodarone", "kat_lidocaine", "kat_IO_FAST", "kat_IV_16", "KAT_Empty_bloodIV_500", "KAT_Empty_bloodIV_250", "kat_AED", "kat_aatKit"];
+	_availableGrenades = ["BWA3_DM51A1", "BWA3_DM32_Yellow", "BWA3_DM32_Red", "BWA3_DM32_Purple", "BWA3_DM32_Orange", "BWA3_DM32_Green", "BWA3_DM32_Blue", "BWA3_DM25", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "ACE_Chemlight_Orange", "ACE_M84", "rhs_mag_an_m14_th3", "ACE_Chemlight_IR"];
+	_availableBackpacks = ["BWA3_Kitbag_Fleck_Medic", "BWA3_PatrolPack_Fleck"];
+	_availableHeadgear = ["rhsusf_mich_bare_norotos_arc_alt"];
+	_availableFacewear = ["BWA3_G_Combat_clear"];
 };
 
 /* Loadout array that's passed back to kosherArsenal */
 [
-    /* Loadoutfile version */
-    "1.3",
+	/* Loadoutfile version */
+	"1.2",
 
-    /* Allowed Equipment array */
-    [
-        (_availableBackpacks + _defBackpacks),
-        (_availableVests + _defVests),
-        (_availableUniforms + _defUniforms),
-        (_availableFacewear + _defFacewear),
-        (_defHeadgear + _availableHeadgear),
-        (_defAttachments + _availableAttachments),
-        (_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
-        (_availableWeapons + _defWeapons),
-        (_availableItems + _defItems)
-    ]
+	/* Allowed Equipment array */
+	[
+		(_availableBackpacks + _defBackpacks),
+		(_availableVests + _defVests),
+		(_availableUniforms + _defUniforms),
+		(_availableFacewear + _defFacewear),
+		(_defHeadgear + _availableHeadgear),
+		(_defAttachments + _availableAttachments),
+		(_availableMagazines + _defGrenades + _defMagazines + _availableGrenades),
+		(_availableWeapons + _defWeapons),
+		(_availableItems + _defItems)
+	]
 ];

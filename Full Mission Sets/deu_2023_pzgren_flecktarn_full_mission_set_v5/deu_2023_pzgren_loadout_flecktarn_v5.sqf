@@ -16,7 +16,7 @@ private ["_availableUniforms", "_availableWeapons", "_availableMagazines", "_ava
 private _defItems = ["ACE_Altimeter", "ItemAndroid", "ItemMicroDAGR", "rhsusf_ANPVS_15", "ACE_EntrenchingTool", "ACRE_SEM52SL", "ACE_Canteen", "ACE_EarPlugs", "kat_guedel", "ACE_adenosine", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot", "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_MapTools", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ItemMap", "ItemCompass", "ItemWatch", "ACE_CableTie", "ACE_IR_Strobe_Item", "ACE_SpraypaintBlack", "ACE_SpraypaintBlue", "ACE_SpraypaintGreen", "ACE_SpraypaintRed", "ACE_wirecutter", "ItemcTabHCam"];
 private _defWeapons = ["BWA3_Vector"];
 private _defAttachments = [];
-private _defMagazines = ["BWA3_30Rnd_556x45_G36", "BWA3_30Rnd_556x45_G36_AP", "BWA3_120Rnd_762x51_soft", "BWA3_120Rnd_762x51_Tracer_soft", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_m4009"];
+private _defMagazines = ["BWA3_200Rnd_556x45_Tracer", "BWA3_200Rnd_556x45", "BWA3_30Rnd_556x45_G36", "BWA3_30Rnd_556x45_G36_AP", "BWA3_120Rnd_762x51_soft", "BWA3_120Rnd_762x51_Tracer_soft", "rhs_mag_M433_HEDP", "rhs_mag_M441_HE", "rhs_mag_m4009"];
 private _defGrenades = ["BWA3_DM51A1", "BWA3_DM32_Yellow", "BWA3_DM32_Red", "BWA3_DM32_Purple", "BWA3_DM32_Orange", "BWA3_DM32_Green", "BWA3_DM32_Blue", "BWA3_DM25", "Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow", "ACE_Chemlight_Orange", "ACE_M84", "rhs_mag_an_m14_th3", "ACE_Chemlight_IR"];
 private _defUniforms = [];
 private _defVests = [];
@@ -68,9 +68,23 @@ if (_condition && _role in ["MED"]) then {
 };
 
 /* SAW/LMG */
-if (_condition && _role in ["AR"]) then {
+if (_condition && _role in ["MMG"]) then {
     _availableUniforms = ["BWA3_Uniform_Fleck"];
     _availableWeapons = ["BWA3_MG5_tan"];
+    _availableAttachments = ["bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
+    _availableMagazines = [];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableItems = [];
+    _availableGrenades = [];
+    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
+};
+
+/* MG4 */
+if (_condition && _role in ["AR"]) then {
+    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableWeapons = ["BWA3_MG4"];
     _availableAttachments = ["bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = [];
     _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
