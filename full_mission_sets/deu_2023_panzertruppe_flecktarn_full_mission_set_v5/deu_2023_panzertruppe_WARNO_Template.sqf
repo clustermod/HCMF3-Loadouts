@@ -2,6 +2,11 @@
  * Warning order explanation, markdown glossary general information:
  * https://wiki.cluster-community.com/index.php?title=CMF3:_Warno#Editing
  * 
+ *
+ * This file only has the comms plan changed since it is quite complicated on a company scale. 
+ * The rest is unchanged and still needs to be filled out by the misison maker.
+ * 
+ *
  */
 
 /* SITUATION */
