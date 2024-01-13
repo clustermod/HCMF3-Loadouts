@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/Tapawingo/HCMF3-Loadouts/releases">
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/releases">
         <img src="https://img.shields.io/github/v/release/clustermod/HCMF3-Loadouts?style=flat-square" alt="Releases">
     </a>
     <a>
@@ -15,7 +15,7 @@
     <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/clustermod/HCMF3-Loadouts?style=flat-square" alt="License">
     </a>
-    <a href="https://discord.gg/MBP64PWz">
+    <a href="https://discord.gg/Fwp7H5F4NT">
         <img src="https://img.shields.io/badge/Discord-Join-darkviolet.svg?style=flat-square" alt="Cluster Discord"">
     </a>
 </p>
