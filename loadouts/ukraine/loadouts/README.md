@@ -30,3 +30,35 @@ None
 </a>
 
 ---
+
+## 2024 Freedom of Russia Legion, Ukrainian Armed Forces
+**File:** `ukr_2023_mech-inf_multicam_v5.sqf`
+
+**Modpack Version:** `[V5]`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `LAT` Anti-Tank, Light
+- ``MAT` Anti-Tank, Medium
+- `GRD` Grenadier
+- `ENG` Combat Engineer 
+
+**Description:**
+<!-- Description -->
+Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.
+
+**Country:** Ukraine
+
+
+**Associated Files:**
+None
+
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/addloadouts/loadouts/ukraine/loadouts/ukr_2023_mech-inf_multicam_v5.sqf">
+  <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
+</a>
