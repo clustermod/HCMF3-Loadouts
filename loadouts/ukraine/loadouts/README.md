@@ -45,9 +45,9 @@ None
 - `MED` Medic
 - `AR` Autorifleman
 - `LAT` Anti-Tank, Light
-- ``MAT` Anti-Tank, Medium
+- `MAT` Anti-Tank, Medium
 - `GRD` Grenadier
-- `ENG` Combat Engineer 
+- `ENG` Combat Engineer
 
 **Description:**
 <!-- Description -->
