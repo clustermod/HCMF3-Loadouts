@@ -29,7 +29,7 @@
 <!-- List of templates associated with this e.g. garage and logistics templates -->
 <br/>
 <br/>
-<a href="https://raw.githubusercontent.com/clustermod/HCMF3-Loadouts/master/loadouts/united_states/loadouts/usa_2005_delta_dcu.sqf">
+<a href="https://raw.githubusercontent.com/clustermod/HCMF3-Loadouts/master/loadouts/united_states/loadouts/usa_2005_delta_3cd.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 
