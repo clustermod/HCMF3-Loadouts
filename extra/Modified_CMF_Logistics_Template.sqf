@@ -14,9 +14,11 @@
         _available = 2;
         _class = "CUP_BOX_US_ARMY_Ammo_F";
         _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
+        /* Change Values in between the qoutes to object classnames. */
+        _magazines = [["<Main Weapon magazines>", 50], ["<Automatic Weapon Magazines>",10], ["<LAT Launchers>",2 ], ["<GPs for UGLs>",15], ["<Flares>",10]];
+        /* Change Values in between the qoutes to object classnames. */
+        _grenades = [["<Throwable grenades>", 15]];
+        _items = [["ACE_fieldDressing", 12],  ["ACE_morphine", 12], ["ACE_canteen", 6]];
         _cargo = [];
     }],
     
@@ -34,7 +36,8 @@
         _available = 0;
         _class = "CUP_BOX_US_ARMY_AmmoOrd_F";
         _weapons = [];
-        _magazines = [];
+        /* Change Values in between the qoutes to object classnames. */
+        _magazines = [["<Explosives<", 10]];
         _grenades = [];
         _items = [];
         _cargo = [];
