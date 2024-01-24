@@ -67,7 +67,7 @@ if (_condition && _role in ["MED"]) then {
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
-/* SAW/LMG */
+/* MG5, heavy 7,62mm MMG */
 if (_condition && _role in ["MMG"]) then {
     _availableUniforms = ["BWA3_Uniform_Fleck"];
     _availableWeapons = ["BWA3_MG5_tan"];
@@ -81,7 +81,7 @@ if (_condition && _role in ["MMG"]) then {
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
-/* MG4 */
+/* MG4, light 5,56mm LMG */
 if (_condition && _role in ["AR"]) then {
     _availableUniforms = ["BWA3_Uniform_Fleck"];
     _availableWeapons = ["BWA3_MG4"];
