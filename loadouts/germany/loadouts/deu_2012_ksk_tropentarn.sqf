@@ -249,7 +249,7 @@ if (_condition && _role in ["FWP"]) then
 };
 
 // EOD  , HAS TO BE SET AS EOD INSIDE 3DEN EDITOR THROUGH ACE.
-if (_condition && _role in ["ENG"]) then
+if (_condition && _role in ["EOD"]) then
 {
     _availableUniforms = ["CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_6"];
     _availableWeapons = ["CUP_arifle_G36K_KSK", "CUP_arifle_G36K_KSK_VFG","CUP_arifle_G36K_KSK_VFG_camo","CUP_arifle_G36K_KSK_camo"];
