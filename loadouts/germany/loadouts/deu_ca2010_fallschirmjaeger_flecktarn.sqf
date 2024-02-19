@@ -124,21 +124,6 @@ if (_condition && _role in ["GRD"]) then
     _availableGrenades = [];
 };
 
-// LAT
-if (_condition && _role in ["LAT"]) then
-{
-    _availableUniforms = [];
-    _availableWeapons = ["CUP_arifle_G36A"];
-    _availableMagazines = ["CUP_30Rnd_556x45_G36"];
-    _availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
-    _availableItems = ["cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d"];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-    _availableAttachments = [];
-    _availableGrenades = [];
-};
-
 // MAT
 if (_condition && _role in ["MAT"]) then
 {

@@ -49,7 +49,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Team leader / Squad leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
     _availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];
