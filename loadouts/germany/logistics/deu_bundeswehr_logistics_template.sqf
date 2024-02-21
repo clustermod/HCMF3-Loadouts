@@ -13,10 +13,12 @@
     ["Fireteam", {
         _available = 2;
         _class = "BWA3_Box_Ammo";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
+         _weapons = [];
+        /* Change Values in between the qoutes to object classnames. */
+        _magazines = [["<Main Weapon magazines>", 50], ["<Automatic Weapon Magazines>",10], ["<LAT Launchers>",2 ], ["<GPs for UGLs>",15], ["<Flares>",10]];
+        /* Change Values in between the qoutes to object classnames. */
+        _grenades = [["<Throwable grenades>", 15]];
+        _items = [["ACE_fieldDressing", 12],  ["ACE_morphine", 12], ["ACE_canteen", 6]];
         _cargo = [];
     }],
     
@@ -34,33 +36,14 @@
         _available = 0;
         _class = "BWA3_Box_Explosives";
         _weapons = [];
-        _magazines = [];
+        /* Change Values in between the qoutes to object classnames. */
+        _magazines = [["<Explosives<", 10]];
         _grenades = [];
         _items = [];
         _cargo = [];
     }],
-    
-    ["MMG", {
-        _available = 0;
-        _class = "BWA3_Box_Ammo";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["HMG", {
-        _available = 0;
-        _class = "BWA3_Box_Ammo";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
-    ["MAT", {
+
+    ["LAT", {
         _available = 0;
         _class = "BWA3_Box_Launchers";
         _weapons = [];
@@ -69,17 +52,7 @@
         _items = [];
         _cargo = [];
     }],
-    
-    ["HAT", {
-        _available = 0;
-        _class = "BWA3_Box_Launchers";
-        _weapons = [];
-        _magazines = [];
-        _grenades = [];
-        _items = [];
-        _cargo = [];
-    }],
-    
+
     ["Mortar", {
         _available = 0;
         _class = "BWA3_box_120mm_Mo_Combo";
