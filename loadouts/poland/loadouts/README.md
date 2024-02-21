@@ -14,11 +14,9 @@
 - `MED` Medic
 - `AR` Autorifleman
 - `GRD` Grenadier
-- `DMR` Designated Marksman
 - `LAT` Anti-Tank, Light
 - `MAT` Anti-Tank, Medium
 - `HAT` Anti-Tank, Heavy
-- `EOD` Explosive Ordenance Disposal
 - `ENG` Engineer
 
 **Description:**
