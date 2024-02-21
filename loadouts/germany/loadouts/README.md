@@ -85,7 +85,7 @@ This loadout is depicting a modern German light infantry unit. They are called [
 - `MED` Medic
 - `MMG` Medium Machinegunner
 - `AR` Autorifleman
-- ``HAT` Anti-Tank, Heavy
+- `HAT` Anti-Tank, Heavy
 - `GRD` Grenadier
 
 **Description:**
