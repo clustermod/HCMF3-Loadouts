@@ -3,10 +3,11 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [This loadout is depicting a modern German light infantry unit. They are called "Jäger" in German. Mostly using Boxer GTK AFV's for transportation and light support.]
+ * This loadout is depicting a modern German light infantry unit. They are called "Jäger" in German. Mostly using Boxer GTK AFV's for transportation and light support.
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
+ 
 params ["_role", "_unit"];
 
 /* Custom additional condition */

@@ -3,7 +3,7 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [Logistic file for https://github.com/clustermod/HCMF3-Loadouts/blob/addloadouts/loadouts/germany/loadouts/deu_2024_jäger_flecktarn_v5.sqf]
+ * Logistic file for https://github.com/clustermod/HCMF3-Loadouts/blob/addloadouts/loadouts/germany/loadouts/deu_2024_jäger_flecktarn_v5.sqf
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */

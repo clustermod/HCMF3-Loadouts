@@ -3,8 +3,9 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [CMF Logistics file with preset crates correct for the German military throughout all time zones and climates. Only needs BW mod.]
+ * CMF Logistics file with preset crates correct for the German military throughout all time zones and climates. Only needs BW mod.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
 
 

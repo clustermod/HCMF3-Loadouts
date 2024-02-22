@@ -1,3 +1,14 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Fallschirmjäger are German paratroopers.
+ * The KSK or Kommando Spezialkräfte is the most elite unit of the German Bundeswehr. They specialise in operations behind enemy lines, hostage rescues and point raids.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -16,8 +27,6 @@ private _defHeadgear = ["tc2002_sb", "tc2002od2", "tc2002_od"];
 private _defFacewear = ["AGE_Balaclava_Black", "CUP_G_RUS_Balaclava_Ratnik", "CUP_G_ESS_BLK"];
 private _defAttachments = [];
 
-//
-// Loadout made by Per_von_Harke
 // Not 100% accurate. But accurate as it can get and still look good/acceptable inside Arma.
 
 // Rifleman
