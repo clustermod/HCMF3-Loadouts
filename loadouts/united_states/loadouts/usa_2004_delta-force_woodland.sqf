@@ -32,7 +32,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["rhs_weap_m4a1_carryhandle"];
