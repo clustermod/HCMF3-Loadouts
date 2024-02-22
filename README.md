@@ -3,28 +3,18 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/clustermod/HCMF3-Loadouts/releases">
-        <img src="https://img.shields.io/github/v/release/clustermod/HCMF3-Loadouts?style=flat-square" alt="Releases">
-    </a>
-    <a>
-        <img src="https://img.shields.io/github/repo-size/clustermod/HCMF3-Loadouts?style=flat-square" alt="repo Size">
-    </a>
-    <a href="https://github.com/clustermod/HCMF3-Loadouts/issues" alt="Issue Tracker">
-        <img src="https://img.shields.io/github/issues-raw/clustermod/HCMF3-Loadouts?style=flat-square">
-    </a>
-    <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/clustermod/HCMF3-Loadouts?style=flat-square" alt="License">
-    </a>
-    <a href="https://discord.gg/Fwp7H5F4NT">
-        <img src="https://img.shields.io/badge/Discord-Join-darkviolet.svg?style=flat-square" alt="Cluster Discord"">
-    </a>
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/releases"><img src="https://img.shields.io/github/v/release/clustermod/HCMF3-Loadouts?style=flat-square" alt="Releases"></a>
+    <a><img src="https://img.shields.io/github/repo-size/clustermod/HCMF3-Loadouts?style=flat-square" alt="repo Size"></a>
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/issues" alt="Issue Tracker"><img src="https://img.shields.io/github/issues-raw/clustermod/HCMF3-Loadouts?style=flat-square"></a>
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/LICENSE"><img src="https://img.shields.io/github/license/clustermod/HCMF3-Loadouts?style=flat-square" alt="License"></a>
+    <a href="https://discord.gg/Fwp7H5F4NT"><img src="https://img.shields.io/badge/Discord-Join-darkviolet.svg?style=flat-square" alt="Cluster Discord""></a>
 </p>
 
 <p align="center">
-    <sup><strong>Click to see list of loadouts<br/>
-    <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/README.md">
-        <img src="https://img.shields.io/badge/Loadout_List-orange?style=flat-square" alt="Cluster Discord"">
-    </a></strong></sup>
+    <sup><strong>Click to see list of loadouts or to request a loadout</strong></sup><br/>
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/README.md"><img src="https://img.shields.io/badge/Find_Loadout-blue?style=flat-square" alt="Cluster Discord""></a>
+    &ensp;
+    <a href="https://github.com/clustermod/HCMF3-Loadouts/issues/new?assignees=&labels=kind%2Floadout+request&projects=&template=loadout-request.yml"><img src="https://img.shields.io/badge/Request_Loadout-orange?style=flat-square" alt="Cluster Discord""></a>
 </p>
 
 Hark's Cluster Mission Framework Loadouts (HCMF3-Loadouts) is a collection of loadouts made for [Cluster Community](https://cluster-community.com/) using the mission framework [CMF3](https://github.com/clustermod/CMF3).
