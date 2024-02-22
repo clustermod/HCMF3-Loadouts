@@ -35,7 +35,7 @@ if (_condition && _role in ["RFL"]) then {
 };
 
 // Team leader
-if (_condition && _role in ["SL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
     _availableUniforms = [];
     _availableWeapons = ["UK3CB_M16A2"];
     _availableAttachments = [];

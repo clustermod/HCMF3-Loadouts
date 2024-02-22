@@ -38,7 +38,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Radioman
-if (_condition && _role in ["RADIO"]) then
+if (_condition && _role in ["RTO"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_M4A1"];

@@ -36,7 +36,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
@@ -112,7 +112,7 @@ if (_condition && _role in ["RTO"]) then
 };
 
 // Zeus
-if (_condition && _role in ["Zeus"]) then
+if (_condition && _role in ["ZEUS"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];

@@ -8,7 +8,7 @@
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -40,7 +40,7 @@ None
 
 **File:** `deu_2024_jäger_flecktarn_v5.sqf`
 
-**Modpack Version:** `[V5]`
+**Modpack Version:** `cc_core_v5`
 
 **Template Version:** `1.3`
 
@@ -76,7 +76,7 @@ This loadout is depicting a modern German light infantry unit. They are called [
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -85,7 +85,7 @@ This loadout is depicting a modern German light infantry unit. They are called [
 - `MED` Medic
 - `MMG` Medium Machinegunner
 - `AR` Autorifleman
-- ``HAT` Anti-Tank, Heavy
+- `HAT` Anti-Tank, Heavy
 - `GRD` Grenadier
 
 **Description:**
@@ -110,7 +110,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -143,7 +143,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -175,7 +175,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -207,7 +207,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -251,7 +251,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -285,7 +285,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -323,7 +323,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -357,7 +357,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -388,7 +388,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -425,7 +425,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `CRW` Crewman
@@ -451,7 +451,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -524,7 +524,7 @@ None
 
 **File:** `deu_2023_pzgren_flecktarn_v5.sqf`, `deu_2023_pzgren_tropentarn_v5.sqf`
 
-**Modpack Version:** `[V5]`
+**Modpack Version:** `cc_core_v5`
 
 **Template Version:** `1.3`
 
@@ -564,7 +564,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
@@ -601,7 +601,7 @@ None
 
 **Modpack Version:** `unknown`
 
-**Template Version:** `unknown`
+**Template Version:** `1.3`
 
 **Roles:** 
 - `RFL` Rifleman
