@@ -21,7 +21,7 @@ A norwegian tanker crew.
 
 **Year**: 2018
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts//norway/loadouts/nor_2018_tankcrew_woodland.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2018_tankcrew_woodland.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 
@@ -58,7 +58,7 @@ A norwegian semi-sof team.
 
 **Camo:** M98 (N-Kamo, Woodland)
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts//norway/loadouts/nor_2018_telemarken-battalion_woodland.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2018_telemarken-battalion_woodland.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 
@@ -95,7 +95,7 @@ A norwegian sof team in multicam.
 
 **Camo:** Multicam
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts//norway/loadouts/nor_2020_fsk_multicam.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2020_fsk_multicam.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 
@@ -126,7 +126,7 @@ A norwegian marine sof team.
 
 **Camo:** Black / Grey and Multicam
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts//norway/loadouts/nor_2022_marinejeger.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2022_marinejeger.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 

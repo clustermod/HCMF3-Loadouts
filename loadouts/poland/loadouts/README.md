@@ -29,6 +29,6 @@ A polish SOF team.
 
 **Camo:** Multicam
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts//norway/loadouts/pol_2018_grom_multicam.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/poland/loadouts/pol_2018_grom_multicam.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
