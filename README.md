@@ -38,6 +38,7 @@ The compatibility with the current Cluster Community Modset is written inside ea
  * CC Modpack Version: [version]
  * [Description]
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
 ```
 
