@@ -111,7 +111,7 @@ if (_condition && _role in ["GRD"]) then {
 };
 
 /* Radio Operator SEM70 */
-if (_condition && _role in ["RFL"]) then {
+if (_condition && _role in ["RTO"]) then {
     _availableUniforms = [];
     _availableWeapons = ["BWA3_G36A2"];
     _availableAttachments = ["BWA3_optic_RSAS", "BWA3_acc_LLM01_irlaser"];
