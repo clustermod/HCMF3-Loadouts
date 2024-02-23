@@ -57,7 +57,7 @@ if (_condition && _role in ["SL", "FTL"]) then {
 if (_condition && _role in ["MED"]) then {
     _unit setVariable ["ace_medical_medicclass", 2, true];
     _availableUniforms = [];
-    _availableWeapons = [];
+    _availableWeapons = ["BWA3_G36A2"];
     _availableAttachments = ["BWA3_optic_RSAS", "BWA3_acc_LLM01_irlaser"];
     _availableMagazines = [];
     _availableVests = ["BWA3_Vest_Medic_Fleck"];
