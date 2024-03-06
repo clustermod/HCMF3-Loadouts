@@ -1,5 +1,37 @@
 # Loadouts
 
+## 2024, Green Sea Bataillon in EMR Summer
+**File:** `crn_2024_green-sea-bataillon_summer_v5.sqf`
+
+**Modpack Version:** `v6`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Automatic Rifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+
+**Description:**
+<!-- Description -->
+Cluster Community modpack adjusted interpretaion of the "Green Sea Bataillon" seen in other mods dealing with the Chernorussia lore.
+The Green Sea Bataillon mostly has eastern style gear but a western modernisation is seen throuout their equipment.
+Inside the loadout is also a ID armband in the colors green and yellow. The enemy armband colors should be either white or red. 
+
+**Country:** Chernorussia
+
+**ID Armband Colors:** Green, Yellow
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+- crn_2024_Green-Sea-Bataillon_logistics_summer_v6
+
+---
+
 ## 2020 Chernarus Defence Forces (CDF) in ATACS
 **File:** `cdf_2020_cherno-sso_atac.sqf`
 
@@ -313,8 +345,8 @@ Escape from Tarkov Inspired loadout
 
 ---
 
-## Fictional Modern African Special Forces in Tan
-**File:** `fic_na_african-modern-SOF_Tan.sqf`
+## 2020 Chernarus Defence Forces (CDF) in ATACS
+**File:** `cdf_2020_cherno-sso_atac.sqf`
 
 **Modpack Version:** `??`
 
@@ -323,19 +355,23 @@ Escape from Tarkov Inspired loadout
 **Roles:** 
 - `RFL` Rifleman
 - `SL` Squad Leader
-- `FTL` Fireteam Leader
 - `MED` Medic
-- `GRD` Grenadier
-- `LAT` Anti-Tank, Light
 - `MMG` Machinegunner, Medium
+- `GRD` Grenadier
+- `ENG` Engineer
 
 **Description:**
 <!-- Description -->
-Fictional Modern African Special Forces in Tan
+2020 Chernarus Defence Forces (CDF) in ATACS
 
 <!-- File Meta Data e.g. **Country:** Russia -->
+**Country:** Chernarus
+
+**Year:** 2020
+
 
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
+
 
 ---
