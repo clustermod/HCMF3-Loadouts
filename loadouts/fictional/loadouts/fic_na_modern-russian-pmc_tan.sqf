@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Is supposed to be some PMC of Russian decent operating in Syria and is completely fictional
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = ["CUP_H_RUS_6B47_headset_desert"];
 private _defFacewear = ["G_SWDG", "CUP_G_Tan_Scarf_Shades_GPSCombo_Beard_Blonde", "CUP_G_Tan_Scarf_Shades_GPSCombo_Beard", "CUP_G_WristWatch", "CUP_RUS_Balaclava_tan"];
 private _defAttachments = [];
-
-
-// Is supposed to be some PMC of Russian decent operating in Syria and is completely fictional
-// Made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then
