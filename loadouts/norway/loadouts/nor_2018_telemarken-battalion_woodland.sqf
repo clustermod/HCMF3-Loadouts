@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Norwegian mechanized infantry. You can replace the PEQ2s with PEQ15s if you want to get more newer loadouts for Telemarken Battalion.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,12 +25,6 @@ private _defBackpacks = ["B_AssaultPack_cbr"];
 private _defHeadgear = ["n_opscore_w_cover_pelt_nsw", "n_opscore_w_cover_pelt", "n_opscore_ut_pelt_nsw", "n_opscore_ut_pelt"];
 private _defFacewear = ["n_facemask_w", "rhs_googles_clear", "rhs_googles_black", "CUP_G_ESS_BLK", "G_Bandanna_oli", "CUP_G_WristWatch"];
 private _defAttachments = [];
-
-
-// Koscher gasmask: SE_S10_Gas_Mask
-// Loadout made by Per_von_Harke
-//
-// You can replace the PEQ2s with PEQ15s if you want to get more newer loadouts for Telemarken Battalion.
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

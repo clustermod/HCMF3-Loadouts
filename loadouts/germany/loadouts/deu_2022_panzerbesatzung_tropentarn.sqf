@@ -3,8 +3,9 @@
  *
  * Author: Hark
  * CC Modpack Version: V4
- * [Loadout for somewhat recent 2023 German tank crews. In this loadout everyone is supposed to be a tank commander hence the SEM-70 that everyone gets.]
+ * Loadout for somewhat recent 2023 German tank crews. In this loadout everyone is supposed to be a tank commander hence the SEM-70 that everyone gets.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
 
 params ["_role", "_unit"];

@@ -117,7 +117,7 @@ Inside the loadout is also a ID armband in the colors green and yellow. The enem
 
 **Description:**
 <!-- Description -->
-2020 "Specialized" Chernarus Defence Forces (CDF) Motorized Infantry in EMR
+2020 "Specialized" Chernarus Defence Forces (CDF) Motorized Infantry in EMR.
 
 <!-- File Meta Data e.g. **Country:** Russia -->
 **Country:** Chernarus
@@ -251,6 +251,36 @@ Escape from Tarkov Inspired loadout
 
 ---
 
+## Fnrech SOF in CCE
+**File:** `fic_na_french-sof_cce.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `MAT` Anti-Tank, Medium
+- `ESP` Explosive Specialist
+
+**Description:**
+<!-- Description -->
+French special force team.
+Fnre
+<!-- File Meta Data e.g. **Country:** Russia -->
+**Year:** unpecified / modern
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+
+---
+
 ## 2020 Fictional JSOK PMC in Woodland
 **File:** `fic_2020_jsok-sof_woodland.sqf`
 
@@ -373,5 +403,190 @@ Escape from Tarkov Inspired loadout
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
 
+---
+
+
+## Modern JSOK in M81 Woodland
+**File:** `fic_na_jsok-modern_m81.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `MAT` Anti-Tank, Medium
+- `MMG` Machinegunner, Medium
+- `AR` Autorifleman
+- `ENG` Engineer
+
+**Description:**
+<!-- Description -->
+
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## Modern Russian PMC
+**File:** `fic_na_modern-russian-pmc_tan.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `MMG` Machinegunner, Medium
+
+**Description:**
+<!-- Description -->
+Is supposed to be some PMC of Russian decent operating in Syria and is completely fictional
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## 80s US Army Ranger inspired loadout in Woodland
+**File:** `fic_na_reforgor-type-beat_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `MMG` Machinegunner, Medium
+- `GRD` Grenadier
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+## Undefined 1 in Woodland
+**File:** `fic_na_undefined-1_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `MMG` Machinegunner, Medium
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## Undefined 2 in Woodland
+**File:** `fic_na_undefined-2_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## PDF in ERDL
+**File:** `pdf_1975_erdl.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `HAT` Anti-Tank, Heavy
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+
+## "Army"
+**File:** `rac_na_army_dbdu.sqf`, `rac_na_army_erdl.sqf`, `rac_na_army_tigerstripe.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `MMG` Medium Machinegunner
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `MAT` Anti-Tank, Medium
+- `HAT` Anti-Tank, Heavy
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
 
 ---

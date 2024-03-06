@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * A Polish SOF team in multicam.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,14 +25,6 @@ private _defBackpacks = ["B_AssaultPack_mcamo"];
 private _defHeadgear = [];
 private _defFacewear = [];
 private _defAttachments = [];
-
-
-// Loadout file made by Per_von_Harke
-
-// Polish Special Forces, all camo is Multicam
-// Classname of accurate looking gasmask = SE_S10_Gas_Mask
-// NO NIGHTVISION GOGGLES INCLUDED , no real military uses Deagles they are impractical af
-
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * French special force team.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = ["UNS_Ammopack"];
 private _defHeadgear = ["CUP_H_CZ_Helmet10", "CUP_H_CZ_Helmet09", "CUP_H_Booniehat_CCE"];
 private _defFacewear = ["UK3CB_G_Neck_Shemag_Tan", "CUP_G_ESS_BLK"];
 private _defAttachments = [];
-
-
-//
-// Loadout made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

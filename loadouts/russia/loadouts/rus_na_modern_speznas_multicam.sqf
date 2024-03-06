@@ -1,3 +1,15 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * This loadout is also nearly completely fictional and only tries to imitate the look and feel of modern Speznas.
+ * Because at this current time Cluster Community does not have mods for those units in their modlist.
+ * It also only has very few roles because it was made for one specific mission. This loadout was made before the year 2022. 
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -16,13 +28,9 @@ private _defHeadgear = ["CUP_H_OpsCore_Covered_MCAM_SF"];
 private _defFacewear = ["UK3CB_G_Balaclava2_DES", "CUP_G_RUS_Balaclava_Ratnik"];
 private _defAttachments = [];
 
-//
-// Made for Arma 3 Virtual MILSIM
 // This loadout is also nearly completely fictional and only tries to imitate the look and feel of modern Speznas.
 // Because at this current time Cluster Community does not have mods for those units in their modlist.
 // It also only has very few roles because it was made for one specific mission.
-//
-// Loadout made by Per_von_Harke
 
 // Rifleman
 if (_condition && _role in ["JTAC"]) then

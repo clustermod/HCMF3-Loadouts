@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * The KSK or Kommando Spezialkräfte is the most elite unit of the German Bundeswehr. They specialise in operations behind enemy lines, hostage rescues and point raids. Note that this loadout is incomplete and does not cover all roles.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = ["rhsusf_opscore_ut_pelt"];
 private _defFacewear = ["CUP_RUS_Balaclava_tan", "CUP_RUS_Balaclava_rgr", "CUP_G_PMC_Facewrap_Tan_Glasses_Dark", "CUP_G_PMC_Facewrap_Black_Glasses_Dark"];
 private _defAttachments = [];
-
-
-//
-// Loadout made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

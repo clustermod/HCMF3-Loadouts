@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * A norwegian sof team in multicam.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = ["n_opscore_ut_pelt_nsw", "n_opscore_ut_pelt"];
 private _defFacewear = [];
 private _defAttachments = [];
-
-
-//
-// Loadout made by Per_von_Harke
-// WIP
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

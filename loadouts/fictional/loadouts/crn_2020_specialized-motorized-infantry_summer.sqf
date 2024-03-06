@@ -3,7 +3,7 @@
  *
  * Author: Hark
  * CC Modpack Version: ??
- * 2020 "Modernized" Chernarus Defence Forces (CDF) SSO in EMR
+ * 2020 "Specialized" Chernarus Defence Forces (CDF) Motorized Infantry in EMR
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */

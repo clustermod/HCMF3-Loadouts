@@ -3,8 +3,9 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.]
+ * Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
 params ["_role", "_unit"];
 

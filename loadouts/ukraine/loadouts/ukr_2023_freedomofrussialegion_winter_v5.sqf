@@ -3,7 +3,7 @@
  *
  * Author: Hark
  * CC Modpack Version: V5 
- * [This is losely inspired by the Freedom Russia Legion unit of the Armed Force of Ukraine. They have a mix of western and russian weapons and oftene conduct cross border raids into Russian territory.]
+ * This is losely inspired by the Freedom Russia Legion unit of the Armed Force of Ukraine. They have a mix of western and russian weapons and oftene conduct cross border raids into Russian territory.
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */

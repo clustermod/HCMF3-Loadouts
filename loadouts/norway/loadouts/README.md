@@ -15,7 +15,7 @@
 
 **Description:**
 
-A norwegian tanker crew.
+A Norwegian tanker crew.
 
 **Contry:** Norway
 
@@ -102,7 +102,7 @@ A norwegian sof team in multicam.
 ---
 
 ## 2022 Marinejeger 
-**file:** `nor_2022_marinejeger.sqf`
+**file:** `nor_2022_marinejeger_black.sqf`
 
 **Modpack Version:** `??`
 

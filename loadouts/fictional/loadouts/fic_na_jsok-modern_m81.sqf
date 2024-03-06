@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ *
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -16,13 +26,6 @@ private _defBackpacks = ["B_AssaultPack_rgr"];
 private _defHeadgear = ["rhsusf_mich_bare_norotos_arc_alt"];
 private _defFacewear = ["CUP_G_ESS_BLK"];
 private _defAttachments = [];
-
-//
-// Made for Arma 3 Virtual MILSIM
-//
-// Made by Per_von_Harke
-//
-
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then {

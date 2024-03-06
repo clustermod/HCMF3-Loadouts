@@ -3,7 +3,7 @@
 ## YEAR NAME
 **file:** `rus_1998_vdv_ai.sqf`
 
-**Modpack Version:** `<!--REPLACE WITH MODPACKVERSION-->`
+**Modpack Version:** `??`
 
 **Template Version:** `1.3`
 
