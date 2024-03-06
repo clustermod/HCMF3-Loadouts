@@ -15,7 +15,7 @@
 
 **Description:**
 
-A norwegian tanker crew.
+A Norwegian tanker crew.
 
 **Contry:** Norway
 
@@ -102,7 +102,7 @@ A norwegian sof team in multicam.
 ---
 
 ## 2022 Marinejeger 
-**file:** `nor_2022_marinejeger.sqf`
+**file:** `nor_2022_marinejeger_black.sqf`
 
 **Modpack Version:** `??`
 
@@ -126,7 +126,7 @@ A norwegian marine sof team.
 
 **Camo:** Black / Grey and Multicam
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2022_marinejeger.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/master/loadouts/norway/loadouts/nor_2022_marinejeger_black.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
 
