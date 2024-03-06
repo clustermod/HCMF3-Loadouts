@@ -1,8 +1,7 @@
 /*
- * Author: [Author]
- * [Description]
+ * Author: Eric
  *
- * [Modpack Version]
+ * Modpack Version: ??
  */
 
 /* Get the unit's role */
