@@ -68,7 +68,7 @@ None
 
 ## 2024 Ukrainian Special Operations Forces
 
-**File:** `ukr_2023_mech-inf_multicam_v5.sqf`
+**File:** `ukr_2022_uaf-sof_multicam.sqf`
 
 **Modpack Version:** `??`
 
@@ -85,7 +85,7 @@ None
 
 **Description:**
 <!-- Description -->
-Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.
+UAF SOF forces.
 
 **Country:** Ukraine
 
@@ -93,6 +93,6 @@ Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction wit
 **Associated Files:**
 None
 
-<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/addloadouts/loadouts/ukraine/loadouts/ukr_2023_mech-inf_multicam_v5.sqf">
+<a href="https://github.com/clustermod/HCMF3-Loadouts/blob/addloadouts/loadouts/ukraine/loadouts/ukr_2022_uaf-sof_multicam.sqf">
   <img alt="Static Badge" src="https://img.shields.io/badge/File-Download_(CTRL_%2B_S)-orange?style=flat-square">
 </a>
