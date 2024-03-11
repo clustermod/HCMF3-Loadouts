@@ -1,5 +1,37 @@
 # Loadouts
 
+## 2024, Green Sea Bataillon in EMR Summer
+**File:** `crn_2024_green-sea-bataillon_summer_v5.sqf`
+
+**Modpack Version:** `v6`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Automatic Rifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+
+**Description:**
+<!-- Description -->
+Cluster Community modpack adjusted interpretaion of the "Green Sea Bataillon" seen in other mods dealing with the Chernorussia lore.
+The Green Sea Bataillon mostly has eastern style gear but a western modernisation is seen throuout their equipment.
+Inside the loadout is also a ID armband in the colors green and yellow. The enemy armband colors should be either white or red. 
+
+**Country:** Chernorussia
+
+**ID Armband Colors:** Green, Yellow
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+- crn_2024_Green-Sea-Bataillon_logistics_summer_v6
+
+---
+
 ## 2020 Chernarus Defence Forces (CDF) in ATACS
 **File:** `cdf_2020_cherno-sso_atac.sqf`
 
@@ -343,8 +375,39 @@ None
 
 ---
 
-## Fictional Modern African Special Forces in Tan
-**File:** `fic_na_african-modern-SOF_Tan.sqf`
+## 2020 Chernarus Defence Forces (CDF) in ATACS
+**File:** `cdf_2020_cherno-sso_atac.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `MED` Medic
+- `MMG` Machinegunner, Medium
+- `GRD` Grenadier
+- `ENG` Engineer
+
+**Description:**
+<!-- Description -->
+2020 Chernarus Defence Forces (CDF) in ATACS
+
+<!-- File Meta Data e.g. **Country:** Russia -->
+**Country:** Chernarus
+
+**Year:** 2020
+
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+
+---
+
+
+## Modern JSOK in M81 Woodland
+**File:** `fic_na_jsok-modern_m81.sqf`
 
 **Modpack Version:** `??`
 
@@ -357,16 +420,174 @@ None
 - `MED` Medic
 - `GRD` Grenadier
 - `LAT` Anti-Tank, Light
+- `MAT` Anti-Tank, Medium
 - `MMG` Machinegunner, Medium
+- `AR` Autorifleman
+- `ENG` Engineer
 
 **Description:**
 <!-- Description -->
-Fictional Modern African Special Forces in Tan
 
 <!-- File Meta Data e.g. **Country:** Russia -->
 
 **Associated Files:**
 <!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## Modern Russian PMC
+**File:** `fic_na_modern-russian-pmc_tan.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `MMG` Machinegunner, Medium
+
+**Description:**
+<!-- Description -->
+Is supposed to be some PMC of Russian decent operating in Syria and is completely fictional
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## 80s US Army Ranger inspired loadout in Woodland
+**File:** `fic_na_reforgor-type-beat_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `MMG` Machinegunner, Medium
+- `GRD` Grenadier
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+## Undefined 1 in Woodland
+**File:** `fic_na_undefined-1_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `MMG` Machinegunner, Medium
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## Undefined 2 in Woodland
+**File:** `fic_na_undefined-2_woodland.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+## PDF in ERDL
+**File:** `pdf_1975_erdl.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `HAT` Anti-Tank, Heavy
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+---
+
+
+
+## "Army"
+**File:** `rac_na_army_dbdu.sqf`, `rac_na_army_erdl.sqf`, `rac_na_army_tigerstripe.sqf`
+
+**Modpack Version:** `??`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Autorifleman
+- `MMG` Medium Machinegunner
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+- `MAT` Anti-Tank, Medium
+- `HAT` Anti-Tank, Heavy
+
+**Description:**
+<!-- Description -->
+<!-- File Meta Data e.g. **Country:** Russia -->
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
 
 ---
 
