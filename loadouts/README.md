@@ -20,6 +20,11 @@
 </a>
 <br/><br/>
 
+<a href="https://github.com/clustermod/Harks-CMF3-Loadouts/tree/master/loadouts/japan">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Category-Japan-grey?labelColor=red" height="30px">
+</a>
+<br/><br/>
+
 <a href="https://github.com/clustermod/Harks-CMF3-Loadouts/tree/master/loadouts/lithuania">
     <img alt="Static Badge" src="https://img.shields.io/badge/Category-Lithuania-grey?labelColor=red" height="30px">
 </a>
