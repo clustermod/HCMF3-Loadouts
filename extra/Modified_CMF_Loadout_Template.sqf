@@ -40,7 +40,7 @@ if (_condition && _role in ["RFL"]) then {
 };
 
 /* Squad Leader and Fireteam Leader */
-if (_condition && _role in ["SL", "FTL"]) then {
+if (_condition && _role in ["PL", "SL", "FTL"]) then {
     _availableUniforms = [];
     _availableWeapons = [];
     _availableAttachments = [];
