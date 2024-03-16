@@ -1,6 +1,93 @@
 # Loadouts
 
-## 2020 Chernarus Defence Forces (CDF) in ATACS
+## 2024, Green Sea Bataillon in EMR Summer
+**File:** `crn_2024_green-sea-bataillon_summer_v6.sqf`
+
+**Modpack Version:** `v6`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Automatic Rifleman
+- `GRD` Grenadier
+- `LAT` Anti-Tank, Light
+
+**Description:**
+<!-- Description -->
+Cluster Community modpack adjusted interpretaion of the "Green Sea Bataillon" seen in other mods dealing with the Chernorussia lore.
+The Green Sea Bataillon mostly has eastern style gear but a western modernisation is seen throuout their equipment.
+Inside the loadout is also a ID armband in the colors green and yellow. The enemy armband colors should be either white or red. 
+
+**Country:** Chernorussia
+
+**ID Armband Colors:** Green, Yellow
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+- crn_2024_Green-Sea-Bataillon_logistics_summer_v6
+- crn_2024_tankcrew_summer_v6
+
+---
+
+## 2024, Chernorussian Tank Crew
+**File:** `crn_2024_tankcrew_summer_v6.sqf`
+
+**Modpack Version:** `v6`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `CRW` Crewman
+- `TC`  Tank Commander
+
+**Description:**
+<!-- Description -->
+Chernarus tank crew for IFVs and MBTs.
+
+**Country:** Chernorussia
+
+**ID Armband Colors:** Green, Yellow
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+- crn_2024_green-sea-bataillon_summer_v6
+
+---
+
+## 2009, Chernorussian National Guard
+**File:** `crn_2009_national-guard_ttsko_v6.sqf`
+
+**Modpack Version:** `v6`
+
+**Template Version:** `1.3`
+
+**Roles:** 
+- `RFL` Rifleman
+- `PL` Platoon Leader
+- `SL` Squad Leader
+- `FTL` Fireteam Leader
+- `MED` Medic
+- `AR` Automatic Rifleman
+- `AAR` Assistant Autorifleman
+- `LAT` Anti-Tank, Light
+
+**Description:**
+<!-- Description -->
+Chernorussian National Reserve unit during the 2009 ChDKZ uprising in M88 Forest TTsKO.
+
+**Country:** Chernorussia
+
+**Associated Files:**
+<!-- List of templates associated with this e.g. garage and logistics templates -->
+None
+
+---
+
+## 2020 Chernarus Defence Forces (CDF) in ATAC
 **File:** `cdf_2020_cherno-sso_atac.sqf`
 
 **Modpack Version:** `??`

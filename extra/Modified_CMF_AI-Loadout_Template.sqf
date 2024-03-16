@@ -1,8 +1,9 @@
 /*
- * Author: [Author]
- * [Description]
+ * Made for Arma 3 Virtual MILSIM
  *
- * [Modpack Version]
+ * Author: [Author]
+ * CC Modpack Version: [Modpack Version]
+ * [Description]
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!ai_arsenal_template.sqf
  */
