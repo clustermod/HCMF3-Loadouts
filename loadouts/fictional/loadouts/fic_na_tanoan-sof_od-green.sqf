@@ -3,7 +3,7 @@
  *
  * Author: Hark
  * CC Modpack Version: V4
- * [OD Green Special Operations Force made for a mission on Tanoa or any comparable jungle map.]
+ * OD Green Special Operations Force made for a mission on Tanoa or any comparable jungle map.
  *
  */
 params ["_role", "_unit"];

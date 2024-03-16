@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * The PSA BPOL (Polizeiliche Schutzaufgaben Ausland der Bundespolizei) is a specialized unit of the German Federal Police tasked with providing personal security for German diplomatic missions in conflict regions.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -16,9 +26,6 @@ private _defHeadgear = ["rhsusf_opscore_ut_pelt", "rhsusf_opscore_ut_pelt_cam", 
 private _defFacewear = ["rhs_googles_black", "rhs_googles_clear", "rhs_googles_orange", "AGE_Balaclava_Black", "CUP_RUS_Balaclava_rgr", "CUP_RUS_Balaclava_blk"];
 private _defAttachments = [];
 
-//
-// Loadout made by Per_von_Harke
-//
 // Optional fictional gasmask: G_AirPurifyingRespirator_01_F
 // Compromises have been made by not having accurate G36's and vests for 2021 EGB units.
 // The correct HK steel parts for the G36KA3 have not been made available within a Arma 3 mod.

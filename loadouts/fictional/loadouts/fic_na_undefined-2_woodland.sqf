@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * 
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = ["CUP_B_AlicePack_OD"];
 private _defHeadgear = ["usm_bdu_boonie_odg", "usm_bdu_boonie_wdl", "CUP_H_ChDKZ_Beanie"];
 private _defFacewear = ["G_Bandanna_oli"];
 private _defAttachments = [];
-
-
-//
-// Loadout made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then
@@ -68,7 +73,7 @@ if (_condition && _role in ["MED"]) then
 };
 
 // SAW / LMG
-if (_condition && _role in ["LMG"]) then
+if (_condition && _role in ["AR"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_RPK74"];

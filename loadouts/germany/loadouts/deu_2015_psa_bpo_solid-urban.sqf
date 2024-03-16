@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * The PSA BPOL (Polizeiliche Schutzaufgaben Ausland der Bundespolizei) is a specialized unit of the German Federal Police tasked with providing personal security for German diplomatic missions in conflict regions.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,8 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = [];
 private _defFacewear = [];
 private _defAttachments = [];
-
-//Loadout made by Per_von_Harke
 
 // Zeus
 if (_condition && _role in ["ZEUS"]) then
@@ -49,7 +57,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Team leader / Squad leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = ["CUP_I_B_PMC_Unit_42", "CUP_I_B_PMC_Unit_39", "CUP_I_B_PMC_Unit_36", "U_C_ArtTShirt_01_v6_F", "U_Rangemaster", "U_Marshal"];
     _availableWeapons = ["CUP_arifle_G36K_RIS", "CUP_arifle_G36C", "CUP_arifle_G36C_VFG", "rhsusf_weap_glock17g4"];

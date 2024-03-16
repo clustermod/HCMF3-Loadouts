@@ -3,9 +3,11 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [Loadout depicting the 2023 state of German Paratroopers, with limitations in realism due to available mods for Arma 3.]
+ * Loadout depicting the 2023 state of German Paratroopers, with limitations in realism due to available mods for Arma 3.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -68,7 +70,7 @@ if (_condition && _role in ["MED"]) then {
 };
 
 /* LMG 556*/
-if (_condition && _role in ["MMG"]) then {
+if (_condition && _role in ["AR"]) then {
     _availableUniforms = [];
     _availableWeapons = ["BWA3_MG4"];
     _availableAttachments = ["bwa3_optic_zo4x30i_sand", "BWA3_acc_LLM01_irlaser", "BWA3_bipod_MG3"];

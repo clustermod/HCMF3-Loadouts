@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Fallschirmjäger are German paratroopers.  
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -115,21 +125,6 @@ if (_condition && _role in ["GRD"]) then
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_AG36"];
     _availableMagazines = ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_SmokeRed_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_SmokeGreen_M203", "CUP_1Rnd_SmokeYellow_M203", "ACE_40mm_Flare_white", "ACE_40mm_Flare_white", "CUP_FlareGreen_M203", "CUP_FlareRed_M203", "CUP_FlareYellow_M203", "CUP_30Rnd_556x45_G36"];
-    _availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
-    _availableItems = ["cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d"];
-    _availableBackpacks = [];
-    _availableHeadgear = [];
-    _availableFacewear = [];
-    _availableAttachments = [];
-    _availableGrenades = [];
-};
-
-// LAT
-if (_condition && _role in ["LAT"]) then
-{
-    _availableUniforms = [];
-    _availableWeapons = ["CUP_arifle_G36A"];
-    _availableMagazines = ["CUP_30Rnd_556x45_G36"];
     _availableVests = ["CUP_V_B_GER_Carrier_Rig_2"];
     _availableItems = ["cup_optic_g36dualoptics", "cup_optic_g36dualoptics_3d"];
     _availableBackpacks = [];

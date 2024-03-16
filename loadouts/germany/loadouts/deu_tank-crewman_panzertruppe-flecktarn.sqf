@@ -2,10 +2,11 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: 
- * [Description]
+ * CC Modpack Version: ??
+ * German tank crewman usually operating the Leopard 2A6, 2A7 or 2A8. Within Arma only the Leopard 2A6 is properly modelled and available through the BW3 mod.
  *
  */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */

@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * US Army Rangers in woodland camouflage.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -35,7 +45,7 @@ if (_condition && _role in ["RFL"]) then {
 };
 
 // Team leader
-if (_condition && _role in ["SL"]) then {
+if (_condition && _role in ["SL", "FTL"]) then {
     _availableUniforms = [];
     _availableWeapons = ["UK3CB_M16A2"];
     _availableAttachments = [];

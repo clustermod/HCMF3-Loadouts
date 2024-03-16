@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * 1968 U.S. MACV-SOG in Green camouflage operating during the Vietnam war behind enemy lines inside of Laos and Camobodia.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -36,7 +46,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];
@@ -112,7 +122,7 @@ if (_condition && _role in ["RTO"]) then
 };
 
 // Zeus
-if (_condition && _role in ["Zeus"]) then
+if (_condition && _role in ["ZEUS"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["uns_xm177e2_grip", "uns_xm177e2", "uns_xm177e2_short", "uns_m45"];

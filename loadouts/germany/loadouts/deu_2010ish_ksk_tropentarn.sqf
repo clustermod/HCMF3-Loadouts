@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Fallschirmjäger are German paratroopers.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,11 +25,6 @@ private _defBackpacks = ["BWA3_PatrolPack_Tropen"];
 private _defHeadgear = ["BWA3_M92_Tropen", "BWA3_Booniehat_Tropen"];
 private _defFacewear = ["AGE_Goggles_ComTacs", "CUP_G_PMC_RadioHeadset", "rhsusf_shemagh2_tan", "rhsusf_shemagh_tan"];
 private _defAttachments = [];
-
-
-//
-// Loadout made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

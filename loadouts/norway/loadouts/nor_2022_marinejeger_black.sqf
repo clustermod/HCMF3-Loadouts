@@ -1,9 +1,13 @@
 /*
- * Author: [Author]
- * [Description]
+ * Made for Arma 3 Virtual MILSIM
  *
- * [Modpack Version]
+ * Author: Eric
+ * CC Modpack Version: ??
+ * A norwegian marine sof team.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */

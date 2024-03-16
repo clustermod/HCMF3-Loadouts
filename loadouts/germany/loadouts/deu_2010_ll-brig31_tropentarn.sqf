@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * This loadout Fallschirmjäger fighting in Afghanistan around the year 2010. Specifically, within Arma 3 mod limitations, accurate to the Fallschirmjägerbataillons 373 from Seedorf which participated in the Karfreitagsgefecht on the 2nd of April 2010.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,10 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = [];
 private _defFacewear = [];
 private _defAttachments = [];
-
-//Loadout made by Per_von_Harke
-//As used by Germany in 2010 Afghanistan
-//
 
 // Zeus
 if (_condition && _role in ["ZEUS"]) then

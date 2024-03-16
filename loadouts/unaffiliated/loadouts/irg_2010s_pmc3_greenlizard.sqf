@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Unspecified PMC operating in a more jungle like enviroment.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -21,7 +31,6 @@ private _defAttachments = [];
 // Loadout made by Per_von_Harke
 
 
-
 // Rifleman
 if (_condition && _role in ["RFL"]) then
 {
@@ -38,7 +47,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Radioman
-if (_condition && _role in ["RADIO"]) then
+if (_condition && _role in ["RTO"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_M4A1"];
@@ -54,7 +63,7 @@ if (_condition && _role in ["RADIO"]) then
 
 
 // Squad Leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_M4A1", "rhssaf_zrak_rd7j"];

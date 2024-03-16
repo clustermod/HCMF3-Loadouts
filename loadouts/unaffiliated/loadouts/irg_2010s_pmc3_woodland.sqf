@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Unspecified PMC operating in a more jungle like enviroment.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -38,7 +48,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Radioman
-if (_condition && _role in ["RADIO"]) then
+if (_condition && _role in ["RTO"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["CUP_arifle_M4A1"];

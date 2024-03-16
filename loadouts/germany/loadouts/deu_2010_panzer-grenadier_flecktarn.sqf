@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * Panzergrenadiere are the Mechanized Infantry part of the Bundeswehr. During the time this loadout is in the Panzergrenadiere used the Marder IFV.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -15,10 +25,6 @@ private _defBackpacks = [];
 private _defHeadgear = ["CUP_H_Ger_M92_Cover"];
 private _defFacewear = ["BWA3_G_Combat_clear", "BWA3_G_Combat_black"];
 private _defAttachments = [];
-
-//
-// Loadout made by Per_von_Harke
-//
 
 // Rifleman
 if (_condition && _role in ["RFL"]) then

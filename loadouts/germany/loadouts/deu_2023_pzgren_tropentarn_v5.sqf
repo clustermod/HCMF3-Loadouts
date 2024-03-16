@@ -3,9 +3,11 @@
  *
  * Author: Hark
  * CC Modpack Version: V5
- * [Loadout depicting the 2023 state of German Mechanized Infantry, with limitations in realism due to available mods for Arma 3. Made for a forest enviroment.]
+ * Loadout depicting the 2023 state of German Mechanized Infantry, with limitations in realism due to available mods for Arma 3. Made for a desert enviroment.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -26,106 +28,106 @@ private _defFacewear = [];
 
 /* Rifleman */
 if (_condition && _role in ["RFL"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = [];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = [];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* Team leader */
 if (_condition && _role in ["SL", "FTL"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3", "BWA3_P2A1"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = ["BWA3_1Rnd_Flare_Illum", "BWA3_1Rnd_Flare_Singlestar_Red", "BWA3_1Rnd_Flare_Singlestar_White", "BWA3_1Rnd_Flare_Singlestar_Green"];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = ["ACRE_SEM70", "B_UavTerminal"];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* Medic */
 if (_condition && _role in ["MED"]) then {
     _unit setVariable ["ace_medical_medicclass", 2, true];
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = [];
     _availableVests = ["CUP_V_JPC_medicalbelt_rngr"];
     _availableItems = ["ACE_personalAidKit", "ACE_plasmaIV", "ACE_plasmaIV_250", "ACE_plasmaIV_500", "ACE_surgicalKit", "kat_chestSeal", "kat_larynx", "kat_stethoscope", "kat_amiodarone", "kat_lidocaine", "kat_IO_FAST", "kat_IV_16", "KAT_Empty_bloodIV_500", "KAT_Empty_bloodIV_250", "kat_AED", "kat_aatKit"];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_Kitbag_Fleck_Medic"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_Kitbag_Tropen_Medic"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* SAW/LMG */
 if (_condition && _role in ["AR"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_MG5_tan"];
     _availableAttachments = ["bwa3_optic_zo4x30i_sand", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = [];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = [];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* Grenadier */
 if (_condition && _role in ["GRD"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3_AG40"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = [];
-    _availableVests = ["CUP_V_JPC_weaponsbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_weaponsbelt_coy"];
     _availableItems = [];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* LAT */
 if (_condition && _role in ["LAT"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3", "BWA3_PzF3_Tandem_Loaded"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser", "bwa3_optic_nsa80"];
     _availableMagazines = [];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = [];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* ZF-Schütze (DMR) */
 if (_condition && _role in ["DMR"]) then {
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G28"];
     _availableAttachments = ["bwa3_optic_pmii_dmr_microt1_rear", "bwa3_acc_varioray_irlaser", "bwa3_bipod_harris"];
     _availableMagazines = ["BWA3_20Rnd_762x51_G28", "BWA3_20Rnd_762x51_G28_AP", "BWA3_20Rnd_762x51_G28_Tracer_Dim", "BWA3_20Rnd_762x51_G28_SD", "BWA3_20Rnd_762x51_G28_Tracer", "BWA3_20Rnd_762x51_G28_LR"];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = ["ACE_Kestrel4500", "ACE_RangeCard", "ACE_Tripod", "ACE_SpottingScope", "ACE_ATragMX"];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 
 /* Tank Crew */
 if (_condition && _role in ["CRW"]) then {
-    _availableUniforms = ["BWA3_Uniform_Crew_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Crew_Tropen"];
     _availableWeapons = ["BWA3_MP7", "rhssaf_zrak_rd7j"];
     _availableAttachments = ["bwa3_optic_rsas_riser"];
     _availableMagazines = ["BWA3_40Rnd_46x30_MP7"];
@@ -140,15 +142,15 @@ if (_condition && _role in ["CRW"]) then {
 /* Engineer */
 if (_condition && _role in ["ENG"]) then {
     _unit setVariable ["ACE_IsEngineer", 2, true];
-    _availableUniforms = ["BWA3_Uniform_Fleck"];
+    _availableUniforms = ["BWA3_Uniform_Tropen"];
     _availableWeapons = ["BWA3_G36A3", "ACE_VMM3"];
     _availableAttachments = ["bwa3_optic_zo4x30_rsas_brown", "bwa3_acc_varioray_irlaser"];
     _availableMagazines = ["rhs_ec75_mag", "rhs_ec200_mag"];
-    _availableVests = ["CUP_V_JPC_communicationsbelt_rngr", "CUP_V_JPC_Fastbelt_rngr", "CUP_V_JPC_lightbelt_rngr"];
+    _availableVests = ["CUP_V_JPC_communicationsbelt_coy", "CUP_V_JPC_Fastbelt_coy", "CUP_V_JPC_lightbelt_coy"];
     _availableItems = ["ToolKit", "ACE_Clacker", "ACE_DefusalKit"];
     _availableGrenades = [];
-    _availableBackpacks = ["BWA3_AssaultPack_Fleck"];
-    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Fleck"];
+    _availableBackpacks = ["BWA3_AssaultPack_Tropen"];
+    _availableHeadgear = ["BWA3_OpsCore_FastMT_SOF_Tropen"];
     _availableFacewear = ["BWA3_G_Combat_clear", "CUP_G_RUS_Balaclava_Ratnik", "FGN_CauR_Shemag_green", "rhsusf_shemagh2_od", "rhsusf_shemagh_od"];
 };
 

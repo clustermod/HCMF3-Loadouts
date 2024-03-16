@@ -3,9 +3,11 @@
  *
  * Author: Hark
  * CC Modpack Version: V4 
- * [Loadout for modern KSK in the year of 2023. Not completly correct due to mod limitations.]
+ * Loadout for modern KSK in the year of 2023. Not completly correct due to mod limitations.
  *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
  */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */

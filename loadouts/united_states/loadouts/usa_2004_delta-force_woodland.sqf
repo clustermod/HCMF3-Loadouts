@@ -1,3 +1,13 @@
+/*
+ * Made for Arma 3 Virtual MILSIM
+ *
+ * Author: Hark
+ * CC Modpack Version: ??
+ * US Army Delta Force operators in DCU and Woodland separated by camouflage into two loadout files.
+ *
+ * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
+ */
+
 params ["_role", "_unit"];
 
 /* Custom additional condition */
@@ -32,7 +42,7 @@ if (_condition && _role in ["RFL"]) then
 };
 
 // Squad Leader
-if (_condition && _role in ["SL"]) then
+if (_condition && _role in ["SL", "FTL"]) then
 {
     _availableUniforms = [];
     _availableWeapons = ["rhs_weap_m4a1_carryhandle"];
