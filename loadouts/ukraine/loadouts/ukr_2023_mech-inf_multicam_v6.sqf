@@ -2,7 +2,7 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5
+ * CC Modpack Version: V6
  * Recreation of Ukrainian Mechanized Infantry as seen operating in conjunction with American donated Bradley IFVs on the eastern front.
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf
