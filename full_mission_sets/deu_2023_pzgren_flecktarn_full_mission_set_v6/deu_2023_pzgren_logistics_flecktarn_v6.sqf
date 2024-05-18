@@ -2,8 +2,8 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5
- * [Logistics file for V5_GER_2023_PzGren_Flecktarn_Set]
+ * CC Modpack Version: V6
+ * Logistics file for V5_GER_2023_PzGren_Flecktarn_Set
  *
  */
 
