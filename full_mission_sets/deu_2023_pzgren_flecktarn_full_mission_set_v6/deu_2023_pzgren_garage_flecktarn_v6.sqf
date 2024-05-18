@@ -2,8 +2,8 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5
- * [Logistics Template made for deu_2023_pzgren_flecktarn_full_mission_set.]
+ * CC Modpack Version: V6
+ * Logistics Template made for deu_2023_pzgren_flecktarn_full_mission_set.
  *
  */
 params["_unit"];

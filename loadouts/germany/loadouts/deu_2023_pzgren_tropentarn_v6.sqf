@@ -2,7 +2,7 @@
  * Made for Arma 3 Virtual MILSIM
  *
  * Author: Hark
- * CC Modpack Version: V5
+ * CC Modpack Version: V6
  * Loadout depicting the 2023 state of German Mechanized Infantry, with limitations in realism due to available mods for Arma 3. Made for a desert enviroment.
  *
  * https://github.com/clustermod/CMF3/blob/dev/framework/rsc/loadouts/!arsenal_template.sqf

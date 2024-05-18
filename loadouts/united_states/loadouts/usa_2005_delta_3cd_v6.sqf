@@ -2,7 +2,7 @@
  * Author: Eric
  * U.S. Delta forces
  *
- * cc_core_v5
+ * cc_core_v6
  */
 params ["_role", "_unit"];
 
